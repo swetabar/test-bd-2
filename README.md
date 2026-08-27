@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+- Preview: https://main--test-bd-2--swetabar.aem.page/
+- Live: https://main--test-bd-2--swetabar.aem.live/
 
 ## Documentation
 
