@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/management-and-professional-liability/aig-statement-series",
+  "path": "home/risk-solutions/business/management-and-professional-liability/aig-statement-series",
+  "timestamp": "2026-10-07T18:10:51.475Z",
+  "title": "AIG Statement Series Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "accordion",
+    "downloads"
+  ]
+}

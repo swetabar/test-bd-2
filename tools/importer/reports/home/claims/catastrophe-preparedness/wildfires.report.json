@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/catastrophe-preparedness/wildfires",
+  "path": "home/claims/catastrophe-preparedness/wildfires",
+  "timestamp": "2026-10-07T18:02:49.071Z",
+  "title": "Wildfires | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion",
+    "downloads"
+  ]
+}

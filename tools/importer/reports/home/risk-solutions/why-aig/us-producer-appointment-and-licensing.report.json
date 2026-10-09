@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/why-aig/us-producer-appointment-and-licensing",
+  "path": "home/risk-solutions/why-aig/us-producer-appointment-and-licensing",
+  "timestamp": "2026-10-07T17:15:43.528Z",
+  "title": "U.S. Producer Appointment & Licensing | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion",
+    "cards-related"
+  ]
+}

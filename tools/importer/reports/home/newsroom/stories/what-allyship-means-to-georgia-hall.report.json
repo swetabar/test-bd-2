@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/what-allyship-means-to-georgia-hall",
+  "path": "home/newsroom/stories/what-allyship-means-to-georgia-hall",
+  "timestamp": "2026-10-07T23:28:47.739Z",
+  "title": "What allyship means to Georgia Hall | AIG Newsroom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

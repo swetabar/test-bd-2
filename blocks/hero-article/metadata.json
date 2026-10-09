@@ -1,0 +1,29 @@
+{
+  "variantName": "hero-article",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "large",
+    "structure": "1 CTAs + image + list",
+    "purpose": "article-page hero: breadcrumb trail above a full-width image or video poster"
+  },
+  "contentPattern": {
+    "structure": "rows (all optional): breadcrumb list of links; picture; optional video link (mp4/YouTube/Vimeo) and duration text such as 2:29"
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/newsroom/stories/aig-is-honored-as-a-top-early-career-employer"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-07T20:52:47.501966Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_818772a7fe6a-6",
+    "v_818772a7fe6a-5"
+  ]
+}

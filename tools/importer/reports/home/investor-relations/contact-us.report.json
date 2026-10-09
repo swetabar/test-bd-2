@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/investor-relations/contact-us",
+  "path": "home/investor-relations/contact-us",
+  "timestamp": "2026-10-07T16:50:52.063Z",
+  "title": "Contact Investor Relations | AIG Insurance",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion",
+    "accordion"
+  ]
+}

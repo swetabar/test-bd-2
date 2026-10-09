@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/working-to-resolve-your-claims-more-quickly-and-efficiently",
+  "path": "home/newsroom/stories/working-to-resolve-your-claims-more-quickly-and-efficiently",
+  "timestamp": "2026-10-07T23:30:26.342Z",
+  "title": "Working to resolve your claims more quickly and efficiently | AIG Newsroom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

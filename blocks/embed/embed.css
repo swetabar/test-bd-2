@@ -1,0 +1,79 @@
+/*
+ * embed: full content-width iframe, no frame chrome (source: .cmp-embed .iframe-block,
+ * 0 padding/margin/border). The frame height comes from --embed-height, set by
+ * embed.js from the source iframe's fixed height; 150px is the HTML iframe default
+ * the source falls back to when no height is given.
+ */
+.embed {
+  width: 100%;
+}
+
+.embed .embed-intro > :first-child {
+  margin-top: 0;
+}
+
+.embed .embed-frame {
+  position: relative;
+  width: 100%;
+}
+
+/* until the lazy iframe is created, an inline strut of the same height reserves its exact box */
+.embed .embed-frame:not(.embed-frame-video):empty::before {
+  content: '';
+  display: inline-block;
+  height: var(--embed-height, 150px);
+  vertical-align: baseline;
+}
+
+/*
+ * the source iframe stays inline on the text baseline, so the frame is the iframe height
+ * plus the line's descender (~6px at 16px / 1.4286); keep that to preserve page rhythm
+ */
+.embed .embed-frame iframe {
+  vertical-align: baseline;
+  width: 100%;
+  height: var(--embed-height, 150px);
+  margin: 0;
+  border: 0;
+}
+
+/* video providers keep a 16:9 frame */
+.embed .embed-frame.embed-frame-video {
+  aspect-ratio: 16 / 9;
+}
+
+.embed .embed-frame.embed-frame-video iframe {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+}
+
+.embed .embed-placeholder {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.embed .embed-placeholder picture,
+.embed .embed-placeholder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.embed .embed-placeholder::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  border-width: 18px 0 18px 30px;
+  border-color: transparent transparent transparent currentcolor;
+  transform: translate(-40%, -50%);
+}

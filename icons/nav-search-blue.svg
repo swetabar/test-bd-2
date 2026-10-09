@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="60" viewBox="0 0 42 60">
+  <g id="Search_Button" data-name="Search Button" transform="translate(-1521 -16)">
+    <rect id="Rectangle_775" data-name="Rectangle 775" width="42" height="60" transform="translate(1521 16)" fill="#fff" opacity="0"/>
+    <g id="search" transform="translate(1530 34)">
+      <circle id="Ellipse_60" data-name="Ellipse 60" cx="8" cy="8" r="8" transform="translate(3 3)" fill="none" stroke="#1352de" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_218" data-name="Line 218" x1="4.35" y1="4.35" transform="translate(16.65 16.65)" fill="none" stroke="#1352de" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

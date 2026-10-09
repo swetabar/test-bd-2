@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/accident-and-health/aig-travel-protect",
+  "path": "home/risk-solutions/business/accident-and-health/aig-travel-protect",
+  "timestamp": "2026-10-08T14:24:11.776Z",
+  "title": "AIG Travel Protect | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-text",
+    "cards-icon",
+    "accordion",
+    "cta-banner",
+    "downloads"
+  ]
+}

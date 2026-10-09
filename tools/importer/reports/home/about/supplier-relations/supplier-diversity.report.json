@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/supplier-relations/supplier-diversity",
+  "path": "home/about/supplier-relations/supplier-diversity",
+  "timestamp": "2026-10-07T16:45:32.437Z",
+  "title": "Supplier Diversity | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion"
+  ]
+}

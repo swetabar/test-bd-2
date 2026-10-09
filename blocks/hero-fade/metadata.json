@@ -1,0 +1,27 @@
+{
+  "variantName": "hero-fade",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "promo-banner",
+    "imagePattern": "background-right-fade",
+    "structure": "image + heading + text + CTA"
+  },
+  "contentPattern": {
+    "structure": "row 1: background image | row 2: optional breadcrumb list (ul of links: Home > ... > current page, rendered as a breadcrumb row above the heading with a house icon for Home), H1, paragraph, CTA link"
+  },
+  "usage": {
+    "pagesUsing": [
+      "https://www.aig.com/home",
+      "/home/careers/students-and-graduates"
+    ],
+    "reuseCount": 3,
+    "lastUsed": "2026-10-07T23:40:42.624Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "hero-fade"
+  ]
+}

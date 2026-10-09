@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/leadership-and-governance/peter-zaffino",
+  "path": "home/about/leadership-and-governance/peter-zaffino",
+  "timestamp": "2026-10-07T16:42:52.571Z",
+  "title": "Peter Zaffino | AIG Insurance",
+  "template": "content-page",
+  "blocks": [
+    "breadcrumbs",
+    "columns",
+    "carousel-leadership"
+  ]
+}

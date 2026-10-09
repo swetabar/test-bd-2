@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/l/risk-engineering/fire-protection-systems-impairment-management",
+  "path": "home/risk-solutions/business/l/risk-engineering/fire-protection-systems-impairment-management",
+  "timestamp": "2026-10-07T17:04:59.461Z",
+  "title": "Fire Protection Systems Impairment Management | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion"
+  ]
+}

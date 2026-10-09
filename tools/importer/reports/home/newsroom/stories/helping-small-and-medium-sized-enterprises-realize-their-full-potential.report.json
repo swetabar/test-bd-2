@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/helping-small-and-medium-sized-enterprises-realize-their-full-potential",
+  "path": "home/newsroom/stories/helping-small-and-medium-sized-enterprises-realize-their-full-potential",
+  "timestamp": "2026-10-07T23:23:30.445Z",
+  "title": "Helping small- and medium-sized enterprises realize their full potential | AIG Newsroom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

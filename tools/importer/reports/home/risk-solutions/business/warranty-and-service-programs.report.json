@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/warranty-and-service-programs",
+  "path": "home/risk-solutions/business/warranty-and-service-programs",
+  "timestamp": "2026-10-07T17:14:29.179Z",
+  "title": "Warranty & Service Insurance Programs | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "cards-related"
+  ]
+}

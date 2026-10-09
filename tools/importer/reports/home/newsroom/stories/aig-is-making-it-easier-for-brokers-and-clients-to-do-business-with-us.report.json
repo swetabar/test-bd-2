@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/aig-is-making-it-easier-for-brokers-and-clients-to-do-business-with-us",
+  "path": "home/newsroom/stories/aig-is-making-it-easier-for-brokers-and-clients-to-do-business-with-us",
+  "timestamp": "2026-10-07T23:17:57.238Z",
+  "title": "AIG is making it easier for brokers and clients to do business with us | AIG Newsroom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

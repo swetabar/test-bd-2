@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/casualty-construction-risk-liability",
+  "path": "home/claims/report-a-claim/casualty-construction-risk-liability",
+  "timestamp": "2026-10-08T15:08:21.421Z",
+  "title": "Report a AIG Casualty - Construction Risk Liability Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

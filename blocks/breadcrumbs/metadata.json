@@ -1,0 +1,31 @@
+{
+  "variantName": "breadcrumbs",
+  "baseBlock": "breadcrumbs",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "heading + text + 2 CTAs + list",
+    "purpose": "page trail navigation (home icon, chevron separators, current page last)"
+  },
+  "contentPattern": {
+    "structure": "one cell with a list of links, home first (e.g. :home: icon link); the last item is the current page as text or link. Empty block derives the trail from the URL"
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/claims/report-a-claim/casualty-cat-excess",
+      "/home/claims/workers-compensation-claims/alabama-workers-compensation"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-10-07T23:20:14Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_ad3de4cef1f1",
+    "v_823518242103-3",
+    "v_9dc326ad5e8e"
+  ]
+}

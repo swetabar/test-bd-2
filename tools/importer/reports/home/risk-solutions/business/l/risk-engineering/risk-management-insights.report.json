@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/l/risk-engineering/risk-management-insights",
+  "path": "home/risk-solutions/business/l/risk-engineering/risk-management-insights",
+  "timestamp": "2026-10-07T17:05:51.299Z",
+  "title": "Risk Management Insights | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion"
+  ]
+}

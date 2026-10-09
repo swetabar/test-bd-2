@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/accident-and-health/corporate-risk",
+  "path": "home/risk-solutions/business/accident-and-health/corporate-risk",
+  "timestamp": "2026-10-08T17:40:33.834Z",
+  "title": "Corporate Risk Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "form",
+    "hero-banner",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-text",
+    "columns-text",
+    "cta-banner",
+    "downloads",
+    "cards-related",
+    "tabs"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about",
+  "path": "home/about",
+  "timestamp": "2026-10-08T14:18:49.299Z",
+  "title": "About AIG | AIG Insurance",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-featured",
+    "columns-featured",
+    "cards"
+  ]
+}

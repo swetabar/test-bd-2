@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/workers-compensation-claims/new-york-workers-compensation",
+  "path": "home/claims/workers-compensation-claims/new-york-workers-compensation",
+  "timestamp": "2026-10-07T20:56:49.155Z",
+  "title": "New York: Workers' Compensation | AIG US",
+  "template": "accordion-detail",
+  "blocks": [
+    "breadcrumbs",
+    "accordion"
+  ]
+}

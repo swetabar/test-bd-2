@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/how-veterans-apply-their-valuable-skills-at-aig",
+  "path": "home/newsroom/stories/how-veterans-apply-their-valuable-skills-at-aig",
+  "timestamp": "2026-10-07T23:25:18.081Z",
+  "title": "How Veterans Apply Their Valuable Skills at AIG",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

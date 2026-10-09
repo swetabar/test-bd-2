@@ -1,0 +1,41 @@
+{
+  "variantName": "carousel",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "icon",
+    "structure": "heading + text + 1 CTAs + 3 images",
+    "purpose": "horizontally scrolling card row (3-4 cards per view on desktop) with prev/next controls when cards overflow"
+  },
+  "contentPattern": {
+    "structure": "one row per slide: optional image/icon cell | content cell (heading, text, links)"
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/careers/students-and-graduates"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-07T23:40:42.624Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_d297afd101c8-2",
+    "v_acaec4b74249",
+    "v_0b3bcb5bbd8a",
+    "v_14702b2859f6",
+    "v_1a387dbe8884",
+    "v_283781b53d1f",
+    "v_3c469407a852",
+    "v_6825e113d110",
+    "v_866cb5eafdfa",
+    "v_a7a51852978e-1",
+    "v_bcd8e158dc77",
+    "v_c01325780a16",
+    "v_ce10a8aea461",
+    "v_d297afd101c8-3"
+  ]
+}

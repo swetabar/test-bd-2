@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/corporate-responsibility/aig-gives-back",
+  "path": "home/about/corporate-responsibility/aig-gives-back",
+  "timestamp": "2026-10-08T14:18:48.657Z",
+  "title": "AIG Gives Back",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-media",
+    "columns-media",
+    "columns-media",
+    "cards-related"
+  ]
+}

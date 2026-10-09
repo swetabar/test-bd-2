@@ -1,0 +1,458 @@
+/*
+ * hero-fade: full-bleed banner, image with a navy fade on the left and
+ * white heading / text / CTA overlaid. Values extracted from
+ * the source "hero banner with fade" container (breakpoints follow the source:
+ * 768 / 1025 / 1201 / 1400).
+ */
+
+/* full-bleed: undo the global section width / gutter / spacing */
+main > .section.hero-fade-container {
+  margin-block: 0;
+}
+
+main > .section.hero-fade-container > .hero-fade-wrapper {
+  width: auto;
+  max-width: none;
+  padding: 0;
+}
+
+.hero-fade {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---------- mobile (< 768px): image on top, navy content card overlaps ---------- */
+.hero-fade .hero-fade-media {
+  position: relative;
+  height: 235px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.hero-fade .hero-fade-media picture {
+  display: block;
+}
+
+.hero-fade .hero-fade-media img {
+  display: block;
+  width: 200%;
+  max-width: none;
+  height: auto;
+  max-height: 400px;
+  min-height: 0;
+  object-fit: cover;
+  background: var(--aig-navy);
+  transform: translateX(-50%);
+}
+
+.hero-fade .hero-fade-inner {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  margin: -80px 24px 0;
+  padding: 24px;
+  background: var(--aig-navy);
+}
+
+.hero-fade .hero-fade-content h1,
+.hero-fade .hero-fade-content h2,
+.hero-fade .hero-fade-content h3 {
+  margin: 24px 0;
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: 0;
+}
+
+.hero-fade .hero-fade-content p {
+  margin: 0 0 24px;
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.hero-fade .hero-fade-content > :last-child {
+  margin-bottom: 0;
+}
+
+.hero-fade .hero-fade-content p.hero-fade-cta {
+  margin: 0;
+}
+
+/* CTA: cyan arrow link (default) */
+main .hero-fade a.button.link:any-link {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  border: 0;
+  padding: 0 32px 0 0;
+  background: none;
+  color: rgb(128 210 242);
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+main .hero-fade a.button.link::after {
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 30px;
+  background: url('../../icons/arrow-cyan.svg') no-repeat 0 13px;
+}
+
+main .hero-fade a.button.link:hover,
+main .hero-fade a.button.link:focus-visible {
+  color: rgb(128 210 242);
+  text-decoration: underline;
+}
+
+/* CTA: outlined white button on the page-top hero */
+main > .section:first-of-type .hero-fade a.button.link:any-link {
+  margin: 8px 8px 0 0;
+  border: 1px solid #fff;
+  padding: 16px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  transition: all 0s;
+}
+
+main > .section:first-of-type .hero-fade a.button.link::after {
+  content: none;
+}
+
+main > .section:first-of-type .hero-fade a.button.link:hover,
+main > .section:first-of-type .hero-fade a.button.link:focus-visible {
+  border-color: var(--aig-cobalt);
+  background-color: var(--aig-cobalt);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* page-top hero keeps 32px below the content card */
+main > .section:first-of-type .hero-fade .hero-fade-inner {
+  margin-bottom: 32px;
+}
+
+@media (width >= 386px) {
+  .hero-fade .hero-fade-media { height: 260px; }
+}
+
+@media (width >= 441px) {
+  .hero-fade .hero-fade-media { height: 310px; }
+}
+
+@media (width >= 551px) {
+  .hero-fade .hero-fade-media { height: 330px; }
+}
+
+@media (width >= 601px) {
+  .hero-fade .hero-fade-media { height: 380px; }
+}
+
+/* ---------- desktop (>= 768px): content overlays the faded image ---------- */
+@media (width >= 768px) {
+  .hero-fade {
+    min-height: 320px;
+  }
+
+  .hero-fade .hero-fade-media {
+    height: auto;
+    overflow: visible;
+  }
+
+  .hero-fade .hero-fade-media img {
+    width: 160%;
+    min-height: 400px;
+    max-height: 400px;
+    transform: translateX(-30%);
+  }
+
+  .hero-fade .hero-fade-media::after {
+    content: '';
+    position: absolute;
+    inset: 0 25% 0 0;
+    background: linear-gradient(90deg, var(--aig-navy) 0, var(--aig-navy) 60%, rgb(0 24 113 / 0%) 100%);
+  }
+
+  .hero-fade .hero-fade-inner {
+    position: absolute;
+    inset: 0 auto 0 32px;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+
+  main > .section:first-of-type .hero-fade .hero-fade-inner {
+    margin-bottom: 0;
+    bottom: 32px;
+  }
+
+  .hero-fade .hero-fade-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  .hero-fade .hero-fade-content h1,
+  .hero-fade .hero-fade-content h2,
+  .hero-fade .hero-fade-content h3 {
+    margin: 0 0 24px;
+  }
+
+  .hero-fade .hero-fade-content p {
+    margin-bottom: 24px;
+  }
+
+  .hero-fade .hero-fade-content > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (width >= 1025px) {
+  .hero-fade .hero-fade-media img {
+    width: 100%;
+    max-height: 500px;
+    transform: none;
+  }
+
+  .hero-fade .hero-fade-inner {
+    width: 49%;
+  }
+
+  .hero-fade .hero-fade-content h1,
+  .hero-fade .hero-fade-content h2,
+  .hero-fade .hero-fade-content h3 {
+    margin-bottom: 32px;
+  }
+
+  .hero-fade .hero-fade-content p {
+    margin-bottom: 32px;
+  }
+
+  .hero-fade .hero-fade-content > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (width >= 1201px) {
+  .hero-fade .hero-fade-inner {
+    left: 8.3333%;
+  }
+}
+
+@media (width >= 1400px) {
+  .hero-fade .hero-fade-media img {
+    max-height: none;
+  }
+}
+
+/*
+ * breadcrumb trail (leading ul/ol of links in the content cell), as on the source
+ * landing-page heroes and hero-banner: uppercase Futura, light-cyan links, white current
+ * item, chevron separators, house icon for Home. Mobile: top of the navy content card;
+ * desktop: pinned 24px from the top of the hero while the content stays centred.
+ */
+.hero-fade .hero-fade-breadcrumbs ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 22.8571px;
+}
+
+.hero-fade .hero-fade-breadcrumbs li {
+  display: inline-flex;
+  min-height: 24px;
+  vertical-align: top;
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+/* source markup has whitespace between crumbs (a 3px space in the list font) */
+.hero-fade .hero-fade-breadcrumbs li:not(:last-child) {
+  margin-right: 3px;
+}
+
+.hero-fade .hero-fade-breadcrumbs li + li::before {
+  content: '\2039';
+  display: block;
+  height: 20px;
+  margin: 5px 8px 0;
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 20px;
+  transform: rotate(180deg);
+}
+
+.hero-fade .hero-fade-breadcrumbs a:any-link {
+  display: block;
+  color: rgb(128 210 242);
+  text-decoration: none;
+}
+
+.hero-fade .hero-fade-breadcrumbs a:hover {
+  color: rgb(128 210 242);
+  text-decoration: underline;
+}
+
+/* "Home" crumb renders as a house icon */
+.hero-fade .hero-fade-breadcrumbs li:first-child > a:is([href$='/home'], [href='/']) {
+  width: 24px;
+  height: 26px;
+  overflow: hidden;
+  background: url('home.svg') no-repeat 50% 2px / 20px;
+  text-indent: -99999px;
+}
+
+/* the current page item is plain text: keep it white even if authored as a link */
+.hero-fade .hero-fade-breadcrumbs li[aria-current='page'] > a:any-link {
+  color: #fff;
+}
+
+@media (width >= 768px) {
+  .hero-fade .hero-fade-breadcrumbs {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    z-index: 1;
+  }
+
+  /* landing-page heroes with a trail centre their content in the full hero height */
+  main > .section:first-of-type .hero-fade.hero-fade-has-breadcrumbs .hero-fade-inner {
+    bottom: 0;
+  }
+}
+
+/*
+ * Landing-page heroes (breadcrumb trail; section authored with the "dark" style).
+ * The source hero is edge to edge: no navy section padding/background around it
+ * (on mobile only the image band is navy and the content card sits on white).
+ */
+main > .section.hero-fade-container.dark {
+  padding-block: 0;
+  background-color: transparent;
+}
+
+/* the card ends the hero: no extra gap below it (unlike the home page-top hero) */
+main > .section:first-of-type .hero-fade.hero-fade-has-breadcrumbs .hero-fade-inner {
+  margin-bottom: 0;
+}
+
+/* CTA stays the default cyan arrow link (source teaser action link), not the boxed button */
+main > .section:first-of-type .hero-fade.hero-fade-has-breadcrumbs p.hero-fade-cta {
+  display: flex;
+}
+
+main > .section:first-of-type .hero-fade.hero-fade-has-breadcrumbs a.button.link:any-link {
+  margin: 0;
+  border: 0;
+  padding: 0 32px 0 0;
+  color: rgb(128 210 242);
+  font-size: 20px;
+  line-height: 36px;
+  transition: 0.3s;
+}
+
+main > .section:first-of-type .hero-fade.hero-fade-has-breadcrumbs a.button.link::after {
+  content: '';
+}
+
+/* off-site CTA: the external-link glyph replaces the arrow */
+main > .section:first-of-type .hero-fade.hero-fade-has-breadcrumbs a.button.link.hero-fade-external::after {
+  content: none;
+}
+
+/* document CTA: white PDF icon, title with the file size on a second, smaller grey line */
+main > .section:first-of-type .hero-fade.hero-fade-has-breadcrumbs a.button.link.hero-fade-pdf:any-link {
+  margin: 8px 8px 0 0;
+  border: 1px solid transparent;
+  padding: 9px 16px 9px 48px;
+  background: url('../../icons/file-pdf-white.svg') no-repeat 16px 10px / 22px 28px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+main > .section:first-of-type .hero-fade.hero-fade-has-breadcrumbs a.button.link.hero-fade-pdf::after {
+  content: none;
+}
+
+main > .section:first-of-type .hero-fade.hero-fade-has-breadcrumbs a.hero-fade-pdf :is(strong, b) {
+  display: block;
+  color: rgb(208 208 208);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+}
+
+/* bold-authored CTA (button primary / secondary): the source outlined white button */
+main > .section:first-of-type .hero-fade.hero-fade-has-breadcrumbs a.button:is(.primary, .secondary):any-link {
+  display: inline-block;
+  margin: 8px 8px 0 0;
+  border: 1px solid #fff;
+  padding: 16px;
+  background: none;
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+main > .section:first-of-type .hero-fade.hero-fade-has-breadcrumbs a.button:is(.primary, .secondary):hover,
+main > .section:first-of-type .hero-fade.hero-fade-has-breadcrumbs a.button:is(.primary, .secondary):focus-visible {
+  border-color: var(--aig-cobalt);
+  background-color: var(--aig-cobalt);
+  color: #fff;
+}
+
+main > .section:first-of-type .hero-fade.hero-fade-has-breadcrumbs a.button.link:hover,
+main > .section:first-of-type .hero-fade.hero-fade-has-breadcrumbs a.button.link:focus-visible {
+  border-color: transparent;
+  background: none;
+  color: rgb(128 210 242);
+  text-decoration: underline;
+}
+
+/* external-link glyph (custom-icons ligature) after off-site CTA labels, as on the source */
+.hero-fade .hero-fade-icon-external {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  font-family: custom-icons, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  font-feature-settings: 'liga';
+  line-height: 14px;
+  text-decoration: none;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+/* option "narrow": one-third content column (source "thirdwidth" hero container) */
+@media (width >= 768px) {
+  .hero-fade.narrow .hero-fade-inner {
+    width: 32%;
+  }
+}

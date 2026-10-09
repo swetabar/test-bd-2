@@ -1,0 +1,28 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/careers/students-and-graduates",
+  "path": "home/careers/students-and-graduates",
+  "timestamp": "2026-10-08T14:22:21.393Z",
+  "title": "Students & Graduates - Careers at AIG | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-text",
+    "columns-text",
+    "columns-featured",
+    "columns-featured",
+    "columns-featured",
+    "cards-icon",
+    "columns-media",
+    "columns-media",
+    "columns-media",
+    "columns-media",
+    "columns-media",
+    "columns-media",
+    "carousel",
+    "accordion",
+    "cards-related"
+  ]
+}

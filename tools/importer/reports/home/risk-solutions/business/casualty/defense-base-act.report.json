@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/casualty/defense-base-act",
+  "path": "home/risk-solutions/business/casualty/defense-base-act",
+  "timestamp": "2026-10-07T18:06:24.073Z",
+  "title": "Defense Base Act Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "downloads",
+    "cards-related"
+  ]
+}

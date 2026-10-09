@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/como-aig-iberia-esta-ayudando-a-las-pequenas-y-medianas-empresas-en-la-gestion-de-sus-riesgos",
+  "path": "home/newsroom/stories/como-aig-iberia-esta-ayudando-a-las-pequenas-y-medianas-empresas-en-la-gestion-de-sus-riesgos",
+  "timestamp": "2026-10-07T23:21:33.688Z",
+  "title": "Cómo AIG Iberia está ayudando a las Pequeñas y Medianas empresas en la gestión de sus riesgos | AIG Newsroom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share"
+  ]
+}

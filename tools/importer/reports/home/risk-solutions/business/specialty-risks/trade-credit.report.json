@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/specialty-risks/trade-credit",
+  "path": "home/risk-solutions/business/specialty-risks/trade-credit",
+  "timestamp": "2026-10-07T18:16:15.160Z",
+  "title": "Trade Credit Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "downloads",
+    "cards-related"
+  ]
+}

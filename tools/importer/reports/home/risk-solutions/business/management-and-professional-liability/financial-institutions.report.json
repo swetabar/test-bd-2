@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/management-and-professional-liability/financial-institutions",
+  "path": "home/risk-solutions/business/management-and-professional-liability/financial-institutions",
+  "timestamp": "2026-10-07T17:07:42.547Z",
+  "title": "Financial Institutions Insurance Solutions | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "columns-text",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "cards-related"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/casualty/worldrisk-foreign-commercial",
+  "path": "home/risk-solutions/business/casualty/worldrisk-foreign-commercial",
+  "timestamp": "2026-10-07T18:08:11.374Z",
+  "title": "WorldRisk Foreign Commercial Package Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "columns-text",
+    "downloads",
+    "cards-related"
+  ]
+}

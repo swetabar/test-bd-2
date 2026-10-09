@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/investor-relations/stock-information",
+  "path": "home/investor-relations/stock-information",
+  "timestamp": "2026-10-07T16:51:44.581Z",
+  "title": "Stock Information | AIG Insurance",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "embed"
+  ]
+}

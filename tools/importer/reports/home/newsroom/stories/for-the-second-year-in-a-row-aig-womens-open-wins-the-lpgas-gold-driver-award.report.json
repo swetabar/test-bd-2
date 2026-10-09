@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/for-the-second-year-in-a-row-aig-womens-open-wins-the-lpgas-gold-driver-award",
+  "path": "home/newsroom/stories/for-the-second-year-in-a-row-aig-womens-open-wins-the-lpgas-gold-driver-award",
+  "timestamp": "2026-10-07T23:23:22.364Z",
+  "title": "AIG Women’s Open Wins the LPGA’s Gold Driver Award for Best Player Experience for the Second Year in a Row",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

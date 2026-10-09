@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/casualty-vendor-services-casualty-liability",
+  "path": "home/claims/report-a-claim/casualty-vendor-services-casualty-liability",
+  "timestamp": "2026-10-08T15:09:19.637Z",
+  "title": "Report a AIG Casualty - Vendor Services Casualty Liability Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

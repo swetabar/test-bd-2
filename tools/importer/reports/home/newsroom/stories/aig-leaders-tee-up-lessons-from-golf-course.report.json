@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/aig-leaders-tee-up-lessons-from-golf-course",
+  "path": "home/newsroom/stories/aig-leaders-tee-up-lessons-from-golf-course",
+  "timestamp": "2026-10-07T23:18:50.871Z",
+  "title": "AIG Leaders Tee Up Lessons from the Golf Course | AIG Newsroom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

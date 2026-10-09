@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/delivering-for-our-clients-when-they-need-us-most",
+  "path": "home/newsroom/stories/delivering-for-our-clients-when-they-need-us-most",
+  "timestamp": "2026-10-07T23:22:29.483Z",
+  "title": "Delivering for Our Clients When They Need Us Most",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

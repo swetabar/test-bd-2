@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories",
+  "path": "home/newsroom/stories",
+  "timestamp": "2026-10-07T18:04:33.856Z",
+  "title": "AIG Newsroom Stories | AIG Insurance",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner"
+  ]
+}

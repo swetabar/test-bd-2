@@ -1,0 +1,30 @@
+{
+  "variantName": "hero-banner",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "heading + text + 1 CTAs + list",
+    "purpose": "text-only page-title banner with breadcrumb trail"
+  },
+  "contentPattern": {
+    "structure": "one row (cells merged in order): optional breadcrumb list of links; heading; optional intro paragraph; optional CTA link paragraph(s); optional picture-only cell becomes a background"
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/risk-solutions/business/multinational"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-07T13:29:03.321003Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_818772a7fe6a-3",
+    "v_818772a7fe6a-4",
+    "v_818772a7fe6a-7"
+  ]
+}

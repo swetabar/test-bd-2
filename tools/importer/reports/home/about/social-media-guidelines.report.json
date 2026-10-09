@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/social-media-guidelines",
+  "path": "home/about/social-media-guidelines",
+  "timestamp": "2026-10-07T16:44:38.257Z",
+  "title": "Social Media Guidelines | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "cards-related"
+  ]
+}

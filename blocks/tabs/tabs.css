@@ -1,0 +1,287 @@
+/*
+ * tabs: AIG panel-container tabs (aig.com/home/worldwide, contact forms).
+ * Values come from the source computed styles; breakpoints mirror the
+ * source (768 / 993 / 1025 / 1201). The tab bar matches tabs-risk.
+ */
+
+/* the source tabs span the full section width (no gutters) */
+main > .section > .tabs-wrapper {
+  width: auto;
+  max-width: none;
+  padding: 0;
+}
+
+.tabs {
+  display: flow-root;
+}
+
+/* tab bar */
+.tabs .tabs-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 16px 0 0;
+  padding: 0;
+}
+
+.tabs .tabs-tab {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+  min-width: 110px;
+  margin: 0 15px;
+  padding: 15px 3px 27px;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+  background: none;
+  color: rgb(91 92 96);
+  font-family: var(--heading-font-family);
+  font-size: 19.2px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.36px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tabs .tabs-tab:hover,
+.tabs .tabs-tab[aria-selected='true'] {
+  padding-bottom: 26px;
+  border-bottom: 2px solid var(--aig-cobalt);
+  color: var(--aig-cobalt);
+}
+
+.tabs .tabs-tab:focus {
+  outline: none;
+}
+
+.tabs .tabs-tab:focus-visible {
+  outline: 2px solid var(--aig-cobalt);
+  outline-offset: 2px;
+}
+
+/* panels */
+.tabs .tabs-panel {
+  margin: 0 auto;
+  padding-top: 48px;
+}
+
+.tabs .tabs-panel:focus {
+  outline: none;
+}
+
+.tabs .tabs-panel[hidden] {
+  display: none;
+}
+
+.tabs .tabs-panel > :first-child {
+  margin-top: 0;
+}
+
+.tabs .tabs-panel > :last-child {
+  margin-bottom: 0;
+}
+
+.tabs .tabs-panel p {
+  margin: 20px 0;
+}
+
+/* disclaimers: source renders <sup> copy as small baseline text */
+.tabs .tabs-panel sup {
+  font-size: 15px;
+  vertical-align: baseline;
+}
+
+/* link-list panels: up to three centered link columns */
+.tabs .tabs-panel.tabs-panel-links {
+  padding-top: 0;
+}
+
+.tabs .tabs-links {
+  box-sizing: border-box;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 32px 8px;
+}
+
+.tabs .tabs-link:any-link {
+  position: relative;
+  display: block;
+  color: var(--link-color);
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tabs .tabs-link:hover,
+.tabs .tabs-link:focus-visible {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* hover underline covers the label only, not the icon */
+.tabs .tabs-link:hover .tabs-link-label,
+.tabs .tabs-link:focus-visible .tabs-link-label {
+  text-decoration: underline;
+}
+
+/*
+ * external link glyph (custom-icons ligature font, as on source). Kept inline
+ * (not inline-block) so a wrapped, icon-only line keeps the 36px line height.
+ */
+.tabs .tabs-link .icon-external {
+  margin-left: 6px;
+  font-family: custom-icons, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  vertical-align: top;
+  font-feature-settings: 'liga';
+  text-align: center;
+  text-transform: none;
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+
+/* internal link arrow sits at the right edge of its column */
+.tabs .tabs-link-internal::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: calc(100% - 25px);
+  width: 25px;
+  height: 30px;
+  background: url('../../icons/arrow-blue.svg') no-repeat 0 13px;
+}
+
+@media (width >= 768px) {
+  .tabs .tabs-tab {
+    min-width: auto;
+  }
+
+  .tabs .tabs-links {
+    display: flex;
+  }
+
+  .tabs .tabs-links-col {
+    flex: 0 0 33%;
+    min-width: 0;
+  }
+}
+
+@media (width >= 993px) {
+  .tabs .tabs-tab {
+    font-size: 24px;
+  }
+}
+
+@media (width >= 1025px) {
+  .tabs .tabs-tab {
+    letter-spacing: 0.58px;
+  }
+}
+
+@media (width >= 1201px) {
+  .tabs .tabs-tab {
+    margin: 0 22px;
+  }
+
+  .tabs .tabs-panel {
+    max-width: 85%;
+  }
+
+  .tabs .tabs-links-col {
+    flex-basis: 32%;
+  }
+}
+
+/*
+ * cards option: each panel is a grid of bordered cards (aig.com login panel .tab-card:
+ * heading + text + external "Login" link). 1 column on mobile, 2 from 768px, 3 from 993px.
+ */
+.tabs.cards .tabs-cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+  box-sizing: border-box;
+  max-width: calc(1101px + 2 * var(--content-gutter));
+  margin: 0 auto;
+  padding: 0 var(--content-gutter);
+}
+
+.tabs.cards .tabs-card {
+  box-sizing: border-box;
+  min-width: 0;
+  border: 1px solid var(--light-color);
+  padding: 0 20px;
+  text-align: left;
+}
+
+.tabs.cards .tabs-card > :is(h2, h3, h4, h5, h6) {
+  margin: 16px 0;
+  color: var(--heading-color);
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.tabs.cards .tabs-panel .tabs-card p {
+  margin: 0 0 15px;
+  color: rgb(51 51 51);
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* card link: underlined Futura link (external links get the glyph instead of the arrow) */
+.tabs.cards .tabs-card a.button.link:any-link {
+  display: inline;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.tabs.cards .tabs-card a.tabs-card-link-external:any-link {
+  padding-right: 0;
+  color: var(--link-color);
+  font-family: var(--heading-font-family);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.tabs.cards .tabs-card a.tabs-card-link-external::after {
+  content: none;
+}
+
+.tabs.cards .tabs-card .icon-external {
+  display: inline-block;
+  margin: 0 4px 0 6px;
+  font-family: custom-icons, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  font-feature-settings: 'liga';
+  text-transform: none;
+  white-space: nowrap;
+}
+
+@media (width >= 768px) {
+  .tabs.cards .tabs-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (width >= 993px) {
+  .tabs.cards .tabs-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

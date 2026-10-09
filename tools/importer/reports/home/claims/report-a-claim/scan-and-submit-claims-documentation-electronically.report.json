@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/scan-and-submit-claims-documentation-electronically",
+  "path": "home/claims/report-a-claim/scan-and-submit-claims-documentation-electronically",
+  "timestamp": "2026-10-07T18:03:40.666Z",
+  "title": "Scan & Submit Claims Documentation Electronically",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion",
+    "downloads",
+    "cards-related"
+  ]
+}

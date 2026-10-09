@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/casualty-primary-casualty-liability",
+  "path": "home/claims/report-a-claim/casualty-primary-casualty-liability",
+  "timestamp": "2026-10-08T15:09:14.242Z",
+  "title": "Report a AIG Casualty - Primary Casualty Liability Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

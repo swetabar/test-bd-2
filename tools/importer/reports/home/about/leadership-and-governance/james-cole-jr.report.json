@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/leadership-and-governance/james-cole-jr",
+  "path": "home/about/leadership-and-governance/james-cole-jr",
+  "timestamp": "2026-10-07T16:40:13.679Z",
+  "title": "James Cole, Jr. | AIG Insurance",
+  "template": "content-page",
+  "blocks": [
+    "breadcrumbs",
+    "columns",
+    "carousel-leadership"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "da",
+  "sites": {
+    "test-bd-2": {
+      "previewOrg": "swetabar",
+      "previewSite": "test-bd-2",
+      "contentHostUrl": "https://content.da.live/swetabar/test-bd-2/",
+      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
+    }
+  }
+}

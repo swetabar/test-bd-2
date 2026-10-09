@@ -1,0 +1,76 @@
+/* cta-banner: heading + text on the left, outlined CTA on the right (navy band from the section) */
+.cta-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-banner .cta-banner-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  line-height: 0;
+}
+
+.cta-banner .cta-banner-background picture,
+.cta-banner .cta-banner-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cta-banner .cta-banner-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.cta-banner .cta-banner-text,
+.cta-banner .cta-banner-actions {
+  width: 100%;
+}
+
+.cta-banner .cta-banner-text > :first-child {
+  margin-top: 0;
+}
+
+.cta-banner .cta-banner-actions {
+  text-align: center;
+}
+
+.cta-banner .cta-banner-actions p {
+  margin: 0 0 15px;
+}
+
+main .cta-banner a.button.cta-banner-cta:any-link {
+  margin: 8px 8px 0 0;
+  border-color: currentcolor;
+  background-color: transparent;
+  color: inherit;
+  text-align: center;
+}
+
+main .cta-banner a.button.cta-banner-cta:hover,
+main .cta-banner a.button.cta-banner-cta:focus-visible {
+  border-color: var(--aig-cobalt);
+  background-color: var(--aig-cobalt);
+  color: #fff;
+}
+
+@media (width >= 768px) {
+  .cta-banner .cta-banner-content {
+    flex-wrap: nowrap;
+  }
+
+  .cta-banner .cta-banner-text {
+    width: 74.5%;
+  }
+
+  .cta-banner .cta-banner-actions {
+    flex: 0 0 auto;
+    width: 23.5%;
+  }
+}

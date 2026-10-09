@@ -1,0 +1,26 @@
+{
+  "variantName": "columns-media",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "alternating-media-stories",
+    "imagePattern": "large-alternating",
+    "structure": "media + heading + text + link"
+  },
+  "contentPattern": "row per item: media cell | text cell (H3, paragraph, link) - cell order follows visual order",
+  "usage": {
+    "pagesUsing": [
+      "https://www.aig.com/home",
+      "/home/risk-solutions/business/multinational",
+      "/home/careers/students-and-graduates"
+    ],
+    "reuseCount": 3,
+    "lastUsed": "2026-10-07T23:40:42.624Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "columns-media"
+  ]
+}

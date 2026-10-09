@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/financial-lines-kidnap-ransom-and-extortion",
+  "path": "home/claims/report-a-claim/financial-lines-kidnap-ransom-and-extortion",
+  "timestamp": "2026-10-08T15:10:11.764Z",
+  "title": "Report a AIG Financial Lines - Kidnap, Ransom and Extortion Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

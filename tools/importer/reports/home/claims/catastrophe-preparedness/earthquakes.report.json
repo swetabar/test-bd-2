@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/catastrophe-preparedness/earthquakes",
+  "path": "home/claims/catastrophe-preparedness/earthquakes",
+  "timestamp": "2026-10-07T18:01:56.677Z",
+  "title": "Earthquakes | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion",
+    "downloads"
+  ]
+}

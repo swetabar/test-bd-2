@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/catastrophe-preparedness",
+  "path": "home/claims/catastrophe-preparedness",
+  "timestamp": "2026-10-07T16:46:25.999Z",
+  "title": "Catastrophe Preparedness - AIG Claims | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-text",
+    "columns-text",
+    "columns-media",
+    "columns-media",
+    "cards-related"
+  ]
+}

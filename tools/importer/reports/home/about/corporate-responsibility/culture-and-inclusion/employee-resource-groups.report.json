@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/corporate-responsibility/culture-and-inclusion/employee-resource-groups",
+  "path": "home/about/corporate-responsibility/culture-and-inclusion/employee-resource-groups",
+  "timestamp": "2026-10-08T14:19:40.364Z",
+  "title": "Employee Resource Groups | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-text",
+    "carousel",
+    "cards-related"
+  ]
+}

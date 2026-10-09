@@ -1,0 +1,38 @@
+{
+  "variantName": "downloads",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": true,
+    "imagePattern": "noimg",
+    "structure": "heading",
+    "purpose": "downloadable materials list (document title + Download PDF link with size)"
+  },
+  "contentPattern": {
+    "structure": "one row per document: title cell | download link cell (optional :download: icon). Grid option shows the items in two columns on wide screens"
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/risk-solutions/business/multinational"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-07T13:29:03.321003Z"
+  },
+  "options": [
+    {
+      "class": "grid",
+      "label": "Grid"
+    },
+    {
+      "class": "narrow",
+      "label": "Narrow"
+    }
+  ],
+  "memberVariantIds": [
+    "v_aa5e44d8b6bc",
+    "v_6a8791f0c390"
+  ]
+}

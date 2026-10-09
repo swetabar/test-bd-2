@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/l/risk-engineering/marine-loss-control-engineering",
+  "path": "home/risk-solutions/business/l/risk-engineering/marine-loss-control-engineering",
+  "timestamp": "2026-10-07T17:05:40.305Z",
+  "title": "Marine Risk Consulting (MRC) | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion"
+  ]
+}

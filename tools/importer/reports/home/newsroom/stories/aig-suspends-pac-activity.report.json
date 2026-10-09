@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/aig-suspends-pac-activity",
+  "path": "home/newsroom/stories/aig-suspends-pac-activity",
+  "timestamp": "2026-10-07T23:19:44.835Z",
+  "title": "AIG Suspends PAC Activity",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/workers-compensation-claims/virginia-workers-compensation",
+  "path": "home/claims/workers-compensation-claims/virginia-workers-compensation",
+  "timestamp": "2026-10-07T21:00:34.282Z",
+  "title": "Virginia: Workers' Compensation | AIG US",
+  "template": "accordion-detail",
+  "blocks": [
+    "breadcrumbs",
+    "accordion"
+  ]
+}

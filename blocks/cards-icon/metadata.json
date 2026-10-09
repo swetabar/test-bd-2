@@ -1,0 +1,31 @@
+{
+  "variantName": "cards-icon",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "icon",
+    "structure": "text + image",
+    "purpose": "centered icon/pictogram feature cards"
+  },
+  "contentPattern": {
+    "structure": "one row per card: icon or image cell | body cell (heading, short text, optional link)"
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/careers/students-and-graduates"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-07T23:40:42.624Z"
+  },
+  "options": [
+    "dark-grey"
+  ],
+  "memberVariantIds": [
+    "v_46f899723077",
+    "v_21df9090c6e8"
+  ]
+}

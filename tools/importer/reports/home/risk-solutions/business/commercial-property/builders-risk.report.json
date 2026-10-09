@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/commercial-property/builders-risk",
+  "path": "home/risk-solutions/business/commercial-property/builders-risk",
+  "timestamp": "2026-10-07T18:08:11.703Z",
+  "title": "Builders Risk Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "downloads",
+    "cards-related"
+  ]
+}

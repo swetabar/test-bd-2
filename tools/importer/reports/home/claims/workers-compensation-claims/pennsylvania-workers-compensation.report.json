@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/workers-compensation-claims/pennsylvania-workers-compensation",
+  "path": "home/claims/workers-compensation-claims/pennsylvania-workers-compensation",
+  "timestamp": "2026-10-07T20:57:53.946Z",
+  "title": "Pennsylvania: Workers' Compensation | AIG US",
+  "template": "accordion-detail",
+  "blocks": [
+    "breadcrumbs",
+    "accordion"
+  ]
+}

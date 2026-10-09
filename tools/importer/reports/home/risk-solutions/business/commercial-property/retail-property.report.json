@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/commercial-property/retail-property",
+  "path": "home/risk-solutions/business/commercial-property/retail-property",
+  "timestamp": "2026-10-07T18:09:06.464Z",
+  "title": "Retail Property Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "downloads",
+    "cards-related"
+  ]
+}

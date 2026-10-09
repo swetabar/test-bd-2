@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/specialty-risks/trade-credit/tradenable",
+  "path": "home/risk-solutions/business/specialty-risks/trade-credit/tradenable",
+  "timestamp": "2026-10-07T18:16:15.571Z",
+  "title": "TradEnable Insurance | AIG Us",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "columns-text",
+    "video",
+    "downloads",
+    "cards-related"
+  ]
+}

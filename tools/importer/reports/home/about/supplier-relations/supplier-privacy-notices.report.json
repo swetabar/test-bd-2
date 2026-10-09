@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/supplier-relations/supplier-privacy-notices",
+  "path": "home/about/supplier-relations/supplier-privacy-notices",
+  "timestamp": "2026-10-07T16:45:31.605Z",
+  "title": "Supplier Privacy Notices | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion",
+    "accordion",
+    "cards-related"
+  ]
+}

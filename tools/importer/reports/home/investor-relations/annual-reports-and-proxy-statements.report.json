@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/investor-relations/annual-reports-and-proxy-statements",
+  "path": "home/investor-relations/annual-reports-and-proxy-statements",
+  "timestamp": "2026-10-07T18:04:34.535Z",
+  "title": "Annual Reports & Proxy Statements | AIG Insurance",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-media",
+    "columns-media",
+    "downloads",
+    "downloads",
+    "downloads",
+    "downloads",
+    "downloads",
+    "downloads",
+    "downloads",
+    "downloads",
+    "downloads",
+    "embed"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/workers-compensation-claims/louisiana-workers-compensation",
+  "path": "home/claims/workers-compensation-claims/louisiana-workers-compensation",
+  "timestamp": "2026-10-07T20:51:30.679Z",
+  "title": "Louisiana: Workers' Compensation | AIG US",
+  "template": "accordion-detail",
+  "blocks": [
+    "breadcrumbs",
+    "accordion"
+  ]
+}

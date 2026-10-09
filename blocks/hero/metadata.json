@@ -1,0 +1,27 @@
+{
+  "variantName": "hero",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "large",
+    "structure": "heading + text + 2 CTAs + image + list",
+    "purpose": "generic page hero (image with heading, text and CTAs)"
+  },
+  "contentPattern": {
+    "structure": "one row: background image followed by heading, text and CTA links"
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_823518242103-4",
+    "v_efa4fcb9e82a"
+  ]
+}

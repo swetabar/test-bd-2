@@ -1,0 +1,347 @@
+/* accordion: light-blue rows with +/- toggle, cobalt when hovered or open */
+.accordion {
+  max-width: 946px;
+  margin: 0 auto;
+}
+
+.accordion .accordion-item {
+  margin: 0;
+}
+
+/* header bar */
+.accordion .accordion-item-label {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  min-height: 80px;
+  margin: 0 0 2px;
+  padding: 24px;
+  background-color: var(--aig-pale-blue);
+  color: var(--aig-navy);
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  cursor: pointer;
+  list-style: none;
+}
+
+.accordion .accordion-item-label::-webkit-details-marker {
+  display: none;
+}
+
+.accordion .accordion-item-label::marker {
+  content: '';
+}
+
+.accordion .accordion-item-label:focus {
+  outline: none;
+}
+
+.accordion .accordion-item-label:focus-visible {
+  outline: 2px solid var(--aig-navy);
+  outline-offset: -2px;
+}
+
+.accordion .accordion-item-label-text {
+  display: flex;
+  flex: 0 1 auto;
+  align-items: center;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.accordion .accordion-item-label-text > * {
+  margin: 0;
+  color: inherit;
+  font: inherit;
+}
+
+/* +/- toggle: 24px icon at the right edge */
+.accordion .accordion-item-label::after {
+  content: '';
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  background: url('../../icons/accordion-plus.svg') right center / 24px no-repeat;
+  transition: 0.3s;
+}
+
+/* highlight: always-cobalt bar with a white toggle */
+.accordion.highlight .accordion-item-label {
+  background-color: var(--aig-cobalt);
+  color: #fff;
+}
+
+.accordion.highlight .accordion-item-label::after {
+  background-image: url('../../icons/accordion-plus-white.svg');
+  transform: translateY(-1px);
+}
+
+/* hover + open: cobalt bar, white text, white icon */
+.accordion .accordion-item-label:hover,
+.accordion .accordion-item[open] > .accordion-item-label {
+  background-color: var(--aig-cobalt);
+  color: #fff;
+}
+
+.accordion .accordion-item-label:hover::after {
+  background-image: url('../../icons/accordion-plus-white.svg');
+  transform: translateY(-1px);
+}
+
+.accordion .accordion-item[open] > .accordion-item-label::after {
+  background-image: url('../../icons/accordion-minus-white.svg');
+  transform: translateY(-1px);
+}
+
+/* panel */
+.accordion .accordion-item-body {
+  padding: 24px;
+  background-color: var(--background-color);
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.accordion .accordion-item-body p {
+  margin: 0 0 4px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.accordion .accordion-item-body ul,
+.accordion .accordion-item-body ol {
+  margin: 20px 0;
+  padding: 0 0 0 40px;
+}
+
+.accordion .accordion-item-body li {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.accordion .accordion-item-body h4 {
+  margin: 26.6px 0;
+  color: var(--text-color);
+  font-family: aig-futura, var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.accordion .accordion-item-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* case-study columns (Challenge / Solution / AIG Benefit) */
+.accordion .accordion-item-body.accordion-item-body-columns {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  padding: 30px 24px;
+}
+
+.accordion .accordion-item-body-columns .accordion-item-column {
+  padding: 24px 0;
+}
+
+.accordion .accordion-item-body-columns h4 {
+  margin: 0 0 16px;
+  color: var(--heading-color);
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+/* highlight: leading PDF icon, navy bar when open */
+.accordion.highlight .accordion-item[open] > .accordion-item-label {
+  background-color: var(--aig-navy);
+}
+
+.accordion.highlight .accordion-item[open] > .accordion-item-label::after {
+  background-image: url('../../icons/accordion-minus-white.svg');
+}
+
+.accordion.highlight .accordion-item-label-text::before {
+  content: '';
+  box-sizing: border-box;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 32px;
+  margin-right: 10px;
+  background: url('../../icons/file-pdf-white.svg') left center / 24px no-repeat;
+}
+
+.accordion.highlight .accordion-item-label-with-icon .accordion-item-label-text::before {
+  content: none;
+}
+
+.accordion.highlight .accordion-item-label-with-icon .icon {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+@media (width >= 768px) {
+  .accordion .accordion-item-body.accordion-item-body-columns {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px 32px 40px;
+  }
+
+  .accordion .accordion-item-body-columns .accordion-item-column {
+    box-sizing: border-box;
+    width: 33%;
+    padding: 24px;
+  }
+}
+
+@media (width >= 1201px) {
+  .accordion .accordion-item-body.accordion-item-body-columns {
+    padding: 32px 9% 40px;
+  }
+
+  .accordion .accordion-item-body-columns .accordion-item-column {
+    width: 32%;
+  }
+}
+
+/*
+ * cards option: each panel body is a grid of bordered cards (aig.com/home/contact
+ * .aig-contact-card): 1 column on mobile, 2 from 768px, 24px gutters.
+ */
+.accordion.cards .accordion-item-body.accordion-item-body-cards {
+  padding: 32px 24px;
+}
+
+.accordion.cards .accordion-cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 24px;
+}
+
+.accordion.cards .accordion-card {
+  box-sizing: border-box;
+  min-width: 0;
+  border: 1px solid var(--aig-grey);
+  padding: 24px;
+  font-family: var(--heading-font-family);
+  font-weight: 500;
+}
+
+.accordion.cards .accordion-card > :first-child {
+  margin-top: 0;
+}
+
+/* the source keeps the 4px line margin below the last text line */
+.accordion.cards .accordion-card > :last-child:not(p, .accordion-card-title) {
+  margin-bottom: 0;
+}
+
+.accordion.cards .accordion-card p,
+.accordion.cards .accordion-card .accordion-card-title {
+  margin: 0 0 4px;
+  color: var(--text-color);
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+/* label-only lines keep the full 30px line box (also in quirks-mode rendering) */
+.accordion.cards .accordion-card p {
+  min-height: 30px;
+}
+
+/* card title linking to a page: cobalt with a trailing arrow */
+.accordion.cards .accordion-card .accordion-card-title a:any-link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.accordion.cards .accordion-card .accordion-card-title a:hover {
+  text-decoration: underline;
+}
+
+/* (33px tall like the source arrow box, so a linked title line is 33px high) */
+.accordion.cards .accordion-card .accordion-card-title-link a::after {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 33px;
+  background: url('../../icons/arrow-blue.svg') no-repeat 6px 7px;
+  vertical-align: top;
+}
+
+/* small grey labels ("U.S. Toll Free:", opening hours) */
+.accordion.cards .accordion-card u {
+  display: inline-block;
+  color: rgb(91 92 96);
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+/* contact line: icon + large number */
+.accordion.cards .accordion-card :is(strong, b) {
+  display: inline-block;
+  color: rgb(51 51 51);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.accordion.cards .accordion-card p picture,
+.accordion.cards .accordion-card p img {
+  vertical-align: middle;
+}
+
+.accordion.cards .accordion-card p img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* stacked arrow links (CTA paragraphs) */
+.accordion.cards .accordion-card p.button-wrapper {
+  margin: 0;
+}
+
+.accordion.cards .accordion-card a.button.link:any-link {
+  display: inline-block;
+}
+
+.accordion.cards .accordion-card a.accordion-card-link-external::after {
+  content: none;
+}
+
+.accordion.cards .accordion-card a.button.link.accordion-card-link-external:any-link {
+  padding-right: 0;
+}
+
+.accordion.cards .accordion-card .accordion-card-icon-external {
+  margin-left: 6px;
+  font-family: custom-icons, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  font-feature-settings: 'liga';
+  text-transform: none;
+  white-space: nowrap;
+}
+
+@media (width >= 768px) {
+  .accordion.cards .accordion-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

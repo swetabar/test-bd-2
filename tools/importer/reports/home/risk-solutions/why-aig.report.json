@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/why-aig",
+  "path": "home/risk-solutions/why-aig",
+  "timestamp": "2026-10-08T14:25:05.524Z",
+  "title": "Why Insurance Brokers Choose AIG | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-text",
+    "cards",
+    "cards-related"
+  ]
+}

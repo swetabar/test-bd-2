@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/specialty-risks/marine/ocean-cargo",
+  "path": "home/risk-solutions/business/specialty-risks/marine/ocean-cargo",
+  "timestamp": "2026-10-07T18:15:20.468Z",
+  "title": "Ocean Cargo Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "downloads",
+    "cards-related"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "variantName": "header",
+  "baseBlock": "header",
+  "canonicalModel": "configuration",
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "complexity": "advanced",
+    "density": "moderate",
+    "purpose": "global site header and navigation loaded from the /nav fragment"
+  },
+  "contentPattern": {
+    "structure": "fragment-based: the block loads the /nav document (brand, sections/megamenu, tools) into the page header"
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  },
+  "options": [],
+  "memberVariantIds": [
+    "header-global"
+  ]
+}

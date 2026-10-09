@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/inspiring-the-next-generation-of-talent",
+  "path": "home/newsroom/stories/inspiring-the-next-generation-of-talent",
+  "timestamp": "2026-10-07T23:26:55.055Z",
+  "title": "Inspiring the Next Generation of Talent",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

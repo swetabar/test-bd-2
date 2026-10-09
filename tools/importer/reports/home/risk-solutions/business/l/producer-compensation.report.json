@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/l/producer-compensation",
+  "path": "home/risk-solutions/business/l/producer-compensation",
+  "timestamp": "2026-10-07T17:04:10.857Z",
+  "title": "Producer Compensation | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion",
+    "accordion",
+    "cards-related"
+  ]
+}

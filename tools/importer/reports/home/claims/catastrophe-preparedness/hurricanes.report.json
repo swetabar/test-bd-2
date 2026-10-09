@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/catastrophe-preparedness/hurricanes",
+  "path": "home/claims/catastrophe-preparedness/hurricanes",
+  "timestamp": "2026-10-07T18:01:58.264Z",
+  "title": "Hurricanes | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "columns-text",
+    "accordion",
+    "downloads"
+  ]
+}

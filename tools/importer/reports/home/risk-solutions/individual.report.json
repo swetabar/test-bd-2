@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/individual",
+  "path": "home/risk-solutions/individual",
+  "timestamp": "2026-10-08T14:25:04.879Z",
+  "title": "Individuals & Families Insurance | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-featured",
+    "cards-related"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/workers-compensation-claims/illinois-workers-compensation",
+  "path": "home/claims/workers-compensation-claims/illinois-workers-compensation",
+  "timestamp": "2026-10-07T20:51:26.487Z",
+  "title": "Illinois: Workers' Compensation | AIG US",
+  "template": "accordion-detail",
+  "blocks": [
+    "breadcrumbs",
+    "accordion"
+  ]
+}

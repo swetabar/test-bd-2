@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/leadership-and-governance/juan-perez",
+  "path": "home/about/leadership-and-governance/juan-perez",
+  "timestamp": "2026-10-07T16:41:06.482Z",
+  "title": "Juan Perez | AIG Insurance",
+  "template": "content-page",
+  "blocks": [
+    "breadcrumbs",
+    "columns",
+    "carousel-leadership"
+  ]
+}

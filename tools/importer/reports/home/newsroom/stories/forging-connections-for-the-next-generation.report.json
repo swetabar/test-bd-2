@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/forging-connections-for-the-next-generation",
+  "path": "home/newsroom/stories/forging-connections-for-the-next-generation",
+  "timestamp": "2026-10-07T23:23:21.835Z",
+  "title": "Forging Connections for the Next Generation",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

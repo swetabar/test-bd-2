@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/app-and-web-portal",
+  "path": "home/app-and-web-portal",
+  "timestamp": "2026-10-08T14:20:32.975Z",
+  "title": "Travel Assistance App and Web Portal | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-media",
+    "carousel",
+    "accordion",
+    "downloads",
+    "cards-related"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/aig-unprecedented-turnaround",
+  "path": "home/newsroom/stories/aig-unprecedented-turnaround",
+  "timestamp": "2026-10-07T23:20:42.112Z",
+  "title": "AIG's Unprecedented Turnaround",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

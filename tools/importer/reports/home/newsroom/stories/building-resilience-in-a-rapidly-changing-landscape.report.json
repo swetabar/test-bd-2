@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/building-resilience-in-a-rapidly-changing-landscape",
+  "path": "home/newsroom/stories/building-resilience-in-a-rapidly-changing-landscape",
+  "timestamp": "2026-10-07T23:20:39.783Z",
+  "title": "Building Resilience in a Rapidly Changing Landscape",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

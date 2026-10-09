@@ -1,0 +1,45 @@
+{
+  "variantName": "tabs",
+  "baseBlock": "tabs",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "heading + text + 10 CTAs + list",
+    "purpose": "horizontal wrapping tab list (e.g. regions) with one panel visible at a time"
+  },
+  "contentPattern": {
+    "structure": "one row per tab: first cell = tab label, remaining cell(s) = panel content (text, link lists, sub-headings). The Cards option renders each panel as a grid of bordered cards (heading + text + link; 1/2/3 columns at mobile/768/993px): several content cells give one card per cell, a single cell is split at every heading of its first heading level (or at each horizontal rule)"
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  },
+  "options": [
+    {
+      "class": "cards",
+      "label": "Cards"
+    }
+  ],
+  "memberVariantIds": [
+    "v_2ccfa6b0796a-15",
+    "v_09887c5d9e86",
+    "v_2ccfa6b0796a-1",
+    "v_2ccfa6b0796a-11",
+    "v_2ccfa6b0796a-4",
+    "v_05d037c1e603",
+    "v_2ccfa6b0796a-5",
+    "v_2ccfa6b0796a-7",
+    "v_2ccfa6b0796a-8",
+    "v_8cad2b608dd2-10",
+    "v_9b1181c623a4",
+    "v_aeb0bf7352c7",
+    "v_b14fc0c8195c",
+    "v_ca225462263e",
+    "v_efdd18195434-1"
+  ]
+}

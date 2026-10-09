@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home",
+  "path": "home",
+  "timestamp": "2026-10-07T15:41:07.636Z",
+  "title": "AIG Insurance Home | AIG US",
+  "template": "home",
+  "blocks": [
+    "hero-fade",
+    "hero-fade",
+    "cards-teaser",
+    "tabs-risk",
+    "columns-media",
+    "columns-media",
+    "columns-media",
+    "columns-featured"
+  ]
+}

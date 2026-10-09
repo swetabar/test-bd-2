@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/casualty-excess",
+  "path": "home/claims/report-a-claim/casualty-excess",
+  "timestamp": "2026-10-08T14:52:34.401Z",
+  "title": "Report a AIG Casualty - Excess Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

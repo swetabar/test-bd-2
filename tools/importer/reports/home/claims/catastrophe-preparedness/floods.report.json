@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/catastrophe-preparedness/floods",
+  "path": "home/claims/catastrophe-preparedness/floods",
+  "timestamp": "2026-10-07T18:01:55.086Z",
+  "title": "Floods | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion",
+    "downloads"
+  ]
+}

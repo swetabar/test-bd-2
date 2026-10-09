@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/intellirisk",
+  "path": "home/claims/intellirisk",
+  "timestamp": "2026-10-07T16:48:10.885Z",
+  "title": "Intellirisk | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "columns-text",
+    "accordion",
+    "columns-media",
+    "cards-related"
+  ]
+}

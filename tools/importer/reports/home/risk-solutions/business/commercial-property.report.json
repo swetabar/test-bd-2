@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/commercial-property",
+  "path": "home/risk-solutions/business/commercial-property",
+  "timestamp": "2026-10-07T16:59:32.146Z",
+  "title": "Commercial Property Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "columns-media",
+    "cta-banner",
+    "cards-related"
+  ]
+}

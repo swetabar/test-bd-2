@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/lexington-non-property-speciality-professional-liability",
+  "path": "home/claims/report-a-claim/lexington-non-property-speciality-professional-liability",
+  "timestamp": "2026-10-08T15:00:30.619Z",
+  "title": "Report a AIG Lexington Non-Property - Specialty Professional Liability Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

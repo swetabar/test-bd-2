@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/aig-raises-the-standard-in-women-s-golf",
+  "path": "home/newsroom/stories/aig-raises-the-standard-in-women-s-golf",
+  "timestamp": "2026-10-07T23:19:48.637Z",
+  "title": "AIG Raises the Standard in Women's Golf",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

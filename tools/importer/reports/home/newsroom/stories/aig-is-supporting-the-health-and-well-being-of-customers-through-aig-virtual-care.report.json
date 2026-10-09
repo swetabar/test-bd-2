@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/aig-is-supporting-the-health-and-well-being-of-customers-through-aig-virtual-care",
+  "path": "home/newsroom/stories/aig-is-supporting-the-health-and-well-being-of-customers-through-aig-virtual-care",
+  "timestamp": "2026-10-07T23:18:55.656Z",
+  "title": "AIG is supporting the health and well-being of customers through AIG Virtual Care | AIG Newsroom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

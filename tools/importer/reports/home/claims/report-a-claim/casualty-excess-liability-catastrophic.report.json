@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/casualty-excess-liability-catastrophic",
+  "path": "home/claims/report-a-claim/casualty-excess-liability-catastrophic",
+  "timestamp": "2026-10-08T14:53:26.973Z",
+  "title": "Report a AIG Casualty - Excess Liability Catastrophic Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

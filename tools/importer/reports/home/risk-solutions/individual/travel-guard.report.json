@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/individual/travel-guard",
+  "path": "home/risk-solutions/individual/travel-guard",
+  "timestamp": "2026-10-08T14:25:03.370Z",
+  "title": "AIG Travel Guard: Travel Insurance Solutions | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-text",
+    "columns-featured",
+    "columns-media",
+    "columns-media"
+  ]
+}

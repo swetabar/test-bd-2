@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/management-and-professional-liability/mergers-and-acquisitions",
+  "path": "home/risk-solutions/business/management-and-professional-liability/mergers-and-acquisitions",
+  "timestamp": "2026-10-07T17:08:29.241Z",
+  "title": "Mergers & Acquisitions Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "cta-banner",
+    "cards-related"
+  ]
+}

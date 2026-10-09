@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/worldwide",
+  "path": "home/worldwide",
+  "timestamp": "2026-10-07T17:16:24.972Z",
+  "title": "Worldwide | AIG Insurance",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "tabs"
+  ]
+}

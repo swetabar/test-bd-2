@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/workers-compensation-claims",
+  "path": "home/claims/workers-compensation-claims",
+  "timestamp": "2026-10-07T16:49:58.391Z",
+  "title": "Workers' Compensation Claims: Tools & Information | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion",
+    "accordion"
+  ]
+}

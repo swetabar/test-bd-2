@@ -1,0 +1,358 @@
+/* hero-article: article-page hero (breadcrumb trail on white + full-bleed image / video poster) */
+
+/* full-bleed: the hero supplies its own spacing; the article title below sets the gap (24px) */
+main > .section.hero-article-container {
+  margin-bottom: 0;
+}
+
+main > .section.hero-article-container + .section {
+  margin-top: 0;
+}
+
+main > .section > .hero-article-wrapper {
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-article {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* breadcrumb trail (mobile: home icon, back chevron to the parent page, current page) */
+.hero-article .hero-article-breadcrumbs {
+  padding: 10px 32px 0;
+}
+
+.hero-article .hero-article-breadcrumbs ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22.8571px;
+}
+
+main .hero-article .hero-article-breadcrumbs li {
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 24px;
+  padding: 3px 0;
+  vertical-align: middle;
+  color: var(--aig-navy);
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.hero-article .hero-article-breadcrumbs li:not(:first-child, :nth-last-child(2), :last-child) {
+  display: none;
+}
+
+/* source markup has whitespace between crumbs (a 3px space in the list font) */
+.hero-article .hero-article-breadcrumbs li:not(:last-child) {
+  margin-right: 3px;
+}
+
+.hero-article .hero-article-breadcrumbs li:first-child:not(:last-child) {
+  margin-right: 9px;
+}
+
+.hero-article .hero-article-breadcrumbs a:any-link,
+.hero-article .hero-article-breadcrumbs li > span {
+  color: var(--aig-navy);
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.hero-article .hero-article-breadcrumbs a:hover {
+  color: var(--aig-navy);
+  text-decoration: underline;
+}
+
+.hero-article .hero-article-breadcrumbs [aria-current='page'] a:any-link,
+.hero-article .hero-article-breadcrumbs [aria-current='page'] > span {
+  color: var(--aig-cobalt);
+}
+
+/* "Home" crumb renders as a house icon */
+.hero-article .hero-article-breadcrumbs li:first-child > a:is([href$='/home'], [href='/']) {
+  display: block;
+  height: 24px;
+}
+
+.hero-article .hero-article-breadcrumbs li:first-child > a:is([href$='/home'], [href='/']) > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('home.svg') no-repeat 50% 50% / 20px;
+  vertical-align: top;
+  text-indent: -99999px;
+}
+
+/* mobile: the parent crumb collapses to a back chevron */
+.hero-article .hero-article-breadcrumbs li:nth-last-child(2):not(:first-child) > a::before {
+  content: '\2039';
+  position: relative;
+  top: -2px;
+  margin-right: 6px; /* 2px + the source's collapsed space before the hidden label */
+  color: var(--aig-navy);
+  font-family: var(--heading-font-family);
+  font-size: 35.2px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.hero-article .hero-article-breadcrumbs li:nth-last-child(2):not(:first-child) > a > span {
+  display: inline-block;
+  width: 0;
+  height: 24px;
+  text-indent: -16000px;
+}
+
+/* media stage: image at its natural aspect, full viewport width */
+.hero-article .hero-article-media {
+  position: relative;
+  line-height: 0;
+}
+
+.hero-article.hero-article-video .hero-article-media {
+  margin-top: 8px;
+}
+
+.hero-article .hero-article-frame picture,
+.hero-article .hero-article-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* video poster: the whole image is the play button */
+.hero-article.hero-article-video .hero-article-frame {
+  background-color: rgb(239 239 239);
+}
+
+.hero-article .hero-article-play {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.hero-article .hero-article-play::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  width: 72px;
+  height: 72px;
+  margin: -36px 0 0 -36px;
+  border: 4px solid #fff;
+  border-radius: 72px;
+  background: rgb(0 0 0 / 40%) url('play.svg') no-repeat 50% 50% / 64px 64px;
+}
+
+.hero-article .hero-article-play:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -6px;
+}
+
+.hero-article .hero-article-duration {
+  position: absolute;
+  right: 36px;
+  bottom: 16px;
+  z-index: 1;
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  pointer-events: none;
+}
+
+/* video modal: dimmed full-viewport overlay, centered player, close tab top right */
+.hero-article .hero-article-modal {
+  position: fixed;
+  inset: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: rgb(0 0 0 / 40%);
+  line-height: normal;
+}
+
+.hero-article .hero-article-modal[open] {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero-article .hero-article-modal::backdrop {
+  background: transparent;
+}
+
+.hero-article .hero-article-modal .hero-article-player {
+  display: block;
+  max-width: 85%;
+  max-height: 100%;
+  margin: 55px 0 0;
+}
+
+.hero-article .hero-article-modal iframe.hero-article-player {
+  width: 85%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+/*
+ * Source renders the close label as a synthesized bold of Source Sans Light (its "source sans pro"
+ * family only loads the light file). Register that file as a single-weight family so the browser
+ * synthesizes the same faux bold instead of switching to Source Sans Bold.
+ */
+@font-face {
+  font-family: hero-article-source-sans-light;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../fonts/source-sanspro-light.ttf') format('truetype');
+}
+
+.hero-article .hero-article-modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
+  color: var(--aig-navy);
+  font-family: hero-article-source-sans-light, var(--body-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.hero-article .hero-article-modal-close-icon {
+  display: inline-block;
+  padding-right: 5px;
+  font-family: custom-icons, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: normal;
+}
+
+@media (width >= 768px) {
+  .hero-article .hero-article-breadcrumbs {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  main .hero-article .hero-article-breadcrumbs li {
+    padding: 8px 0;
+    line-height: 40px;
+  }
+
+  /* the 40px line comes from the crumb text itself, so it holds with or without a doctype */
+  .hero-article .hero-article-breadcrumbs a:any-link,
+  .hero-article .hero-article-breadcrumbs li > span {
+    line-height: 40px;
+  }
+
+  .hero-article .hero-article-breadcrumbs li:first-child > a:is([href$='/home'], [href='/']) {
+    height: 40px;
+  }
+
+  .hero-article .hero-article-breadcrumbs li:first-child > a:is([href$='/home'], [href='/']) > span {
+    margin-top: 8px;
+  }
+
+  .hero-article.hero-article-video .hero-article-media {
+    margin-top: 0;
+  }
+
+  .hero-article .hero-article-modal[open] {
+    align-items: center;
+  }
+
+  .hero-article .hero-article-modal .hero-article-player {
+    max-width: 70%;
+    margin: 0;
+  }
+
+  .hero-article .hero-article-modal iframe.hero-article-player {
+    width: 70%;
+  }
+
+  .hero-article .hero-article-breadcrumbs li:not(:first-child, :nth-last-child(2), :last-child) {
+    display: inline-block;
+  }
+
+  .hero-article .hero-article-breadcrumbs li:first-child:not(:last-child) {
+    margin-right: 3px;
+  }
+
+  /* separator: a light single guillemet turned to point right; the trailing space is the margin */
+  .hero-article .hero-article-breadcrumbs li + li::before {
+    content: '\2039';
+    display: inline-block;
+    width: 8px;
+    height: 24px;
+    margin: 0 12px 0 8px;
+    color: rgb(51 51 51);
+    font-family: var(--heading-font-family);
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 20px;
+    vertical-align: text-top;
+    transform: rotate(180deg);
+  }
+
+  .hero-article .hero-article-breadcrumbs li:nth-last-child(2):not(:first-child) > a::before {
+    content: none;
+  }
+
+  .hero-article .hero-article-breadcrumbs li:nth-last-child(2):not(:first-child) > a > span {
+    display: inline;
+    width: auto;
+    height: auto;
+    text-indent: 0;
+  }
+}
+
+@media (width >= 1025px) {
+  .hero-article .hero-article-breadcrumbs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (width >= 1201px) {
+  .hero-article .hero-article-breadcrumbs {
+    padding-right: 8.333%;
+    padding-left: 8.333%;
+  }
+}

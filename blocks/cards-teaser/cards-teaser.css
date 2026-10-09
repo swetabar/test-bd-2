@@ -1,0 +1,159 @@
+/*
+ * cards-teaser: thumbnail teasers on a light-blue band (aig.com home, below hero).
+ * Values extracted from computed styles of .hero-banner-2022 .container.paleblue.
+ */
+
+/* section band: inset box on mobile, full-bleed from 768px */
+main .section.light-blue.cards-teaser-container {
+  margin: -1px 24px 0;
+  padding: 24px 0;
+}
+
+main .section.light-blue.cards-teaser-container > .cards-teaser-wrapper {
+  padding: 0 24px;
+}
+
+/* cards: stacked on mobile */
+.cards-teaser > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-teaser .cards-teaser-card {
+  margin: 0;
+}
+
+.cards-teaser .cards-teaser-card:not(:last-child) {
+  padding-bottom: 32px;
+}
+
+.cards-teaser .cards-teaser-card-image {
+  margin: 0 0 24px;
+  line-height: 0;
+}
+
+.cards-teaser .cards-teaser-card-image picture {
+  display: block;
+}
+
+.cards-teaser .cards-teaser-card-image img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+/* typography */
+.cards-teaser .cards-teaser-card-body h2,
+.cards-teaser .cards-teaser-card-body h3 {
+  margin: 0 0 16px;
+  color: var(--heading-color);
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.cards-teaser .cards-teaser-card-body p {
+  margin: 0 0 10px;
+  color: var(--aig-navy);
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.cards-teaser .cards-teaser-card-body p.button-wrapper {
+  line-height: 36px;
+}
+
+.cards-teaser .cards-teaser-card-body p.button-wrapper a.button {
+  vertical-align: top;
+}
+
+/* source arrow: 25x30 box, 19.542x14 svg at natural size, offset 0 13px */
+.cards-teaser .cards-teaser-card-body a.button.link::after {
+  background-position: 0 13px;
+  background-size: auto;
+}
+
+.cards-teaser .cards-teaser-card-body > :first-child {
+  margin-top: 0;
+}
+
+.cards-teaser .cards-teaser-card-body > :last-child {
+  margin-bottom: 0;
+}
+
+@media (width >= 768px) {
+  main .section.light-blue.cards-teaser-container {
+    margin: 0;
+    padding: 32px 0;
+  }
+
+  main .section.light-blue.cards-teaser-container > .cards-teaser-wrapper {
+    padding: 0 32px;
+  }
+
+  /* two cards side by side, 49% each; odd cards carry the 24px gutter */
+  .cards-teaser > ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .cards-teaser .cards-teaser-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 49%;
+  }
+
+  .cards-teaser .cards-teaser-card:not(:last-child) {
+    padding-bottom: 0;
+  }
+
+  .cards-teaser .cards-teaser-card:nth-child(odd) {
+    padding-right: 24px;
+  }
+
+  .cards-teaser .cards-teaser-card-image {
+    flex: 0 0 auto;
+    margin: 0 24px 0 0;
+  }
+
+  .cards-teaser .cards-teaser-card-image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .cards-teaser .cards-teaser-card-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .cards-teaser .cards-teaser-card-body p {
+    margin-bottom: 16px;
+  }
+}
+
+@media (width >= 1024px) {
+  .cards-teaser .cards-teaser-card-image img {
+    width: 190px;
+    height: 190px;
+  }
+}
+
+@media (width >= 1280px) {
+  main .section.light-blue.cards-teaser-container {
+    padding: 48px 0;
+  }
+
+  main .section.light-blue.cards-teaser-container > .cards-teaser-wrapper {
+    width: 83.333%;
+    max-width: none;
+    padding: 0;
+  }
+}

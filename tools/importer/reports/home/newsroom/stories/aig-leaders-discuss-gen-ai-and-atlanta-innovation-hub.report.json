@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/aig-leaders-discuss-gen-ai-and-atlanta-innovation-hub",
+  "path": "home/newsroom/stories/aig-leaders-discuss-gen-ai-and-atlanta-innovation-hub",
+  "timestamp": "2026-10-07T23:18:53.355Z",
+  "title": "AIG Leaders Discuss GenAI and the Atlanta Innovation Hub",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

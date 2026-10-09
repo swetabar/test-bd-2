@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/colleague-spotlight--vanessa-gilmartin",
+  "path": "home/newsroom/stories/colleague-spotlight-vanessa-gilmartin",
+  "timestamp": "2026-10-07T23:21:34.956Z",
+  "title": "How Practice Makes Perfect – for Both Claims and Triathlons",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

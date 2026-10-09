@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.539" height="25.074" viewBox="0 0 26.539 25.074">
+  <g id="x_close_out_mega_menu" data-name="x close out mega menu" transform="translate(0.5 0.5)">
+    <g id="x_close_out_button_-_core_blue" data-name="x close out button - core blue" transform="translate(0 0)">
+      <rect id="Rectangle_1205" data-name="Rectangle 1205" width="25.538" height="24.074" transform="translate(0 0)" fill="#001871" stroke="#001871" stroke-miterlimit="10" stroke-width="1"/>
+      <g id="Group_3384" data-name="Group 3384" transform="translate(6.139 5.007)">
+        <g id="Group_3383" data-name="Group 3383" transform="translate(0 0)">
+          <path id="Path_527" data-name="Path 527" d="M-217.947,1299.064l-5.2-6.675h1.687l4.439,5.78,4.369-5.78h1.685l-5.092,6.675,5.644,7.363H-212.1l-4.92-6.469-4.921,6.469h-1.685Z" transform="translate(223.647 -1292.377)" fill="#fff"/>
+          <path id="Path_528" data-name="Path 528" d="M-210.485,1306.39H-212.2l0,0-4.91-6.457-4.915,6.461h-1.715l.015-.019,5.671-7.356-5.2-6.686h1.716l0,0,4.43,5.767,4.363-5.772h1.714l-.014.019-5.086,6.667Zm-1.7-.023h1.657l-5.635-7.351.005-.007,5.078-6.656h-1.656l-4.375,5.787-.009-.012-4.436-5.775h-1.657l5.186,6.663-.005.007-5.661,7.344h1.656l4.927-6.477.009.012Z" transform="translate(223.745 -1292.329)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <g id="x_close_out_button_-_cobalt_blue" data-name="x close out button - cobalt blue" transform="translate(0 0)">
+      <rect id="Rectangle_1205-2" data-name="Rectangle 1205" width="25.538" height="24.074" transform="translate(0 0)" fill="#1352de" stroke="#1352de" stroke-miterlimit="10" stroke-width="1"/>
+      <g id="Group_3384-2" data-name="Group 3384" transform="translate(6.139 5.007)">
+        <g id="Group_3383-2" data-name="Group 3383" transform="translate(0 0)">
+          <path id="Path_527-2" data-name="Path 527" d="M-217.947,1299.064l-5.2-6.675h1.687l4.439,5.78,4.369-5.78h1.685l-5.092,6.675,5.644,7.363H-212.1l-4.92-6.469-4.921,6.469h-1.685Z" transform="translate(223.647 -1292.377)" fill="#fff"/>
+          <path id="Path_528-2" data-name="Path 528" d="M-210.485,1306.39H-212.2l0,0-4.91-6.457-4.915,6.461h-1.715l.015-.019,5.671-7.356-5.2-6.686h1.716l0,0,4.43,5.767,4.363-5.772h1.714l-.014.019-5.086,6.667Zm-1.7-.023h1.657l-5.635-7.351.005-.007,5.078-6.656h-1.656l-4.375,5.787-.009-.012-4.436-5.775h-1.657l5.186,6.663-.005.007-5.661,7.344h1.656l4.927-6.477.009.012Z" transform="translate(223.745 -1292.329)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <g id="X_close_out_button_-_white" data-name="X close out button - white" transform="translate(0 0)">
+      <rect id="Rectangle_1204" data-name="Rectangle 1204" width="25.538" height="24.074" transform="translate(0 0)" fill="#fff" stroke="#001871" stroke-miterlimit="10" stroke-width="1"/>
+      <g id="Group_3382" data-name="Group 3382" transform="translate(6.139 5.007)">
+        <g id="Group_3381" data-name="Group 3381" transform="translate(0 0)">
+          <path id="Path_525" data-name="Path 525" d="M-552.293,1299.064l-5.2-6.675h1.687l4.439,5.78,4.369-5.78h1.685l-5.092,6.675,5.644,7.363h-1.687l-4.92-6.469-4.921,6.469h-1.685Z" transform="translate(557.993 -1292.377)" fill="#001871"/>
+          <path id="Path_526" data-name="Path 526" d="M-544.831,1306.39h-1.716l0,0-4.91-6.457-4.915,6.461h-1.715l.015-.019,5.671-7.356-5.2-6.686h1.716l0,0,4.43,5.767,4.363-5.772h1.714l-.014.019-5.086,6.667Zm-1.7-.023h1.657l-5.635-7.351.005-.007,5.078-6.656h-1.656l-4.375,5.787-.009-.012-4.436-5.775h-1.657l5.186,6.663-.005.007-5.661,7.344h1.656l4.927-6.477.009.012Z" transform="translate(558.091 -1292.329)" fill="#001871"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

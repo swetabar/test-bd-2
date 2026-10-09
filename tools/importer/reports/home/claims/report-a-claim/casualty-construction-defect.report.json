@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/casualty-construction-defect",
+  "path": "home/claims/report-a-claim/casualty-construction-defect",
+  "timestamp": "2026-10-08T15:07:33.314Z",
+  "title": "Report a AIG Casualty - Construction Defect Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

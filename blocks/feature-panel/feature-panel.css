@@ -1,0 +1,81 @@
+/* feature-panel: structural layout only; brand styling is applied by the design pass */
+.feature-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.feature-panel .feature-panel-image {
+  line-height: 0;
+}
+
+.feature-panel .feature-panel-image picture,
+.feature-panel .feature-panel-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-panel .feature-panel-content {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 32px 24px;
+  background-color: var(--dark-color);
+  color: var(--background-color);
+}
+
+.feature-panel .feature-panel-content > :first-child {
+  margin-top: 0;
+}
+
+.feature-panel .feature-panel-content > :last-child {
+  margin-bottom: 0;
+}
+
+.feature-panel .feature-panel-content :is(h1, h2, h3, h4, h5, h6, p, a:any-link) {
+  color: inherit;
+}
+
+.feature-panel .feature-panel-cta {
+  margin-top: 24px;
+}
+
+.feature-panel .feature-panel-button {
+  display: inline-block;
+  padding: 12px 16px;
+  border: 1px solid currentcolor;
+  text-decoration: none;
+}
+
+@media (width >= 900px) {
+  .feature-panel {
+    min-height: 540px;
+    justify-content: flex-start;
+    padding: 50px 0;
+  }
+
+  .feature-panel .feature-panel-image {
+    position: absolute;
+    inset: 0;
+  }
+
+  .feature-panel .feature-panel-content {
+    width: min(810px, 66%);
+    margin-left: 8%;
+    padding: 40px 32px;
+    background-color: color-mix(in srgb, var(--dark-color) 85%, transparent);
+  }
+
+  .feature-panel.feature-panel-no-image {
+    min-height: 0;
+    padding: 0;
+  }
+
+  .feature-panel.feature-panel-no-image .feature-panel-content {
+    width: 100%;
+    margin-left: 0;
+  }
+}

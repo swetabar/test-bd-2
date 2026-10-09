@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/specialty-trade-credit",
+  "path": "home/claims/report-a-claim/specialty-trade-credit",
+  "timestamp": "2026-10-08T15:06:36.977Z",
+  "title": "Report a AIG Specialty - Trade Credit Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

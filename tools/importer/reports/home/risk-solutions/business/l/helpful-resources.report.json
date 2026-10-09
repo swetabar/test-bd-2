@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/l/helpful-resources",
+  "path": "home/risk-solutions/business/l/helpful-resources",
+  "timestamp": "2026-10-07T21:04:07.423Z",
+  "title": "Helpful Resources | AIG US",
+  "template": "accordion-detail",
+  "blocks": [
+    "accordion"
+  ]
+}

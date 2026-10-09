@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/specialty-surety",
+  "path": "home/claims/report-a-claim/specialty-surety",
+  "timestamp": "2026-10-08T15:05:49.244Z",
+  "title": "Report a AIG Specialty - Surety Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

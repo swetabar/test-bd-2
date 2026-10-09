@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/l/energy-risk-consulting",
+  "path": "home/risk-solutions/business/l/energy-risk-consulting",
+  "timestamp": "2026-10-07T17:04:07.783Z",
+  "title": "Global Energy and Construction Risk Consulting | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion",
+    "cards-related"
+  ]
+}

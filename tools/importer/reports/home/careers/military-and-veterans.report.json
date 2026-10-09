@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/careers/military-and-veterans",
+  "path": "home/careers/military-and-veterans",
+  "timestamp": "2026-10-07T16:46:23.438Z",
+  "title": "Military & Veterans - Careers at AIG | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "columns-featured",
+    "columns-media",
+    "cards-related"
+  ]
+}

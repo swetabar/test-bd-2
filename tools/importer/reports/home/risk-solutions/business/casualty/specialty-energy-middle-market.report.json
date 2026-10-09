@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/casualty/specialty-energy-middle-market",
+  "path": "home/risk-solutions/business/casualty/specialty-energy-middle-market",
+  "timestamp": "2026-10-07T18:08:12.554Z",
+  "title": "Specialty Energy Middle Market Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "downloads"
+  ]
+}

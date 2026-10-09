@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/helping-companies-confidently-manage-cross-border-risks",
+  "path": "home/newsroom/stories/helping-companies-confidently-manage-cross-border-risks",
+  "timestamp": "2026-10-07T23:23:30.138Z",
+  "title": "Helping companies confidently manage cross-border risks | AIG Newsroom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39" height="29.698" viewBox="0 0 39 29.698">
+  <g id="menu" transform="translate(-1.5 -3.151)">
+    <line id="b" x2="36" transform="translate(8.272 30.728) rotate(-45)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <line id="m" x2="36" transform="translate(3 18)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity="0"/>
+    <line id="t" x2="36" transform="translate(8.272 5.272) rotate(45)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>

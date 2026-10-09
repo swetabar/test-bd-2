@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/accident-and-health",
+  "path": "home/risk-solutions/business/accident-and-health",
+  "timestamp": "2026-10-07T16:53:29.455Z",
+  "title": "Accident & Health Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "columns-text",
+    "accordion",
+    "cta-banner",
+    "cards-related"
+  ]
+}

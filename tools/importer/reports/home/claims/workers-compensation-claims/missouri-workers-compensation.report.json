@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/workers-compensation-claims/missouri-workers-compensation",
+  "path": "home/claims/workers-compensation-claims/missouri-workers-compensation",
+  "timestamp": "2026-10-07T20:54:59.880Z",
+  "title": "Missouri: Workers' Compensation | AIG US",
+  "template": "accordion-detail",
+  "blocks": [
+    "breadcrumbs",
+    "accordion"
+  ]
+}

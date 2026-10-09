@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/disaster-notifications",
+  "path": "home/about/disaster-notifications",
+  "timestamp": "2026-10-07T16:37:33.744Z",
+  "title": "Disaster Notifications | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "cards-related"
+  ]
+}

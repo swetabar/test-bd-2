@@ -1,0 +1,25 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/multinational",
+  "path": "home/risk-solutions/business/multinational",
+  "timestamp": "2026-10-07T18:13:35.535Z",
+  "title": "Multinational Solutions | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "columns-featured",
+    "columns-media",
+    "columns-media",
+    "columns-media",
+    "video",
+    "cta-banner",
+    "downloads",
+    "cards-related"
+  ]
+}

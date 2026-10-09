@@ -1,0 +1,9 @@
+<svg id="Top_Navigation_Hamburger_Menu" xmlns="http://www.w3.org/2000/svg" >
+  <g id="Hamburger_Icon" >
+    <g id="menu">
+      <line id="b" x2="36" transform="translate(3 30)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <line id="m" x2="36" transform="translate(3 18)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <line id="t" x2="36" transform="translate(3 6)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

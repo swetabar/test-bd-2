@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/financial-lines-bermuda",
+  "path": "home/claims/report-a-claim/financial-lines-bermuda",
+  "timestamp": "2026-10-08T14:55:11.664Z",
+  "title": "Report a AIG Financial Lines - Bermuda Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

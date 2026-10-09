@@ -1,0 +1,327 @@
+/*
+ * carousel-timeline: AIG history timeline (aig.com/home/about/history .aig-timeline).
+ * "Select Decade" dropdown, a grey progress rail with one dot per card, 3 bordered milestone
+ * cards per view (1 on mobile) and white square prev / next controls at the page edges.
+ * Values come from the source computed styles; breakpoints follow the source (768 / 1280).
+ */
+
+/* the rail and the controls span the full viewport, so drop the section wrapper width */
+main > .section > .carousel-timeline-wrapper {
+  width: auto;
+  max-width: none;
+  padding: 0;
+}
+
+.carousel-timeline {
+  --carousel-timeline-gap: 24px;
+  --carousel-timeline-rail: rgb(204 204 204);
+}
+
+/* ---------- decade dropdown (aligned with the section content column) ---------- */
+.carousel-timeline .carousel-timeline-controls {
+  display: none;
+  box-sizing: border-box;
+  max-width: 1575px;
+  margin: 0 auto 36px;
+  padding: 0 var(--content-gutter);
+}
+
+.carousel-timeline .carousel-timeline-select-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.carousel-timeline .carousel-timeline-select {
+  appearance: none;
+  margin: 0 0 0 3px;
+  border: 0;
+  border-radius: 0;
+  padding: 0 25px 0 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 330 330' fill='%23333'%3E%3Cpath d='M325.607 79.393c-5.857-5.857-15.355-5.858-21.213.001l-139.39 139.393L25.607 79.393c-5.857-5.857-15.355-5.858-21.213.001-5.858 5.858-5.858 15.355 0 21.213l150.004 150c2.813 2.813 6.628 4.393 10.606 4.393s7.794-1.581 10.606-4.394l149.996-150c5.859-5.857 5.859-15.355.001-21.213z'/%3E%3C/svg%3E") 100% 12px / 13px no-repeat transparent;
+  color: rgb(51 51 51);
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.carousel-timeline .carousel-timeline-select:focus {
+  outline: none;
+}
+
+.carousel-timeline .carousel-timeline-select:focus-visible {
+  outline: 2px solid var(--aig-cobalt);
+  outline-offset: 2px;
+}
+
+/* ---------- stage: track between the edge controls ---------- */
+.carousel-timeline .carousel-timeline-stage {
+  position: relative;
+}
+
+.carousel-timeline .carousel-timeline-track {
+  position: relative;
+  display: flex;
+  margin: 0 80px;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel-timeline .carousel-timeline-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* one card per view on mobile */
+.carousel-timeline .carousel-timeline-item {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+
+/* mobile: the rail carousel gives way to one titled carousel per decade */
+.carousel-timeline .carousel-timeline-rail {
+  display: none;
+}
+
+.carousel-timeline .carousel-timeline-decade-title {
+  margin: 56px 0 29px;
+  padding-left: 104px;
+  color: var(--text-color);
+  font-family: var(--heading-font-family);
+  font-size: 35.008px;
+  font-weight: 500;
+  line-height: 56px;
+}
+
+/* ---------- card ---------- */
+.carousel-timeline .carousel-timeline-card {
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  border: 1px solid rgb(238 238 238);
+
+  /* source cards are inline-blocks: their line box leaves 6px below the content */
+  padding-bottom: 6px;
+  background: #fff;
+  box-shadow: inset 0 2px 6px rgb(0 0 0 / 16%);
+}
+
+.carousel-timeline .carousel-timeline-card-image {
+  line-height: 0;
+}
+
+.carousel-timeline .carousel-timeline-card-image picture,
+.carousel-timeline .carousel-timeline-card-image img {
+  display: block;
+  width: 100%;
+}
+
+.carousel-timeline .carousel-timeline-card-image img {
+  height: auto;
+  aspect-ratio: 540 / 475;
+  object-fit: cover;
+}
+
+.carousel-timeline .carousel-timeline-card-body {
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.carousel-timeline .carousel-timeline-card-body > :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+  padding: 24px 0 16px 24px;
+  color: var(--aig-cobalt);
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+/*
+ * Source renders the year as a synthesized bold of Futura PT Medium (no bold face loaded for
+ * that family): register the medium file as a single-weight family to get the same faux bold.
+ */
+@font-face {
+  font-family: carousel-timeline-futura-medium;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../fonts/futura_pt_medium.otf') format('opentype');
+}
+
+.carousel-timeline .carousel-timeline-card-body > :is(h1, h2, h3, h4, h5, h6),
+.carousel-timeline .carousel-timeline-card-body > :is(h1, h2, h3, h4, h5, h6) :is(strong, b) {
+  font-family: carousel-timeline-futura-medium, var(--heading-font-family);
+  font-weight: 700;
+}
+
+.carousel-timeline .carousel-timeline-card-body ul,
+.carousel-timeline .carousel-timeline-card-body ol {
+  margin: 20px 0;
+  padding: 0 0 0 40px;
+  list-style-type: disc;
+}
+
+.carousel-timeline .carousel-timeline-card-body ol {
+  list-style-type: decimal;
+}
+
+.carousel-timeline .carousel-timeline-card-body li {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* source separates milestones with a blank line */
+.carousel-timeline .carousel-timeline-card-body li + li {
+  margin-top: 30px;
+}
+
+.carousel-timeline .carousel-timeline-card-body p {
+  margin: 20px 24px;
+}
+
+/* ---------- prev / next: white squares at the viewport edges ---------- */
+.carousel-timeline .carousel-timeline-prev,
+.carousel-timeline .carousel-timeline-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 74px;
+  height: 74px;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: #fff center / 20px 33px no-repeat;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.carousel-timeline .carousel-timeline-prev {
+  left: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30.192 53.171'%3E%3Cpath d='M0 26.586 30.192 53.17v-5.437L6.172 26.583 30.192 5.435V0Z' fill='%231352de'/%3E%3C/svg%3E");
+}
+
+.carousel-timeline .carousel-timeline-next {
+  right: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30.192 53.171'%3E%3Cpath d='M30.192 26.584 0 0v5.437l24.02 21.15L0 47.735v5.437Z' fill='%231352de'/%3E%3C/svg%3E");
+}
+
+.carousel-timeline .carousel-timeline-prev:disabled {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30.192 53.171'%3E%3Cpath d='M0 26.586 30.192 53.17v-5.437L6.172 26.583 30.192 5.435V0Z' fill='%23ccc'/%3E%3C/svg%3E");
+  cursor: default;
+}
+
+.carousel-timeline .carousel-timeline-next:disabled {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30.192 53.171'%3E%3Cpath d='M30.192 26.584 0 0v5.437l24.02 21.15L0 47.735v5.437Z' fill='%23ccc'/%3E%3C/svg%3E");
+  cursor: default;
+}
+
+.carousel-timeline .carousel-timeline-prev:focus-visible,
+.carousel-timeline .carousel-timeline-next:focus-visible {
+  outline: 2px solid var(--aig-cobalt);
+  outline-offset: -4px;
+}
+
+.carousel-timeline .carousel-timeline-stage-single .carousel-timeline-prev,
+.carousel-timeline .carousel-timeline-stage-single .carousel-timeline-next {
+  display: none;
+}
+
+/* ---------- tablet / desktop: one rail, three cards per view ---------- */
+@media (width >= 768px) {
+  .carousel-timeline .carousel-timeline-controls {
+    display: block;
+  }
+
+  .carousel-timeline .carousel-timeline-rail {
+    display: block;
+  }
+
+  .carousel-timeline .carousel-timeline-decades {
+    display: none;
+  }
+
+  .carousel-timeline .carousel-timeline-track {
+    margin: 0 85px;
+  }
+
+  .carousel-timeline .carousel-timeline-item {
+    flex-basis: calc(100% / 3 - var(--carousel-timeline-gap));
+    margin-right: var(--carousel-timeline-gap);
+    padding-top: 36px;
+  }
+
+  /* the rail runs across the top of every item and also crosses the gap to the next card */
+  .carousel-timeline .carousel-timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: calc(100% + var(--carousel-timeline-gap));
+    height: 2px;
+    background: var(--carousel-timeline-rail);
+  }
+
+  /* rail dot centred above each card */
+  .carousel-timeline .carousel-timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: calc(50% - 9px);
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--carousel-timeline-rail);
+    border-radius: 50%;
+    background: #fff;
+  }
+
+  .carousel-timeline .carousel-timeline-item:only-child::before {
+    content: none;
+  }
+
+  .carousel-timeline .carousel-timeline-item:first-child::before {
+    left: 50%;
+    width: calc(50% + var(--carousel-timeline-gap));
+  }
+
+  .carousel-timeline .carousel-timeline-item:last-child::before {
+    width: 50%;
+  }
+
+  .carousel-timeline .carousel-timeline-prev,
+  .carousel-timeline .carousel-timeline-next {
+    width: 64px;
+  }
+}
+
+@media (width >= 1280px) {
+  .carousel-timeline .carousel-timeline-controls {
+    width: calc(83.333% - 25px);
+    padding: 0;
+  }
+
+  /* track sits 24px outside the section content column */
+  .carousel-timeline .carousel-timeline-track {
+    margin: 0 calc(8.3335% + 12.5px - 24px);
+  }
+
+  .carousel-timeline .carousel-timeline-prev,
+  .carousel-timeline .carousel-timeline-next {
+    width: 74px;
+  }
+}

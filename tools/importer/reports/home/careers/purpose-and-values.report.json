@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/careers/purpose-and-values",
+  "path": "home/careers/purpose-and-values",
+  "timestamp": "2026-10-08T14:22:22.518Z",
+  "title": "Purpose & Values - Careers at AIG | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-featured",
+    "cards",
+    "cards-related"
+  ]
+}

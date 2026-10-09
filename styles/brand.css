@@ -1,0 +1,48 @@
+/* AIG brand tokens — extracted from https://www.aig.com/home */
+:root {
+  /* colors */
+  --background-color: #fff;
+  --text-color: rgb(52 55 65);
+  --heading-color: rgb(0 24 113);
+  --link-color: rgb(19 82 222);
+  --link-hover-color: rgb(35 82 124);
+  --aig-navy: rgb(0 24 113);
+  --aig-cobalt: rgb(19 82 222);
+  --aig-light-blue: rgb(199 219 244);
+  --aig-pale-blue: rgb(199 219 244 / 40%);
+  --aig-charcoal: rgb(52 55 65);
+  --light-color: rgb(238 238 238);
+  --aig-grey: rgb(220 220 220);
+  --dark-color: rgb(52 55 65);
+
+  /* fonts */
+  --heading-font-family: futura-pt, futura-pt-fallback, 'Century Gothic', sans-serif;
+  --body-font-family: source-sans-pro, source-sans-pro-fallback, arial, sans-serif;
+
+  /* body sizes */
+  --body-font-size-l: 20px;
+  --body-font-size-m: 16px;
+  --body-font-size-s: 14px;
+  --body-line-height-l: 30px;
+
+  /* heading sizes */
+  --heading-font-size-xxl: 44px;
+  --heading-font-size-xl: 44px;
+  --heading-font-size-l: 24px;
+  --heading-font-size-m: 20px;
+  --heading-font-size-s: 18px;
+  --heading-font-size-xs: 16px;
+
+  /* spacing */
+  --section-spacing: 48px;
+  --content-gutter: 24px;
+
+  /* nav height */
+  --nav-height: 96px;
+}
+
+@media (width >= 992px) {
+  :root {
+    --nav-height: 100px;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/aig-colleagues-share-how-they-meet-the-moment--on-and-off-the-golf-course",
+  "path": "home/newsroom/stories/aig-colleagues-share-how-they-meet-the-moment-on-and-off-the-golf-course",
+  "timestamp": "2026-10-07T23:17:05.855Z",
+  "title": "AIG colleagues share how they meet the moment—on and off the golf course",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims",
+  "path": "home/claims",
+  "timestamp": "2026-10-08T14:22:22.175Z",
+  "title": "AIG Claims: Delivering Excellence in Insurance Claims | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-text",
+    "columns-featured"
+  ]
+}

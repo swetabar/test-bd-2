@@ -1,0 +1,20 @@
+{
+  "variantName": "tabs-risk",
+  "baseBlock": "tabs",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light-blue",
+    "density": "medium",
+    "purpose": "audience-segmented-solutions",
+    "imagePattern": "banner-in-card",
+    "structure": "tab label + image + text + link + sub-items"
+  },
+  "contentPattern": "one row per tab: tab label | tab content (image, paragraph, link, optional H3/paragraph/link groups)",
+  "usage": {
+    "pagesUsing": ["https://www.aig.com/home"],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-05"
+  },
+  "options": [],
+  "memberVariantIds": ["tabs-risk"]
+}

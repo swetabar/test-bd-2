@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/aig-s-early-career-colleagues-give-back",
+  "path": "home/newsroom/stories/aig-s-early-career-colleagues-give-back",
+  "timestamp": "2026-10-07T23:19:47.260Z",
+  "title": "AIG’s Early Career Colleagues Give Back",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

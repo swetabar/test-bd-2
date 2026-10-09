@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business",
+  "path": "home/risk-solutions/business",
+  "timestamp": "2026-10-08T14:24:10.420Z",
+  "title": "Business | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-featured",
+    "tabs",
+    "cards-related"
+  ]
+}

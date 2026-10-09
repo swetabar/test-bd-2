@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/property-and-casualty-claim-reporting-guide",
+  "path": "home/claims/report-a-claim/property-and-casualty-claim-reporting-guide",
+  "timestamp": "2026-10-07T16:49:04.499Z",
+  "title": "Property and Casualty Claim Reporting Guide | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-media",
+    "cards-related"
+  ]
+}

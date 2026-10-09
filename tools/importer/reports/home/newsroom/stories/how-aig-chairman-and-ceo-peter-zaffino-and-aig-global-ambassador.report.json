@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/how-aig-chairman-and-ceo-peter-zaffino-and-aig-global-ambassador",
+  "path": "home/newsroom/stories/how-aig-chairman-and-ceo-peter-zaffino-and-aig-global-ambassador",
+  "timestamp": "2026-10-07T23:24:22.438Z",
+  "title": "How AIG Chairman & CEO Peter Zaffino and AIG Global Ambassador Georgia Hall prepare to lead",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

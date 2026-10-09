@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/global-claims-capabilities",
+  "path": "home/claims/global-claims-capabilities",
+  "timestamp": "2026-10-07T20:55:32.342Z",
+  "title": "Global Claims Capabilities | AIG Insurance",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "columns-text"
+  ]
+}

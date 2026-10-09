@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/casualty-toxic-tort-environmental-casualty-mass-tort",
+  "path": "home/claims/report-a-claim/casualty-toxic-tort-environmental-casualty-mass-tort",
+  "timestamp": "2026-10-08T14:54:18.906Z",
+  "title": "Report a AIG Casualty - Toxic Tort Environmental Casualty Mass Tort Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

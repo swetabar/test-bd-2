@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/what-it-takes-to-be-a-long-term-insurance-partner",
+  "path": "home/newsroom/stories/what-it-takes-to-be-a-long-term-insurance-partner",
+  "timestamp": "2026-10-07T23:28:51.257Z",
+  "title": "What it takes to be a long-term insurance partner | AIG Newsroom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

@@ -1,0 +1,154 @@
+/*
+ * cards-related: "Related Content" strip (label + rule, then title + arrow-link items).
+ * Values extracted from www.aig.com .aig-autopilot computed styles.
+ * Breakpoints mirror the source: 768px (row layout) and 1280px (wide spacing).
+ */
+
+/* section label: the parser emits the "Related Content" heading as default content
+   right before the block, so it is styled through the block's section */
+main .cards-related-container > .default-content-wrapper:has(+ .cards-related-wrapper),
+main .cards-related-container > .cards-related-wrapper:first-child {
+  padding-top: 32px;
+}
+
+main .cards-related-container > .default-content-wrapper:has(+ .cards-related-wrapper) > h3:last-child {
+  display: flex;
+  align-items: center;
+  margin: 0 0 32px;
+  color: var(--text-color);
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+main .cards-related-container > .default-content-wrapper:has(+ .cards-related-wrapper) > h3:last-child::after {
+  content: '';
+  display: block;
+  flex: 1 1 0%;
+  height: 1px;
+  margin: 0 0 0 24px;
+  background-color: rgb(112 134 161);
+}
+
+/* list */
+.cards-related .cards-related-list {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 48px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--text-color);
+}
+
+.cards-related .cards-related-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 24px 0 0;
+}
+
+.cards-related .cards-related-item:last-child {
+  padding-right: 0;
+}
+
+.cards-related .cards-related-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* title */
+.cards-related .cards-related-body > :not(.cards-related-cta) {
+  margin: 0;
+  color: var(--text-color);
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  text-transform: none;
+}
+
+/* "Learn More" arrow link */
+.cards-related .cards-related-body > .cards-related-cta {
+  margin: 24px 0 48px;
+  padding: 0;
+  color: var(--link-color);
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+}
+
+.cards-related .cards-related-cta a:any-link {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 0 40px 0 0;
+  background: none;
+  color: var(--link-color);
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+.cards-related .cards-related-cta a:any-link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 30px;
+  background: url('../../icons/arrow-blue.svg') no-repeat 0 12px;
+  transition: background-position 0.3s;
+}
+
+.cards-related .cards-related-cta a:hover,
+.cards-related .cards-related-cta a:focus-visible {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.cards-related .cards-related-cta a:hover::after,
+.cards-related .cards-related-cta a:focus-visible::after {
+  background-position: 5px 12px;
+}
+
+@media (width >= 768px) {
+  .cards-related .cards-related-list {
+    flex-flow: row wrap;
+  }
+
+  .cards-related .cards-related-item {
+    flex: 0 0 36%;
+    padding-right: 32px;
+  }
+
+  .cards-related .cards-related-item:last-child {
+    flex-basis: 28%;
+    padding-right: 0;
+  }
+
+  .cards-related .cards-related-body > .cards-related-cta {
+    margin-bottom: 0;
+  }
+}
+
+@media (width >= 1280px) {
+  .cards-related .cards-related-list {
+    margin-top: 60px;
+  }
+
+  .cards-related .cards-related-item {
+    padding-right: 96px;
+  }
+}

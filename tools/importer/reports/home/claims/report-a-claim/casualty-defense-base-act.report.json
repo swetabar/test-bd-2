@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/casualty-defense-base-act",
+  "path": "home/claims/report-a-claim/casualty-defense-base-act",
+  "timestamp": "2026-10-08T14:51:40.711Z",
+  "title": "Report a AIG Casualty - Defense Base Act Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

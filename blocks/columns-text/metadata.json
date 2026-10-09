@@ -1,0 +1,42 @@
+{
+  "variantName": "columns-text",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": true,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "heading + text",
+    "purpose": "equal-width text columns (heading, text, optional links), 2-4 across"
+  },
+  "contentPattern": {
+    "structure": "one row with one cell per column (heading, text, optional links); optional first row with a single image-only cell becomes the section background; Glance option renders each column as a white fact card; Narrow option (or a 'narrow' section style) uses 4-up centred slots; overflowing columns (always on mobile) become a carousel"
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/risk-solutions/business/multinational",
+      "/home/careers/students-and-graduates"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-10-07T23:40:42.624Z"
+  },
+  "options": [
+    {
+      "class": "glance",
+      "label": "Glance"
+    },
+    {
+      "class": "narrow",
+      "label": "Narrow"
+    }
+  ],
+  "memberVariantIds": [
+    "v_3bbf154439d7",
+    "v_8f48f8e68821",
+    "v_2ccfa6b0796a",
+    "v_3e9c84efeb9c",
+    "v_db0f957385ea"
+  ]
+}

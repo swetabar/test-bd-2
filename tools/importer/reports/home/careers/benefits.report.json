@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/careers/benefits",
+  "path": "home/careers/benefits",
+  "timestamp": "2026-10-08T14:21:27.395Z",
+  "title": "Benefits - Careers at AIG | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-featured",
+    "columns-featured",
+    "columns-featured",
+    "columns-featured",
+    "columns-featured",
+    "columns-featured",
+    "cards-related"
+  ]
+}

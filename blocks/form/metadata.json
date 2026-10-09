@@ -1,0 +1,31 @@
+{
+  "variantName": "form",
+  "baseBlock": "form",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "text",
+    "purpose": "JSON-driven form (fetched from adobe-rnd/aem-boilerplate-forms); no variants"
+  },
+  "contentPattern": {
+    "structure": "2-row block: form definition (link to a JSON spreadsheet/form definition) and optional submit action; fields are defined in the form JSON, not in block cells"
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_a3dbcf01b2b0",
+    "v_3014c65cb5cb",
+    "v_2ccfa6b0796a-10",
+    "v_2447c07905eb-1",
+    "v_29488f46feaa",
+    "v_361569c2cf43"
+  ]
+}

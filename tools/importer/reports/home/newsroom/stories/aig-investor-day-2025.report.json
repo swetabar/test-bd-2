@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/aig-investor-day-2025",
+  "path": "home/newsroom/stories/aig-investor-day-2025",
+  "timestamp": "2026-10-07T23:18:00.392Z",
+  "title": "AIG Investor Day 2025",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

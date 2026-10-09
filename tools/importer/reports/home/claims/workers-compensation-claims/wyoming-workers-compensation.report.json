@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/workers-compensation-claims/wyoming-workers-compensation",
+  "path": "home/claims/workers-compensation-claims/wyoming-workers-compensation",
+  "timestamp": "2026-10-07T21:01:26.454Z",
+  "title": "Wyoming: Workers' Compensation | AIG US",
+  "template": "accordion-detail",
+  "blocks": [
+    "breadcrumbs",
+    "accordion"
+  ]
+}

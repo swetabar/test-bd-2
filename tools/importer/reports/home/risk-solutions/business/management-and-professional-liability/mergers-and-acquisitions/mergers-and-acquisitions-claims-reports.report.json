@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/management-and-professional-liability/mergers-and-acquisitions/mergers-and-acquisitions-claims-reports",
+  "path": "home/risk-solutions/business/management-and-professional-liability/mergers-and-acquisitions/mergers-and-acquisitions-claims-reports",
+  "timestamp": "2026-10-07T18:12:38.536Z",
+  "title": "Mergers & Acquisitions 2023 Claims Reports | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "columns-text",
+    "downloads",
+    "downloads"
+  ]
+}

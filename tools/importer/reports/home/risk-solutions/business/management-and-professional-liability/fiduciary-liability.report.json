@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/management-and-professional-liability/fiduciary-liability",
+  "path": "home/risk-solutions/business/management-and-professional-liability/fiduciary-liability",
+  "timestamp": "2026-10-07T18:11:45.092Z",
+  "title": "Fiduciary Liability Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "cta-banner",
+    "downloads",
+    "cards-related"
+  ]
+}

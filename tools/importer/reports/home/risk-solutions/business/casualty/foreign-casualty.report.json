@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/casualty/foreign-casualty",
+  "path": "home/risk-solutions/business/casualty/foreign-casualty",
+  "timestamp": "2026-10-07T16:57:57.181Z",
+  "title": "Foreign Casualty Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "cards-related"
+  ]
+}

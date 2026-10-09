@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/taking-professional-womens-golf-to-new-heights",
+  "path": "home/newsroom/stories/taking-professional-womens-golf-to-new-heights",
+  "timestamp": "2026-10-07T23:27:58.815Z",
+  "title": "Taking Professional Women’s Golf to New Heights",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/aig-achieves-financial-strength-rating-upgrades-from-s-and-p-global-and-moody-s",
+  "path": "home/newsroom/stories/aig-achieves-financial-strength-rating-upgrades-from-s-and-p-global-and-moody-s",
+  "timestamp": "2026-10-07T23:16:11.303Z",
+  "title": "AIG Achieves Financial Strength Rating Upgrades from S&P Global and Moody’s",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

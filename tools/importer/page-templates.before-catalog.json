@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "home",
+      "urls": [
+        "https://www.aig.com/home"
+      ],
+      "representativeUrl": "https://www.aig.com/home",
+      "description": "AIG home page: fade hero, featured teasers, about text, risk-solution tabs, alternating media/text stories, newsroom featured story, careers fade banner",
+      "urlPattern": "/*",
+      "blocks": [
+        {
+          "name": "hero-fade",
+          "instances": [
+            ".container.hero-banner-with-fade"
+          ]
+        },
+        {
+          "name": "cards-teaser",
+          "instances": [
+            ".hero-banner-2022 .container.paleblue"
+          ]
+        },
+        {
+          "name": "tabs-risk",
+          "instances": [
+            ".container.aig-tabs .tabs.panelcontainer"
+          ]
+        },
+        {
+          "name": "columns-media",
+          "instances": [
+            ".container.aig-video.two-column-grid",
+            ".teaserflex.cta-with-image:not(.aig-featured-story)"
+          ]
+        },
+        {
+          "name": "columns-featured",
+          "instances": [
+            ".teaserflex.aig-featured-story"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "1",
+          "name": "Hero - Salford City",
+          "selector": [
+            ".container.hero-banner-with-fade.nobottomspace",
+            "main.responsivegrid > .aem-Grid > .container:nth-child(1)"
+          ],
+          "style": null,
+          "blocks": [
+            "hero-fade"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "2",
+          "name": "Featured teasers",
+          "selector": [
+            ".container.hero-banner-2022"
+          ],
+          "style": "light-blue",
+          "blocks": [
+            "cards-teaser"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "3",
+          "name": "About AIG",
+          "selector": [
+            "main.responsivegrid > .aem-Grid > .container:has(> .cmp-container > .aem-Grid > .two-thirdwidth)",
+            "main.responsivegrid > .aem-Grid > .container:nth-child(3)"
+          ],
+          "style": "narrow, centered",
+          "blocks": [],
+          "defaultContent": [
+            ".two-thirdwidth .cmp-teaser__title",
+            ".two-thirdwidth .cmp-teaser__description"
+          ]
+        },
+        {
+          "id": "4",
+          "name": "Risk Solutions tabs",
+          "selector": [
+            "main.responsivegrid > .aem-Grid > .container.paleblue",
+            "main.responsivegrid > .aem-Grid > .container:nth-child(4)"
+          ],
+          "style": "pale-blue, centered",
+          "blocks": [
+            "tabs-risk"
+          ],
+          "defaultContent": [
+            ".aig-tabs .cmp-teaser__pretitle"
+          ]
+        },
+        {
+          "id": "5",
+          "name": "AIG Performance & Initiatives",
+          "selector": [
+            "main.responsivegrid > .aem-Grid > .container:has(> .cmp-container > .aem-Grid > .title)",
+            "main.responsivegrid > .aem-Grid > .container:nth-child(5)"
+          ],
+          "style": "centered",
+          "blocks": [
+            "columns-media"
+          ],
+          "defaultContent": [
+            ".cmp-title__text"
+          ]
+        },
+        {
+          "id": "6",
+          "name": "AIG Newsroom",
+          "selector": [
+            ".container.flexbox-container.addbottom16"
+          ],
+          "style": "centered",
+          "blocks": [
+            "columns-featured"
+          ],
+          "defaultContent": [
+            ".addbottom16 .teaserflex.titlecenter .cmp-teaser__title"
+          ]
+        },
+        {
+          "id": "7",
+          "name": "Careers banner",
+          "selector": [
+            ".container.hero-banner-with-fade:not(.nobottomspace)",
+            "main.responsivegrid > .aem-Grid > .container:nth-child(9)"
+          ],
+          "style": null,
+          "blocks": [
+            "hero-fade"
+          ],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

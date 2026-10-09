@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/building-skills-for-the-future",
+  "path": "home/newsroom/stories/building-skills-for-the-future",
+  "timestamp": "2026-10-07T23:21:35.381Z",
+  "title": "Building Skills for the Future",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share"
+  ]
+}

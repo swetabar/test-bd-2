@@ -1,0 +1,28 @@
+{
+  "variantName": "table",
+  "baseBlock": "table",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "heading + text + 2 CTAs",
+    "purpose": "data table (e.g. credit ratings grid); typically placed in accordion panels"
+  },
+  "contentPattern": {
+    "structure": "rows -> table rows, cells -> table cells; first row is the header; a bold-only first cell becomes a row header; short rows span the last cell"
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_c3ecbe65cc54",
+    "v_8cad2b608dd2-6",
+    "v_b3c203c216ba"
+  ]
+}

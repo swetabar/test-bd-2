@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/lexington-non-property-employment-practices-and-management-liability",
+  "path": "home/claims/report-a-claim/lexington-non-property-employment-practices-and-management-liability",
+  "timestamp": "2026-10-08T14:57:50.373Z",
+  "title": "Report a AIG Lexington Non-Property - Employment Practices and Management Liability Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

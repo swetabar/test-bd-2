@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/casualty-healthcare-liability",
+  "path": "home/claims/report-a-claim/casualty-healthcare-liability",
+  "timestamp": "2026-10-08T14:53:27.044Z",
+  "title": "Report a AIG Casualty - Healthcare Liability Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

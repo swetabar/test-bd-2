@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/leadership-and-governance/john-rice",
+  "path": "home/about/leadership-and-governance/john-rice",
+  "timestamp": "2026-10-07T16:40:13.949Z",
+  "title": "John G. Rice | AIG Insurance",
+  "template": "content-page",
+  "blocks": [
+    "breadcrumbs",
+    "columns",
+    "carousel-leadership"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/how-aig-and-talbot-join-forces-to-balance-risk",
+  "path": "home/newsroom/stories/how-aig-and-talbot-join-forces-to-balance-risk",
+  "timestamp": "2026-10-07T23:25:08.812Z",
+  "title": "How AIG and Talbot join forces to balance risk | AIG Newsroom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

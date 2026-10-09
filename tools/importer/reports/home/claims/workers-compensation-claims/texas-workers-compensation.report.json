@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/workers-compensation-claims/texas-workers-compensation",
+  "path": "home/claims/workers-compensation-claims/texas-workers-compensation",
+  "timestamp": "2026-10-07T20:59:41.315Z",
+  "title": "Texas: Workers' Compensation | AIG US",
+  "template": "accordion-detail",
+  "blocks": [
+    "breadcrumbs",
+    "accordion"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/history",
+  "path": "home/about/history",
+  "timestamp": "2026-10-08T14:20:33.848Z",
+  "title": "History | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "carousel-timeline",
+    "cards-related"
+  ]
+}

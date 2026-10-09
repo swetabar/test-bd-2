@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/our-summer-interns-reflect-on-the-programs-many-benefits",
+  "path": "home/newsroom/stories/our-summer-interns-reflect-on-the-programs-many-benefits",
+  "timestamp": "2026-10-07T23:27:47.455Z",
+  "title": "AIG’s Summer Internship Program",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/leadership-and-governance/chris-schaper",
+  "path": "home/about/leadership-and-governance/chris-schaper",
+  "timestamp": "2026-10-07T16:38:28.183Z",
+  "title": "Chris Schaper | AIG Insurance",
+  "template": "content-page",
+  "blocks": [
+    "breadcrumbs",
+    "columns",
+    "carousel-leadership"
+  ]
+}

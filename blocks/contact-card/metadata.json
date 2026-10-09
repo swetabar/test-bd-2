@@ -1,0 +1,36 @@
+{
+  "variantName": "contact-card",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "icon",
+    "structure": "heading + text + 4 images",
+    "purpose": "bordered contact information card (claims/First Notice of Loss contacts)"
+  },
+  "contentPattern": {
+    "structure": "one row per card: centered heading, then label/value paragraphs (bold labels; phone, fax, email links with :phone: :fax: :email: icons; mailing addresses)"
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/claims/report-a-claim/casualty-cat-excess"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-07T23:20:14Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_7e61b097105e-1",
+    "v_7e61b097105e-4",
+    "v_7e61b097105e-3",
+    "v_7e61b097105e-2",
+    "v_7e61b097105e-7",
+    "v_7e61b097105e-5",
+    "v_7e61b097105e-8",
+    "v_7e61b097105e",
+    "v_7e61b097105e-6"
+  ]
+}

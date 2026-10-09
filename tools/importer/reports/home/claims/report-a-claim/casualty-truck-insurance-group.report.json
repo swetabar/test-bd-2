@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/casualty-truck-insurance-group",
+  "path": "home/claims/report-a-claim/casualty-truck-insurance-group",
+  "timestamp": "2026-10-08T14:54:19.449Z",
+  "title": "Report a AIG Casualty - Truck Insurance Group Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

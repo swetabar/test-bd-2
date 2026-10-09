@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/casualty-multinational",
+  "path": "home/claims/report-a-claim/casualty-multinational",
+  "timestamp": "2026-10-08T14:52:35.320Z",
+  "title": "Report a AIG Casualty - Multinational Claim",
+  "template": "accordion-detail",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

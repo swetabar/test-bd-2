@@ -1,0 +1,226 @@
+/* carousel-leadership: people slider bleeding to the viewport edges, side arrows, page dots */
+.carousel-leadership {
+  --carousel-leadership-per-view: 2;
+
+  margin-inline: calc(50% - 50vw + var(--carousel-leadership-scrollbar, 0px) / 2);
+  padding-bottom: 18px;
+  color: var(--text-color);
+  font-size: var(--body-font-size-m);
+  line-height: 1.4286;
+}
+
+.carousel-leadership .carousel-leadership-viewport {
+  position: relative;
+}
+
+.carousel-leadership .carousel-leadership-slides {
+  display: flex;
+  margin: 0 10px;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel-leadership .carousel-leadership-slides::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-leadership .carousel-leadership-slide {
+  box-sizing: border-box;
+  flex: 0 0 calc(100% / var(--carousel-leadership-per-view));
+  margin: 0;
+  padding: 10px;
+  font-size: var(--body-font-size-m);
+  line-height: 1.4286;
+  scroll-snap-align: start;
+}
+
+.carousel-leadership .carousel-leadership-image {
+  margin-bottom: 16px;
+  line-height: 0;
+}
+
+.carousel-leadership .carousel-leadership-image a {
+  display: block;
+}
+
+.carousel-leadership .carousel-leadership-image img {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.carousel-leadership .carousel-leadership-current .carousel-leadership-image img,
+.carousel-leadership .carousel-leadership-slide:hover .carousel-leadership-image img,
+.carousel-leadership .carousel-leadership-slide:focus-within .carousel-leadership-image img {
+  border: 6px solid var(--aig-cobalt);
+  opacity: 1;
+}
+
+/* name: futura 20px on the source's 16px x 1.4286 line grid (22.86px per line) */
+.carousel-leadership .carousel-leadership-body {
+  color: var(--text-color);
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-m);
+  font-weight: 500;
+  line-height: calc(var(--body-font-size-m) * 1.4286);
+}
+
+.carousel-leadership .carousel-leadership-body > * {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.carousel-leadership .carousel-leadership-body a:any-link {
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+
+.carousel-leadership .carousel-leadership-body a:focus-visible {
+  outline: 2px solid var(--aig-cobalt);
+  outline-offset: 2px;
+}
+
+/* side arrows: only shown when the people overflow */
+.carousel-leadership .carousel-leadership-prev,
+.carousel-leadership .carousel-leadership-next {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 74px;
+  height: 74px;
+  margin: -37px 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  cursor: pointer;
+}
+
+.carousel-leadership .carousel-leadership-prev {
+  left: 0;
+}
+
+.carousel-leadership .carousel-leadership-next {
+  right: 0;
+}
+
+.carousel-leadership.carousel-leadership-has-overflow .carousel-leadership-prev,
+.carousel-leadership.carousel-leadership-has-overflow .carousel-leadership-next {
+  display: flex;
+}
+
+.carousel-leadership .carousel-leadership-prev::before,
+.carousel-leadership .carousel-leadership-next::before {
+  content: '';
+  width: 20px;
+  height: 33px;
+  background: no-repeat 50% 50% / 100%;
+  opacity: 0.75;
+}
+
+.carousel-leadership .carousel-leadership-prev::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30.192 53.171'%3E%3Cpath d='M0 26.586 30.192 53.17v-5.437L6.172 26.583 30.192 5.437V0Z' fill='%231352de'/%3E%3C/svg%3E");
+}
+
+.carousel-leadership .carousel-leadership-next::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30.192 53.171'%3E%3Cpath d='M30.192 26.584 0 0v5.437l24.02 21.15L0 47.734v5.437Z' fill='%231352de'/%3E%3C/svg%3E");
+}
+
+.carousel-leadership .carousel-leadership-prev:disabled,
+.carousel-leadership .carousel-leadership-next:disabled {
+  cursor: default;
+}
+
+.carousel-leadership .carousel-leadership-prev:disabled::before,
+.carousel-leadership .carousel-leadership-next:disabled::before {
+  opacity: 1;
+}
+
+.carousel-leadership .carousel-leadership-prev:disabled::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30.192 53.171'%3E%3Cpath d='M0 26.586 30.192 53.17v-5.437L6.172 26.583 30.192 5.437V0Z' fill='%23d0d0d0'/%3E%3C/svg%3E");
+}
+
+.carousel-leadership .carousel-leadership-next:disabled::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30.192 53.171'%3E%3Cpath d='M30.192 26.584 0 0v5.437l24.02 21.15L0 47.734v5.437Z' fill='%23d0d0d0'/%3E%3C/svg%3E");
+}
+
+.carousel-leadership .carousel-leadership-prev:focus-visible,
+.carousel-leadership .carousel-leadership-next:focus-visible {
+  outline: 2px solid var(--aig-cobalt);
+  outline-offset: -4px;
+}
+
+/* page dots */
+.carousel-leadership .carousel-leadership-dots {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 48px 0 0;
+  padding: 0;
+  list-style: none;
+  line-height: 0;
+}
+
+.carousel-leadership.carousel-leadership-has-overflow .carousel-leadership-dots {
+  display: flex;
+}
+
+.carousel-leadership .carousel-leadership-dots li {
+  margin: 0;
+  line-height: 0;
+}
+
+.carousel-leadership .carousel-leadership-dots button {
+  box-sizing: border-box;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgb(91 92 96);
+  border-radius: 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.carousel-leadership .carousel-leadership-dots button[aria-current='true'] {
+  background-color: rgb(128 210 242);
+}
+
+.carousel-leadership .carousel-leadership-dots button:focus-visible {
+  outline: 2px solid var(--aig-cobalt);
+  outline-offset: 2px;
+}
+
+@media (width >= 768px) {
+  .carousel-leadership {
+    --carousel-leadership-per-view: 4;
+  }
+}
+
+@media (width >= 1024px) {
+  .carousel-leadership {
+    --carousel-leadership-per-view: 6;
+  }
+}
+
+@media (width >= 1280px) {
+  .carousel-leadership .carousel-leadership-slides {
+    margin: 0 7.5%;
+  }
+}

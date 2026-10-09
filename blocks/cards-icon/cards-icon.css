@@ -1,0 +1,303 @@
+/*
+ * cards-icon — values extracted from www.aig.com (.aig-carousel slick slider with
+ * .teaserflex.aig-productcard icon cards: /home/careers, /home/careers/students-and-graduates,
+ * /home/risk-solutions/business/accident-and-health/aig-travel-protect).
+ * The block bleeds to the section edges so the track can use the source slick-list margins
+ * (80px / 105px / 30px / 7.5% of the viewport); arrows sit on the section edges.
+ * Slider controls mirror blocks/columns-text.
+ */
+
+/*
+ * Source declares futura_pt_light as a single-weight face, so bold runs inside the light
+ * description are synthesized from the light cut. A light-only family reproduces that.
+ */
+@font-face {
+  font-family: cards-icon-futura-light;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../fonts/futura_pt_light.otf') format('opentype');
+}
+
+/* ---------- block frame (full bleed) ---------- */
+.cards-icon {
+  --cards-icon-visible: 1;
+
+  position: relative;
+  margin: 0 calc(-1 * var(--content-gutter));
+}
+
+.cards-icon.is-carousel {
+  margin-bottom: 108px;
+}
+
+.cards-icon .cards-icon-viewport {
+  margin: 0 80px;
+  overflow: auto hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.cards-icon .cards-icon-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-icon .cards-icon-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* fewer cards than slots: slick centres the track */
+.cards-icon:not(.is-carousel) .cards-icon-list {
+  justify-content: center;
+}
+
+.cards-icon .cards-icon-item {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 calc(100% / var(--cards-icon-visible));
+  min-width: 0;
+  margin: 0;
+  padding: 10px;
+  scroll-snap-align: start;
+}
+
+/* ---------- card ---------- */
+.cards-icon .cards-icon-card {
+  box-sizing: border-box;
+  display: flow-root;
+  flex: 1 1 auto;
+  min-width: 0;
+  background-color: #fff;
+  color: var(--aig-navy);
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.cards-icon .cards-icon-image {
+  box-sizing: border-box;
+  width: 65px;
+  height: 46px;
+  margin: 36px auto 20px;
+}
+
+.cards-icon .cards-icon-image p {
+  margin: 0;
+}
+
+.cards-icon .cards-icon-image picture {
+  display: block;
+}
+
+.cards-icon .cards-icon-image img,
+.cards-icon .cards-icon-image .icon {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.cards-icon .cards-icon-body {
+  margin: 0 36px 8px;
+}
+
+/* source card ends 21px below the last text line (also for text not wrapped in a paragraph) */
+.cards-icon .cards-icon-body::after {
+  content: '';
+  display: block;
+  margin-bottom: 21px;
+}
+
+.cards-icon.block .cards-icon-body h2,
+.cards-icon.block .cards-icon-body h3,
+.cards-icon.block .cards-icon-body h4 {
+  margin: 0 0 16px;
+  color: var(--aig-navy);
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.cards-icon.block .cards-icon-body p {
+  margin: 0 0 15px;
+  color: inherit;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.cards-icon .cards-icon-body strong,
+.cards-icon .cards-icon-body b {
+  font-family: cards-icon-futura-light, var(--heading-font-family);
+  font-weight: 700;
+}
+
+/* ---------- dark-grey: charcoal rich-text heading and description ---------- */
+.cards-icon.dark-grey .cards-icon-card {
+  color: var(--text-color);
+}
+
+.cards-icon.dark-grey.block .cards-icon-body h2,
+.cards-icon.dark-grey.block .cards-icon-body h3,
+.cards-icon.dark-grey.block .cards-icon-body h4 {
+  margin: 23.4px 0;
+  color: var(--text-color);
+  font-family: aig-futura, var(--heading-font-family);
+  font-size: 23.4px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+/* ---------- slider controls ---------- */
+.cards-icon .cards-icon-arrow {
+  display: none;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  width: 74px;
+  height: 74px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.cards-icon.is-carousel .cards-icon-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-icon .cards-icon-prev {
+  left: 0;
+}
+
+.cards-icon .cards-icon-next {
+  right: 0;
+}
+
+.cards-icon .cards-icon-arrow::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 33px;
+  background: no-repeat center / 100%;
+  opacity: 0.75;
+}
+
+.cards-icon .cards-icon-arrow:hover::before,
+.cards-icon .cards-icon-arrow:focus-visible::before {
+  opacity: 1;
+}
+
+.cards-icon .cards-icon-prev::before {
+  background-image: url('carousel-left.svg');
+}
+
+.cards-icon .cards-icon-next::before {
+  background-image: url('carousel-right.svg');
+}
+
+.cards-icon .cards-icon-arrow:disabled {
+  cursor: default;
+}
+
+.cards-icon .cards-icon-arrow:disabled::before {
+  opacity: 1;
+}
+
+.cards-icon .cards-icon-prev:disabled::before {
+  background-image: url('carousel-left-disabled.svg');
+}
+
+.cards-icon .cards-icon-next:disabled::before {
+  background-image: url('carousel-right-disabled.svg');
+}
+
+.cards-icon .cards-icon-dots {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.cards-icon.is-carousel .cards-icon-dots {
+  display: flex;
+}
+
+.cards-icon .cards-icon-dots button {
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgb(91 92 96);
+  border-radius: 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.cards-icon .cards-icon-dots button.active {
+  background-color: rgb(128 210 242);
+}
+
+/* ---------- responsive ---------- */
+@media (width > 480px) {
+  .cards-icon .cards-icon-viewport {
+    margin: 0 105px;
+  }
+}
+
+@media (width >= 768px) {
+  .cards-icon {
+    --cards-icon-visible: 2;
+  }
+
+  .cards-icon .cards-icon-viewport {
+    margin: 0 30px;
+  }
+
+  /* with arrows the slick list keeps 7.5% gutters at every desktop width */
+  .cards-icon.is-carousel .cards-icon-viewport {
+    margin: 0 7.5%;
+  }
+
+  .cards-icon .cards-icon-body {
+    margin: 0 30px 8px;
+  }
+}
+
+@media (width >= 1024px) {
+  .cards-icon {
+    --cards-icon-visible: 3;
+  }
+}
+
+@media (width > 1200px) {
+  .cards-icon .cards-icon-viewport {
+    margin: 0 7.5%;
+  }
+}
+
+@media (width >= 1280px) {
+  /* section content box is calc(83.333% - 25px) wide; bleed back to the section edges */
+  .cards-icon {
+    margin-inline: calc(-10% - 15px);
+  }
+}

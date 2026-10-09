@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/how-aig-empowers-multinational-clients-to-stay-ahead-of-the-game",
+  "path": "home/newsroom/stories/how-aig-empowers-multinational-clients-to-stay-ahead-of-the-game",
+  "timestamp": "2026-10-07T23:24:23.780Z",
+  "title": "How AIG Empowers Multinational Clients to Stay Ahead of the Game",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

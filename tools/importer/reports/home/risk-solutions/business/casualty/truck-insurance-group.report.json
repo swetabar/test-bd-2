@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/casualty/truck-insurance-group",
+  "path": "home/risk-solutions/business/casualty/truck-insurance-group",
+  "timestamp": "2026-10-07T16:58:50.318Z",
+  "title": "Truck Insurance Group | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "cards-related"
+  ]
+}

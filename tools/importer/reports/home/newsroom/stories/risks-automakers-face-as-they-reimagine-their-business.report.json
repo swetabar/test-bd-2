@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/risks-automakers-face-as-they-reimagine-their-business",
+  "path": "home/newsroom/stories/risks-automakers-face-as-they-reimagine-their-business",
+  "timestamp": "2026-10-07T23:28:41.469Z",
+  "title": "Risks automakers face as they reimagine their business | AIG Newsroom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

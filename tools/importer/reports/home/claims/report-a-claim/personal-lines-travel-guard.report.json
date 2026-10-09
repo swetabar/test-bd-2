@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/personal-lines-travel-guard",
+  "path": "home/claims/report-a-claim/personal-lines-travel-guard",
+  "timestamp": "2026-10-08T15:03:09.031Z",
+  "title": "Report a AIG Personal Lines - Travel Guard Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

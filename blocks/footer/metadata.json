@@ -1,0 +1,23 @@
+{
+  "variantName": "footer",
+  "baseBlock": "footer",
+  "canonicalModel": "configuration",
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "complexity": "moderate",
+    "density": "moderate",
+    "purpose": "global site footer loaded from the /footer fragment"
+  },
+  "contentPattern": {
+    "structure": "fragment-based: the block loads the /footer document (link lists, social links, legal text) into the page footer"
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  },
+  "options": [],
+  "memberVariantIds": [
+    "footer-global"
+  ]
+}

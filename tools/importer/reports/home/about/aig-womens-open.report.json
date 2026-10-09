@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/aig-womens-open",
+  "path": "home/about/aig-womens-open",
+  "timestamp": "2026-10-08T14:19:07.496Z",
+  "title": "AIG Women's Open | AIG US",
+  "template": "accordion-detail",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-featured",
+    "columns-featured",
+    "columns-featured",
+    "columns-media",
+    "columns-media",
+    "columns-media",
+    "columns-media",
+    "columns-text",
+    "columns-text"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/aig-programs/programs-loss-control-safety-bulletins",
+  "path": "home/risk-solutions/business/aig-programs/programs-loss-control-safety-bulletins",
+  "timestamp": "2026-10-07T16:55:16.944Z",
+  "title": "Programs Loss Control Safety Bulletins | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion",
+    "cards-related"
+  ]
+}

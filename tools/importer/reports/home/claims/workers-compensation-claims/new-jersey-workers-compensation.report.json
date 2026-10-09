@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/workers-compensation-claims/new-jersey-workers-compensation",
+  "path": "home/claims/workers-compensation-claims/new-jersey-workers-compensation",
+  "timestamp": "2026-10-07T20:55:01.977Z",
+  "title": "New Jersey: Workers' Compensation | AIG US",
+  "template": "accordion-detail",
+  "blocks": [
+    "breadcrumbs",
+    "accordion"
+  ]
+}

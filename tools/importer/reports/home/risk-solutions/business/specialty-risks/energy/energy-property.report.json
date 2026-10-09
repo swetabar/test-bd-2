@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/specialty-risks/energy/energy-property",
+  "path": "home/risk-solutions/business/specialty-risks/energy/energy-property",
+  "timestamp": "2026-10-07T18:14:28.359Z",
+  "title": "Energy Property Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "downloads",
+    "cards-related"
+  ]
+}

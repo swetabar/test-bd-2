@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim",
+  "path": "home/claims/report-a-claim",
+  "timestamp": "2026-10-07T18:03:41.769Z",
+  "title": "Report a Claim | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "cards-related",
+    "tabs"
+  ]
+}

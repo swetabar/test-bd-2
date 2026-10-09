@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/careers/life-at-aig",
+  "path": "home/careers/life-at-aig",
+  "timestamp": "2026-10-08T14:21:29.120Z",
+  "title": "Life at AIG - Careers at AIG | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-media",
+    "columns-media",
+    "columns-media",
+    "quote",
+    "quote",
+    "downloads",
+    "cards-related"
+  ]
+}

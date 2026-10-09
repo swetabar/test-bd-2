@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/management-and-professional-liability/kidnap-ransom-and-extortion",
+  "path": "home/risk-solutions/business/management-and-professional-liability/kidnap-ransom-and-extortion",
+  "timestamp": "2026-10-07T18:12:40.086Z",
+  "title": "Kidnap, Ransom & Extortion Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "downloads",
+    "cards-related"
+  ]
+}

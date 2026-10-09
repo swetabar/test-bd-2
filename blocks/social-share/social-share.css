@@ -1,0 +1,116 @@
+/* social-share: row of share icons under the article header */
+.social-share {
+  /* source: a 24px inline-flex list centered on a 22.86px text line -> 25.16px row, list 1.16px down */
+  box-sizing: border-box;
+  height: 25.16px;
+  padding-top: 1.16px;
+}
+
+.social-share .social-share-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main .social-share .social-share-item {
+  display: block;
+  width: 28px;
+  height: 24px;
+  margin: 0 16px 0 0;
+  font-size: 16px;
+  line-height: 22.8571px;
+}
+
+main .social-share .social-share-item-facebook {
+  margin-right: 12px;
+}
+
+.social-share .social-share-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 24px;
+}
+
+.social-share .social-share-link svg {
+  display: block;
+  flex: none;
+}
+
+/*
+ * Article column: the share block lives in the article body section (title, sub-headline,
+ * date/category line, body copy). The source article column is inset 12.75% from 768px up.
+ */
+@media (width >= 768px) {
+  main > .section.social-share-container > div {
+    width: auto;
+    max-width: none;
+    margin: 0 12.75%;
+    padding: 0;
+  }
+}
+
+/* article header: title, sub-headline, date | category */
+main > .section.social-share-container .default-content-wrapper > h1 {
+  margin: 24px 0 12px;
+  color: var(--aig-navy);
+  font-family: var(--heading-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+main > .section.social-share-container .default-content-wrapper > h1 + h2 {
+  margin: 0;
+  color: var(--aig-charcoal);
+  font-family: var(--heading-font-family);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+main > .section.social-share-container .default-content-wrapper > :is(h1, h1 + h2) + p {
+  margin: 12px 0;
+  color: var(--aig-charcoal);
+  font-family: var(--heading-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+main > .section.social-share-container .default-content-wrapper > :is(h1, h1 + h2) + p a:any-link {
+  color: var(--aig-cobalt);
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main > .section.social-share-container .default-content-wrapper > :is(h1, h1 + h2) + p a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* article body copy around the share row (belongs in a global article style; see report) */
+main > .section.social-share-container .default-content-wrapper > p:not(:is(h1, h1 + h2) + p) {
+  margin: 18px 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+main > .section.social-share-container .default-content-wrapper > h2:not(h1 + h2) {
+  font-weight: 400;
+}
+
+@media (width >= 768px) {
+  main > .section.social-share-container .default-content-wrapper > h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  main > .section.social-share-container .default-content-wrapper > h1 + h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}

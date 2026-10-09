@@ -31,3 +31,83 @@
     order: unset;
   }
 }
+
+/* bio: portrait column + name / title / biography (detected in columns.js) */
+.columns.columns-bio {
+  margin: 0 8px;
+}
+
+.columns.columns-bio > div {
+  align-items: stretch;
+  gap: 24px;
+}
+
+.columns.columns-bio > div > div {
+  flex: none;
+}
+
+.columns.columns-bio .columns-img-col img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.columns.columns-bio .columns-bio-name {
+  margin: 0 0 12px;
+  color: var(--heading-color);
+  font-family: var(--heading-font-family);
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 56px;
+}
+
+.columns.columns-bio .columns-bio-title {
+  margin: 0 0 24px;
+  color: rgb(51 51 51);
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.columns.columns-bio .columns-bio-text p:not(.columns-bio-name) {
+  margin: 0;
+  color: var(--text-color);
+  font-size: var(--body-font-size-l);
+  line-height: 28px;
+}
+
+@media (width >= 768px) {
+  .columns.columns-bio {
+    margin: 0;
+  }
+
+  .columns.columns-bio > div {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .columns.columns-bio > div > .columns-img-col {
+    flex: 0 0 32%;
+    order: 0;
+  }
+
+  .columns.columns-bio > div > .columns-bio-text {
+    box-sizing: border-box;
+    flex: 0 0 66%;
+    order: 1;
+    padding-left: 8px;
+  }
+
+  .columns.columns-bio .columns-bio-text p:not(.columns-bio-name) {
+    margin-bottom: 15px;
+  }
+}
+
+@media (width >= 1280px) {
+  .columns.columns-bio {
+    margin: 0 -12.5px;
+  }
+}

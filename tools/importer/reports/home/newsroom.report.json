@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom",
+  "path": "home/newsroom",
+  "timestamp": "2026-10-08T14:23:16.777Z",
+  "title": "AIG Newsroom | AIG Insurance",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "carousel",
+    "embed",
+    "video"
+  ]
+}

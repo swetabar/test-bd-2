@@ -1,0 +1,45 @@
+{
+  "variantName": "quote",
+  "baseBlock": "quote",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "large",
+    "structure": "heading + text + 2 CTAs + 2 images",
+    "purpose": "testimonial: portrait beside a quotation with attribution"
+  },
+  "contentPattern": {
+    "structure": "rows/cells: optional portrait picture; quotation text; optional attribution (second text cell, or trailing paragraph starting with a dash; bold = name)"
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/newsroom/stories/aig-is-honored-as-a-top-early-career-employer"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-07T20:52:47.501966Z"
+  },
+  "options": [
+    {
+      "class": "feature",
+      "label": "Feature (wide image, left-aligned quote)"
+    },
+    {
+      "class": "headshot",
+      "label": "Headshot (narrow headshot, centred navy quote)"
+    },
+    {
+      "class": "portrait",
+      "label": "Portrait (240x288 portrait, large navy quote)"
+    },
+    {
+      "class": "centered",
+      "label": "Centered (no image, large centred quote)"
+    }
+  ],
+  "memberVariantIds": [
+    "v_9027605834da-3"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/2024-aig-womens-open-wins-the-lpga-s-gold-driver-award",
+  "path": "home/newsroom/stories/2024-aig-womens-open-wins-the-lpga-s-gold-driver-award",
+  "timestamp": "2026-10-07T23:15:16.866Z",
+  "title": "2024 AIG Women’s Open Wins the LPGA’s Gold Driver Award For Best Player Experience",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

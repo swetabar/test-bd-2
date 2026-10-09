@@ -10,6 +10,9 @@ import {
   loadSections,
   loadCSS,
   buildBlock,
+  readBlockConfig,
+  toClassName,
+  toCamelCase,
 } from './aem.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
@@ -121,12 +124,16 @@ function decorateButtons(main) {
       if (new URL(a.href).href === new URL(text, window.location).href) return;
     } catch { /* continue */ }
 
-    // require authored formatting for buttonization
     const strong = a.closest('strong');
     const em = a.closest('em');
-    if (!strong && !em) return;
-
     p.className = 'button-wrapper';
+
+    // unformatted standalone link: AIG arrow link
+    if (!strong && !em) {
+      a.className = 'button link';
+      return;
+    }
+
     a.className = 'button';
     if (strong && em) { // high-impact call-to-action
       a.classList.add('accent');
@@ -143,6 +150,54 @@ function decorateButtons(main) {
 }
 
 /**
+ * Applies section-metadata blocks to their sections: `style` becomes section
+ * classes, any other key becomes a data attribute. The metadata block is removed.
+ * @param {Element} main The main element
+ */
+function decorateSectionMetadata(main) {
+  main.querySelectorAll(':scope > .section div.section-metadata').forEach((sectionMeta) => {
+    const section = sectionMeta.closest('.section');
+    const meta = readBlockConfig(sectionMeta);
+    Object.keys(meta).forEach((key) => {
+      if (key === 'style') {
+        meta.style.split(',').filter(Boolean).forEach((style) => {
+          section.classList.add(toClassName(style.trim()));
+        });
+      } else {
+        section.dataset[toCamelCase(key)] = meta[key];
+      }
+    });
+    const wrapper = sectionMeta.parentElement;
+    if (wrapper !== section && wrapper.children.length === 1) wrapper.remove();
+    else sectionMeta.remove();
+  });
+}
+
+/**
+ * The source site marks off-site links with a "custom-icons" ligature glyph; imported content
+ * keeps the ligature text ("external_link") at the end of the label. In default content, turn
+ * it back into the glyph (blocks handle their own links).
+ * @param {Element} main The main element
+ */
+function decorateExternalLinks(main) {
+  const token = 'external_link';
+  main.querySelectorAll('.default-content-wrapper a').forEach((a) => {
+    const last = [...a.childNodes].reverse().find((n) => n.textContent.trim());
+    if (!last || last.nodeType !== Node.TEXT_NODE) return;
+    if (!last.textContent.trimEnd().endsWith(token)) return;
+    last.textContent = last.textContent.replace(/\s*external_link\s*$/, '');
+    if (a.title) a.title = a.title.replace(/\s*external_link\s*$/, '');
+    const icon = document.createElement('span');
+    icon.className = 'icon-external';
+    icon.setAttribute('aria-hidden', 'true');
+    icon.textContent = token;
+    a.append(icon);
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -151,7 +206,9 @@ export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
+  decorateSectionMetadata(main);
   decorateBlocks(main);
+  decorateExternalLinks(main);
   decorateButtons(main);
 }
 

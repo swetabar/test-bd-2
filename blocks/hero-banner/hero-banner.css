@@ -1,0 +1,219 @@
+/* hero-banner: navy page-title banner (breadcrumb trail + H1 + intro + optional CTA) */
+
+/* full-bleed: the banner supplies its own spacing, so drop section padding and wrapper width */
+main > .section.hero-banner-container {
+  padding: 0;
+}
+
+main > .section > .hero-banner-wrapper {
+  width: auto;
+  max-width: none;
+  padding: 0;
+}
+
+.hero-banner {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: var(--aig-navy);
+  color: #fff;
+}
+
+.hero-banner .hero-banner-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  line-height: 0;
+}
+
+.hero-banner .hero-banner-background picture,
+.hero-banner .hero-banner-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-banner .hero-banner-inner {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+/* breadcrumb trail */
+.hero-banner .hero-banner-breadcrumbs ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 22.8571px;
+}
+
+.hero-banner .hero-banner-breadcrumbs li {
+  display: inline-flex;
+  min-height: 24px;
+  vertical-align: top;
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+/* source markup has whitespace between crumbs (a 3px space in the list font) */
+.hero-banner .hero-banner-breadcrumbs li:not(:last-child) {
+  margin-right: 3px;
+}
+
+.hero-banner .hero-banner-breadcrumbs li + li::before {
+  content: '\2039';
+  display: block;
+  height: 20px;
+  margin: 5px 8px 0;
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 20px;
+  transform: rotate(180deg);
+}
+
+.hero-banner .hero-banner-breadcrumbs a:any-link {
+  display: block;
+  color: rgb(128 210 242);
+  text-decoration: none;
+}
+
+.hero-banner .hero-banner-breadcrumbs a:hover {
+  color: rgb(128 210 242);
+  text-decoration: underline;
+}
+
+/* "Home" crumb renders as a house icon */
+.hero-banner .hero-banner-breadcrumbs li:first-child > a:is([href$='/home'], [href='/']) {
+  width: 24px;
+  height: 26px;
+  overflow: hidden;
+  background: url('home.svg') no-repeat 50% 2px / 20px;
+  text-indent: -99999px;
+}
+
+/* title, intro, CTAs */
+.hero-banner .hero-banner-content h1 {
+  margin: 24px 0;
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 56px;
+}
+
+.hero-banner .hero-banner-content > p {
+  margin: 0 0 32px;
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+/*
+ * Source renders bold intro text as a synthesized bold of Futura PT Medium (no bold face is
+ * loaded for that family). Register the medium file as a single-weight family so the browser
+ * synthesizes the same faux bold instead of switching to the much heavier Futura PT Bold.
+ */
+@font-face {
+  font-family: hero-banner-futura-medium;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../fonts/futura_pt_medium.otf') format('opentype');
+}
+
+.hero-banner .hero-banner-content > p strong,
+.hero-banner .hero-banner-content > p b {
+  font-family: hero-banner-futura-medium, var(--heading-font-family);
+  font-weight: 700;
+}
+
+.hero-banner .hero-banner-content > :last-child {
+  margin-bottom: 0;
+}
+
+.hero-banner .hero-banner-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.hero-banner .hero-banner-actions p {
+  margin: 16px 0 0;
+}
+
+main .hero-banner .hero-banner-actions a.hero-banner-cta:any-link {
+  display: inline-block;
+  border: 0;
+  padding: 11px 19px;
+  background-color: var(--aig-cobalt);
+  color: #fff;
+  font-family: aig-futura, var(--heading-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.2s ease-in;
+}
+
+main .hero-banner .hero-banner-actions a.hero-banner-cta:hover,
+main .hero-banner .hero-banner-actions a.hero-banner-cta:focus-visible {
+  background-color: var(--aig-navy);
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-banner .hero-banner-actions a.hero-banner-cta::after {
+  content: none;
+}
+
+@media (width >= 768px) {
+  .hero-banner .hero-banner-inner {
+    min-height: 360px;
+    padding: 0 34% 32px 32px;
+  }
+
+  .hero-banner .hero-banner-breadcrumbs {
+    box-sizing: border-box;
+    min-height: 90px;
+    padding-top: 24px;
+  }
+
+  .hero-banner .hero-banner-content {
+    padding-top: 16px;
+  }
+
+  .hero-banner .hero-banner-content h1 {
+    margin: 0 0 24px;
+  }
+}
+
+@media (width >= 1025px) {
+  .hero-banner .hero-banner-content h1 {
+    margin-bottom: 32px;
+  }
+}
+
+@media (width >= 1200px) {
+  .hero-banner .hero-banner-inner {
+    padding-left: 8.333%;
+  }
+}
+
+@media (width >= 1440px) {
+  .hero-banner .hero-banner-inner {
+    padding-right: 25.667%;
+  }
+}

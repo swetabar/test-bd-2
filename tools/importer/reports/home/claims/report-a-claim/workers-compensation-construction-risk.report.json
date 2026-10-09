@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/workers-compensation-construction-risk",
+  "path": "home/claims/report-a-claim/workers-compensation-construction-risk",
+  "timestamp": "2026-10-08T14:53:27.955Z",
+  "title": "Report a AIG Workers' Compensation - Construction Risk Claim",
+  "template": "accordion-detail",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

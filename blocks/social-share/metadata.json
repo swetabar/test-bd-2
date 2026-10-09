@@ -1,0 +1,28 @@
+{
+  "variantName": "social-share",
+  "baseBlock": "embed",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "1 CTAs + list",
+    "purpose": "row of share icons (Facebook, LinkedIn, email) for the current page"
+  },
+  "contentPattern": {
+    "structure": "optional list items or paragraphs naming networks (facebook, linkedin, x, email), optionally linked to override the share URL; empty block defaults to facebook, linkedin, email"
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/newsroom/stories/aig-is-honored-as-a-top-early-career-employer"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-07T20:52:47.501966Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_088823a7d36d"
+  ]
+}

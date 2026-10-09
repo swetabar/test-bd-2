@@ -1,0 +1,24 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/corporate-responsibility/political-activities-and-contributions",
+  "path": "home/about/corporate-responsibility/political-activities-and-contributions",
+  "timestamp": "2026-10-07T18:01:03.968Z",
+  "title": "Political Activities and Contributions | AIG Insurance",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-text",
+    "columns-text",
+    "downloads",
+    "downloads",
+    "downloads",
+    "downloads",
+    "downloads",
+    "downloads",
+    "downloads",
+    "downloads",
+    "cards-related"
+  ]
+}

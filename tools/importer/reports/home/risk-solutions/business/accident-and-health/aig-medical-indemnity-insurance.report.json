@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/accident-and-health/aig-medical-indemnity-insurance",
+  "path": "home/risk-solutions/business/accident-and-health/aig-medical-indemnity-insurance",
+  "timestamp": "2026-10-08T17:42:20.753Z",
+  "title": "AIG Medical Indemnity Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "form",
+    "hero-banner",
+    "columns-quicklinks",
+    "columns-text"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions",
+  "path": "home/risk-solutions",
+  "timestamp": "2026-10-08T14:24:10.475Z",
+  "title": "Risk Solutions | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-media",
+    "columns-media",
+    "columns-media",
+    "columns-media",
+    "cards-related"
+  ]
+}

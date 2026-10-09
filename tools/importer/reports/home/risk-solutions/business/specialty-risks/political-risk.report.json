@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/specialty-risks/political-risk",
+  "path": "home/risk-solutions/business/specialty-risks/political-risk",
+  "timestamp": "2026-10-07T17:13:35.418Z",
+  "title": "Political Risk Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "cards-related"
+  ]
+}

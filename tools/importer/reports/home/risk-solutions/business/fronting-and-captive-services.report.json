@@ -1,0 +1,22 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/fronting-and-captive-services",
+  "path": "home/risk-solutions/business/fronting-and-captive-services",
+  "timestamp": "2026-10-07T18:10:54.038Z",
+  "title": "Fronting & Captive Services and Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "columns-text",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "accordion",
+    "columns-media",
+    "cta-banner",
+    "downloads",
+    "cards-related"
+  ]
+}

@@ -1,0 +1,116 @@
+/* breadcrumbs: standalone trail on white (leadership bio pages) */
+
+/* the trail follows its own grid (32px gutter, then a 1/12 column inset), not the section width */
+main > .section > .breadcrumbs-wrapper {
+  width: auto;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.breadcrumbs {
+  padding: 10px 32px 0;
+}
+
+.breadcrumbs .breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 22.8571px;
+}
+
+main .breadcrumbs .breadcrumbs-item {
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 24px;
+  padding: 3px 0;
+  vertical-align: middle;
+  color: var(--aig-navy);
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* source markup has whitespace between crumbs (a 3px space in the list font) */
+.breadcrumbs .breadcrumbs-item:not(:last-child) {
+  margin-right: 3px;
+}
+
+.breadcrumbs .breadcrumbs-item + .breadcrumbs-item::before {
+  content: '\2039';
+  display: inline-block;
+  width: 8px;
+  height: 24px;
+  margin-right: 4px; /* source has a space between separator and link */
+  color: rgb(51 51 51);
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 20px;
+  vertical-align: text-top;
+  transform: rotate(180deg);
+}
+
+.breadcrumbs .breadcrumbs-item a:any-link,
+.breadcrumbs .breadcrumbs-item span {
+  color: var(--aig-navy);
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.breadcrumbs .breadcrumbs-item a:hover {
+  color: var(--aig-navy);
+  text-decoration: underline;
+}
+
+.breadcrumbs .breadcrumbs-item [aria-current='page'] {
+  color: var(--aig-cobalt);
+}
+
+/* "Home" crumb renders as a house icon */
+.breadcrumbs .breadcrumbs-item:first-child > a:is([href$='/home'], [href='/']) {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('home.svg') no-repeat 50% 50% / 20px;
+  text-indent: -99999px;
+}
+
+.breadcrumbs .breadcrumbs-item-icon .icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+}
+
+@media (width >= 768px) {
+  .breadcrumbs {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  main .breadcrumbs .breadcrumbs-item {
+    padding: 8px 0;
+    line-height: 40px;
+  }
+
+  .breadcrumbs .breadcrumbs-item + .breadcrumbs-item::before {
+    margin: 0 12px 0 8px;
+  }
+}
+
+@media (width >= 1025px) {
+  .breadcrumbs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (width >= 1201px) {
+  .breadcrumbs {
+    padding-right: 8.333%;
+    padding-left: 8.333%;
+  }
+}

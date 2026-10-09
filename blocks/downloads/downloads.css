@@ -1,0 +1,175 @@
+/* downloads: white document rows (title + "Download PDF [size]" link with icon) */
+.downloads .downloads-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.downloads .downloads-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  margin: 0 0 8px;
+  padding: 24px 32px;
+  background-color: #fff;
+  color: var(--text-color);
+}
+
+.downloads .downloads-title {
+  min-width: 0;
+  margin: 0 0 18px;
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.downloads .downloads-title > * {
+  margin: 0;
+  font: inherit;
+}
+
+.downloads a.downloads-title-link:any-link,
+.downloads a.downloads-title-link:hover {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.downloads .downloads-action {
+  display: flex;
+}
+
+.downloads a.downloads-link:any-link {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: var(--link-color);
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.downloads a.downloads-link::before {
+  content: '';
+  flex: 0 0 auto;
+  width: 32px;
+  height: 28px;
+  background: url('../../icons/download.svg') no-repeat 0 0 / 24px 24px;
+}
+
+.downloads a.downloads-link:hover,
+.downloads a.downloads-link:focus-visible {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+/* grid: the source lays these out with a 24px row gap on top of the item margin */
+.downloads .downloads-list-grid {
+  row-gap: 24px;
+}
+
+@media (width >= 768px) {
+  .downloads .downloads-item {
+    display: block;
+    padding: 30px 28px;
+  }
+
+  .downloads .downloads-action {
+    float: right;
+  }
+
+  .downloads .downloads-title {
+    margin: 0;
+  }
+
+  .downloads .downloads-list-grid .downloads-item {
+    width: 49%;
+  }
+
+  /* narrow: two-thirds content column centred in the section (source "two-thirdwidth" container) */
+  .downloads.narrow {
+    max-width: calc(66.667% - 16px);
+    margin-inline: auto;
+  }
+}
+
+/*
+ * annual-report cards (rows with a cover picture; source .download.aig-annual-card):
+ * cover 273px tall, Futura 23px title one line below it, download link under the title;
+ * each card centred in a 1/3 slot on wide screens.
+ */
+.downloads.downloads-cards .downloads-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: stretch;
+}
+
+.downloads.downloads-cards .downloads-item.downloads-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  margin: 0;
+  padding: 10px;
+  background: none;
+}
+
+.downloads.downloads-cards .downloads-card-inner {
+  width: min-content;
+  max-width: 100%;
+  padding-top: 23px;
+}
+
+.downloads.downloads-cards .downloads-thumb {
+  line-height: 0;
+}
+
+.downloads.downloads-cards .downloads-thumb img {
+  width: auto;
+  max-width: none;
+  height: 273px;
+}
+
+.downloads.downloads-cards .downloads-card .downloads-title {
+  margin: 30px 0 0;
+  font-size: 23.008px;
+  line-height: 30px;
+}
+
+.downloads.downloads-cards .downloads-card .downloads-title :is(strong, b) {
+  font-weight: inherit;
+}
+
+.downloads.downloads-cards .downloads-card .downloads-action {
+  float: none;
+  white-space: nowrap;
+}
+
+.downloads.downloads-cards .downloads-card a.downloads-link:any-link {
+  min-height: 35px;
+}
+
+.downloads.downloads-cards .downloads-card a.downloads-link::before {
+  width: 36px;
+}
+
+@media (width >= 768px) {
+  .downloads.downloads-cards .downloads-list,
+  .downloads.downloads-cards .downloads-list-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 0;
+  }
+}
+
+@media (width >= 1280px) {
+  /* source card slots span 85% of the viewport, just wider than the section column */
+  .downloads.downloads-cards .downloads-list {
+    margin-inline: calc(-0.8333vw - 12.5px);
+  }
+}

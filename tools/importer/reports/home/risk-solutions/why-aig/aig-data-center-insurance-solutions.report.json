@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/why-aig/aig-data-center-insurance-solutions",
+  "path": "home/risk-solutions/why-aig/aig-data-center-insurance-solutions",
+  "timestamp": "2026-10-07T18:16:12.982Z",
+  "title": "AIG Data Centers Insurance Solutions",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-media",
+    "downloads"
+  ]
+}

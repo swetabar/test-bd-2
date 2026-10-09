@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/aig-brings-women-and-business-leaders-together-through-golf",
+  "path": "home/newsroom/stories/aig-brings-women-and-business-leaders-together-through-golf",
+  "timestamp": "2026-10-07T23:16:10.538Z",
+  "title": "AIG brings women and business leaders together through golf | AIG Newsroom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

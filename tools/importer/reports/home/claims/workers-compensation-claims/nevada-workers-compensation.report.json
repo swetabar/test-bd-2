@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/workers-compensation-claims/nevada-workers-compensation",
+  "path": "home/claims/workers-compensation-claims/nevada-workers-compensation",
+  "timestamp": "2026-10-07T20:55:52.478Z",
+  "title": "Nevada: Workers' Compensation | AIG US",
+  "template": "accordion-detail",
+  "blocks": [
+    "breadcrumbs",
+    "accordion"
+  ]
+}

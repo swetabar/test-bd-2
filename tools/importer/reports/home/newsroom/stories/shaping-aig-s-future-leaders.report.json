@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/shaping-aig-s-future-leaders",
+  "path": "home/newsroom/stories/shaping-aig-s-future-leaders",
+  "timestamp": "2026-10-07T23:27:54.255Z",
+  "title": "Shaping AIG's Future Leaders",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share"
+  ]
+}

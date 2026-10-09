@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/get-with-the-program",
+  "path": "home/newsroom/stories/get-with-the-program",
+  "timestamp": "2026-10-07T23:24:15.735Z",
+  "title": "Get with the program | AIG Newsroom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "quote",
+    "quote",
+    "cards-related"
+  ]
+}

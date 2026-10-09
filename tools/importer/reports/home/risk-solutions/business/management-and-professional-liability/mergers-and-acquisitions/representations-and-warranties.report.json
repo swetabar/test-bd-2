@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/management-and-professional-liability/mergers-and-acquisitions/representations-and-warranties",
+  "path": "home/risk-solutions/business/management-and-professional-liability/mergers-and-acquisitions/representations-and-warranties",
+  "timestamp": "2026-10-07T17:09:10.670Z",
+  "title": "Representations & Warranties Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "cards-related"
+  ]
+}

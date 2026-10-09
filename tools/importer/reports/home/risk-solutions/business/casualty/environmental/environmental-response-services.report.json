@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/casualty/environmental/environmental-response-services",
+  "path": "home/risk-solutions/business/casualty/environmental/environmental-response-services",
+  "timestamp": "2026-10-07T21:01:21.612Z",
+  "title": "Environmental Response Services | AIG US",
+  "template": "accordion-detail",
+  "blocks": [
+    "breadcrumbs",
+    "accordion"
+  ]
+}

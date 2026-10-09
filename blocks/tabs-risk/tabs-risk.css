@@ -1,0 +1,227 @@
+/*
+ * tabs-risk: Risk Solutions audience tabs (aig.com/home).
+ * All values are taken from the source computed styles; breakpoints mirror
+ * the source (768 / 993 / 1025 / 1201 / 1280).
+ */
+
+/* section: pale-blue band with 25px vertical padding, 70px-tall centered H2 */
+main > .section.tabs-risk-container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+main > .section.tabs-risk-container > .default-content-wrapper h2 {
+  margin: 0 0 24px;
+  color: var(--aig-navy);
+  font-size: 44px;
+  line-height: 70px;
+}
+
+.tabs-risk {
+  display: flow-root;
+}
+
+/* tab bar */
+.tabs-risk .tabs-risk-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 16px 0 0;
+  padding: 0;
+}
+
+.tabs-risk .tabs-risk-tab {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  appearance: none;
+  margin: 0 15px;
+  padding: 15px 3px 27px;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+  background: none;
+  color: rgb(91 92 96);
+  font-family: var(--heading-font-family);
+  font-size: 19.2px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.36px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tabs-risk .tabs-risk-tab:hover,
+.tabs-risk .tabs-risk-tab[aria-selected='true'] {
+  padding-bottom: 26px;
+  border-bottom: 2px solid var(--aig-cobalt);
+  color: var(--aig-cobalt);
+}
+
+.tabs-risk .tabs-risk-tab:focus {
+  outline: none;
+}
+
+.tabs-risk .tabs-risk-tab:focus-visible {
+  outline: 2px solid var(--aig-cobalt);
+  outline-offset: 2px;
+}
+
+/* panel card */
+.tabs-risk .tabs-risk-panel {
+  box-sizing: border-box;
+  margin: 30px 24px 15px;
+  border: 1px solid rgb(238 238 238);
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 16%) 0 2px 6px 0;
+}
+
+.tabs-risk .tabs-risk-panel[hidden] {
+  display: none;
+}
+
+.tabs-risk .tabs-risk-banner {
+  line-height: 0;
+}
+
+.tabs-risk .tabs-risk-banner picture {
+  display: block;
+}
+
+.tabs-risk .tabs-risk-banner img {
+  display: block;
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* intro copy + CTA */
+.tabs-risk .tabs-risk-body {
+  padding: 24px;
+}
+
+.tabs-risk .tabs-risk-body p {
+  margin: 0 0 16px;
+  color: var(--aig-navy);
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.tabs-risk .tabs-risk-panel p.button-wrapper {
+  margin: 0;
+}
+
+/* sub-items (Risk Managers / Brokers & Agents) */
+.tabs-risk .tabs-risk-items {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.tabs-risk .tabs-risk-item {
+  padding: 16px 24px 24px;
+  text-align: left;
+}
+
+.tabs-risk .tabs-risk-item h3 {
+  margin: 0 0 16px;
+  color: var(--aig-navy);
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.tabs-risk .tabs-risk-item h3 a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.tabs-risk .tabs-risk-item p {
+  margin: 0 0 16px;
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media (width >= 768px) {
+  .tabs-risk .tabs-risk-panel {
+    margin: 30px 32px 15px;
+  }
+
+  .tabs-risk .tabs-risk-banner img {
+    height: 244px;
+  }
+
+  /* sub-items side by side */
+  .tabs-risk .tabs-risk-items {
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+  }
+
+  .tabs-risk .tabs-risk-item {
+    padding: 0 24px 24px;
+  }
+}
+
+@media (width >= 993px) {
+  .tabs-risk .tabs-risk-tab {
+    font-size: 24px;
+  }
+}
+
+@media (width >= 1025px) {
+  .tabs-risk .tabs-risk-tab {
+    letter-spacing: 0.58px;
+  }
+}
+
+@media (width >= 1201px) {
+  .tabs-risk .tabs-risk-tab {
+    margin: 0 22px;
+  }
+
+  .tabs-risk .tabs-risk-panel {
+    max-width: 66%;
+    margin: 30px auto 15px;
+  }
+
+  .tabs-risk .tabs-risk-banner img {
+    height: auto;
+    max-height: 210px;
+  }
+
+  .tabs-risk .tabs-risk-body {
+    padding: 32px;
+  }
+
+  .tabs-risk .tabs-risk-item {
+    padding: 0 32px 32px;
+  }
+}
+
+/* source container widths: 99% (1025-1200), 85% + 15px gutters (1201-1439), full width (1440+) */
+@media (width >= 1025px) {
+  main > .section.tabs-risk-container > .tabs-risk-wrapper {
+    max-width: 99%;
+  }
+}
+
+@media (width >= 1201px) {
+  main > .section.tabs-risk-container > .tabs-risk-wrapper {
+    width: auto;
+    max-width: 85%;
+    padding: 0 15px;
+  }
+}
+
+@media (width >= 1440px) {
+  main > .section.tabs-risk-container > .tabs-risk-wrapper {
+    max-width: 1920px;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/casualty/aig-risk-management",
+  "path": "home/risk-solutions/business/casualty/aig-risk-management",
+  "timestamp": "2026-10-07T18:06:25.389Z",
+  "title": "AIG Risk Management (AIGRM) Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "downloads",
+    "cards-related"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "variantName": "embed",
+  "baseBlock": "embed",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "1 CTAs",
+    "purpose": "embedded third-party content (hosted forms, YouTube/Vimeo, external iframes)"
+  },
+  "contentPattern": {
+    "structure": "one row: link to the embed URL, optional placeholder image (click-to-load), optional heading/text shown above"
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_9a8269a5aaea",
+    "v_d91c580e2f34",
+    "v_8cad2b608dd2-7",
+    "v_2ccfa6b0796a-13",
+    "v_49173d01a303",
+    "v_823518242103-2",
+    "v_8cad2b608dd2-5",
+    "v_8cad2b608dd2-8",
+    "v_efdd18195434-2",
+    "v_f2f5985b7e23"
+  ]
+}

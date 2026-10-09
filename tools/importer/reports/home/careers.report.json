@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/careers",
+  "path": "home/careers",
+  "timestamp": "2026-10-08T14:20:36.522Z",
+  "title": "Careers at AIG | AIG US",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "cards-icon",
+    "columns-media",
+    "columns-media",
+    "cards-related"
+  ]
+}

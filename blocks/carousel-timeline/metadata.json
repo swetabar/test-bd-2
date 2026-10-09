@@ -1,0 +1,26 @@
+{
+  "variantName": "carousel-timeline",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "card-top-image",
+    "structure": "Select Decade dropdown + progress rail with one dot per card + scrolling row of milestone cards (image, year heading, bullet list) + prev/next edge controls",
+    "purpose": "company history timeline browsable by decade"
+  },
+  "contentPattern": {
+    "structure": "one row per milestone: picture | year heading (h3) + bullet list of events. Decades are not authored: the block groups rows by year to build the Select Decade dropdown (jump to the decade's first milestone) and draws the rail. 3 cards per view from 768px, 1 on mobile."
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/about/history"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-07T00:00:00.000Z"
+  },
+  "options": [],
+  "memberVariantIds": []
+}

@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/media-contacts",
+  "path": "home/newsroom/media-contacts",
+  "timestamp": "2026-10-07T16:52:35.433Z",
+  "title": "Media Contacts | AIG Insurance",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion",
+    "accordion",
+    "cards-related"
+  ]
+}

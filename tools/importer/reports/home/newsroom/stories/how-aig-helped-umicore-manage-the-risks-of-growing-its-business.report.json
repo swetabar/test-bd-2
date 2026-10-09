@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/how-aig-helped-umicore-manage-the-risks-of-growing-its-business",
+  "path": "home/newsroom/stories/how-aig-helped-umicore-manage-the-risks-of-growing-its-business",
+  "timestamp": "2026-10-07T23:26:02.573Z",
+  "title": "How AIG helped Umicore manage the risks of growing its business | AIG Newsroom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

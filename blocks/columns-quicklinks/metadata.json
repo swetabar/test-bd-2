@@ -1,0 +1,30 @@
+{
+  "variantName": "columns-quicklinks",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "imagePattern": "noimg",
+    "purpose": "intro text with quick-links sidebar",
+    "structure": "heading + text + list | heading + link list"
+  },
+  "contentPattern": {
+    "structure": "1 row, 2 cells: intro (h2, paragraphs, optional list; content after the first paragraph collapses behind a Show more toggle) | quick links panel (title + list of anchor links). Desktop: intro ~2/3 beside a boxed ~1/3 panel with header row, divided link rows and arrow icons; stacked on mobile. The Featured option replaces the intro text with a featured story: optional leading h2 section title, then picture + heading (h3, may link) + text + CTA link, rendered as a pale-blue image-left card (image on top on mobile); no Show more collapse."
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/risk-solutions/business/multinational",
+      "/home/careers/students-and-graduates"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-10-07T23:40:42.624Z"
+  },
+  "options": [
+    {
+      "class": "featured",
+      "label": "Featured"
+    }
+  ],
+  "memberVariantIds": []
+}

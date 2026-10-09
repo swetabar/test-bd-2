@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/data-centers-aig-powering-risk-solutions-in-the-ai-boom",
+  "path": "home/newsroom/stories/data-centers-aig-powering-risk-solutions-in-the-ai-boom",
+  "timestamp": "2026-10-07T23:22:28.856Z",
+  "title": "Data Centers: How AIG Is Powering Risk Solutions in the AI Boom",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share"
+  ]
+}

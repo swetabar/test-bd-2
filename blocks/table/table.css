@@ -1,0 +1,135 @@
+/*
+ * table: AIG data grid (source: .cmp-text table) — centred 17.6px/30px cells,
+ * light-blue 2px column rules and top rule, zebra rows (header row white,
+ * then grey/white), navy underlined links with the external-link glyph.
+ * Wider-than-viewport tables scroll horizontally (source: table display:block).
+ */
+
+/*
+ * source: heading component (h2 + 16px) then 24px to the table component = 40px from the
+ * heading text; the h2's 16px bottom margin collapses into this one
+ */
+main .table-container .default-content-wrapper + .table-wrapper {
+  margin-top: 40px;
+}
+
+.table .table-scroll {
+  overflow-x: auto;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: rgb(0 0 0);
+  font-size: 17.6px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+.table th,
+.table td {
+  padding: 20px;
+  border-top: 1px solid transparent;
+  border-right: 2px solid var(--aig-light-blue);
+  border-bottom: 1px solid transparent;
+  border-left: 2px solid var(--aig-light-blue);
+  font-weight: inherit;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table thead th {
+  border-top: 2px solid var(--aig-light-blue);
+}
+
+.table tbody tr:last-child > * {
+  border-bottom: 2px solid var(--aig-light-blue);
+}
+
+/* source header cells after the first wrap their label in a 20px <p> (20px block margins) */
+.table thead th:not(:first-child) {
+  padding-block: 40px;
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+/*
+ * source bold is synthesized over a regular-only face (700 on aig_sourcesanspro_regular):
+ * regular advance widths with a thickened outline. Reproduce it with the regular face plus
+ * an outline stroke the size of the browser's synthetic emboldening (~1/26 em), so header
+ * labels wrap exactly like the source; true bold is ~5% wider and wraps earlier.
+ */
+.table th strong,
+.table th b,
+.table td strong,
+.table td b {
+  font-weight: 400;
+  -webkit-text-stroke: 0.038em currentcolor;
+}
+
+.table th p,
+.table td p {
+  margin: 20px 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/*
+ * source header labels (in <p>, word-break: break-word) may break inside words from 768px up;
+ * overflow-wrap: anywhere is the non-deprecated equivalent
+ */
+@media (width >= 768px) {
+  .table thead th:not(:first-child) {
+    overflow-wrap: anywhere;
+  }
+}
+
+.table th > :first-child,
+.table td > :first-child {
+  margin-top: 0;
+}
+
+.table th > :last-child,
+.table td > :last-child {
+  margin-bottom: 0;
+}
+
+.table thead tr,
+.table tbody tr:nth-child(even) {
+  background-color: var(--background-color);
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: var(--light-color);
+}
+
+.table a:any-link {
+  color: var(--aig-navy);
+  font-size: inherit;
+  font-weight: 400;
+  text-decoration: underline;
+  overflow-wrap: normal;
+}
+
+.table a:hover {
+  color: var(--aig-navy);
+}
+
+/* external-link glyph: custom-icons ligature, as on the source */
+.table .table-icon-external {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  font-family: custom-icons, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  font-feature-settings: 'liga';
+  line-height: 14px;
+  text-decoration: none;
+  text-transform: none;
+  white-space: nowrap;
+}

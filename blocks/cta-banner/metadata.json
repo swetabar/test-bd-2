@@ -1,0 +1,28 @@
+{
+  "variantName": "cta-banner",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "heading + text + 2 CTAs",
+    "purpose": "contained call-to-action panel"
+  },
+  "contentPattern": {
+    "structure": "one row: heading, supporting text, 1-2 CTA links (optional picture-only cell becomes a background image)"
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/risk-solutions/business/multinational"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-07T13:29:03.321003Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_9027605834da-4"
+  ]
+}

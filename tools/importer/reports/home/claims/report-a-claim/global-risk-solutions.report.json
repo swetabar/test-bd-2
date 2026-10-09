@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/global-risk-solutions",
+  "path": "home/claims/report-a-claim/global-risk-solutions",
+  "timestamp": "2026-10-08T14:56:06.173Z",
+  "title": "Report a AIG Global Risk Solutions Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

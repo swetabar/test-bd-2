@@ -1,0 +1,33 @@
+{
+  "variantName": "columns-featured",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "medium",
+    "purpose": "featured-story",
+    "imagePattern": "image-right-tinted-panel",
+    "structure": "heading + text + 2 links + image"
+  },
+  "contentPattern": "one row: text cell (H3, paragraph, 2 links) | image cell",
+  "usage": {
+    "pagesUsing": [
+      "https://www.aig.com/home",
+      "/home/risk-solutions/business/multinational",
+      "/home/careers/students-and-graduates"
+    ],
+    "reuseCount": 3,
+    "lastUsed": "2026-10-07T23:40:42.624Z"
+  },
+  "options": [
+    {
+      "class": "dark",
+      "label": "Dark"
+    }
+  ],
+  "memberVariantIds": [
+    "columns-featured",
+    "v_efdd18195434",
+    "v_8cad2b608dd2-1"
+  ]
+}

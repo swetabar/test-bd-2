@@ -1,0 +1,26 @@
+{
+  "variantName": "search",
+  "baseBlock": "search",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "1 CTAs",
+    "purpose": "keyword search input with icon; live results or submit to a results page"
+  },
+  "contentPattern": {
+    "structure": "optional cells: placeholder text; link to a .json query index (live results) or to a results page (submit navigates with ?q=). Defaults to /query-index.json"
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_00f2906030c4"
+  ]
+}

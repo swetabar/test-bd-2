@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/aig-programs",
+  "path": "home/risk-solutions/business/aig-programs",
+  "timestamp": "2026-10-07T18:05:31.358Z",
+  "title": "AIG Programs Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "accordion",
+    "columns-media",
+    "columns-media",
+    "cta-banner",
+    "downloads",
+    "cards-related"
+  ]
+}

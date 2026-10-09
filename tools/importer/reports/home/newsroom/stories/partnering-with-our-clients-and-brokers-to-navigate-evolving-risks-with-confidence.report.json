@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/partnering-with-our-clients-and-brokers-to-navigate-evolving-risks-with-confidence",
+  "path": "home/newsroom/stories/partnering-with-our-clients-and-brokers-to-navigate-evolving-risks-with-confidence",
+  "timestamp": "2026-10-07T23:27:01.266Z",
+  "title": "Partnering with Our Clients and Brokers to Navigate Evolving Risks with Confidence",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

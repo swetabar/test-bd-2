@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/specialty-risks/marine/marine-liability",
+  "path": "home/risk-solutions/business/specialty-risks/marine/marine-liability",
+  "timestamp": "2026-10-07T18:15:21.743Z",
+  "title": "Marine Liability Insurance | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "accordion",
+    "accordion",
+    "cta-banner",
+    "downloads",
+    "cards-related"
+  ]
+}

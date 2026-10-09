@@ -1,0 +1,26 @@
+{
+  "variantName": "feature-panel",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "large",
+    "structure": "heading + text + image",
+    "purpose": "full-bleed background image with an overlaid text panel (heading, text, CTA)"
+  },
+  "contentPattern": {
+    "structure": "one row: image cell | text cell (heading, paragraph, CTA link)"
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_eaeaf4ae820c"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "variantName": "carousel-leadership",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "large",
+    "structure": "heading + 4 CTAs + 11 images + list",
+    "purpose": "leadership people carousel (portrait + linked name, ~6 per view, side arrows, page dots, current person highlighted)"
+  },
+  "contentPattern": {
+    "structure": "one row per person: portrait image cell | name cell (link to bio page, optional title)"
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_2ccfa6b0796a-2"
+  ]
+}

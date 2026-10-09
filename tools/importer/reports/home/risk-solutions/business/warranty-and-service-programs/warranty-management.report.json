@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/warranty-and-service-programs/warranty-management",
+  "path": "home/risk-solutions/business/warranty-and-service-programs/warranty-management",
+  "timestamp": "2026-10-07T17:14:39.445Z",
+  "title": "Warranty Management | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-text",
+    "cta-banner",
+    "cards-related"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "variantName": "cards",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": true,
+    "imagePattern": "noimg",
+    "structure": "heading + text + 1 CTAs + list",
+    "purpose": "generic card grid (image, heading, text, links)"
+  },
+  "contentPattern": {
+    "structure": "one row per card: optional image cell | body cell (heading, text, links)"
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_126effcefb1a",
+    "v_fed797d4e709",
+    "v_842e8a09ac34",
+    "v_06191c6cccf2",
+    "v_285fff928e06",
+    "v_29bcc2279289",
+    "v_2ccfa6b0796a-9",
+    "v_53649d68ba38",
+    "v_5a56b0a82414",
+    "v_6781587ae760",
+    "v_823518242103-1",
+    "v_8cad2b608dd2-4",
+    "v_9027605834da",
+    "v_9cfb87e8a275",
+    "v_c57ab3990ef3",
+    "v_d297afd101c8-1",
+    "v_d297afd101c8-4"
+  ]
+}

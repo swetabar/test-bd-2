@@ -1,0 +1,30 @@
+{
+  "variantName": "video",
+  "baseBlock": "video",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "large",
+    "structure": "1 CTAs + image",
+    "purpose": "click-to-play video: single full-width player or a gallery grid of video teasers"
+  },
+  "contentPattern": {
+    "structure": "one row per video: poster picture; link to the video (mp4/YouTube/Vimeo; link text such as Play Video labels the button); optional duration text (1:30); optional heading/description caption"
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/risk-solutions/business/multinational"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-10-07T13:29:03.321003Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_2e2db030d3a1",
+    "v_51cc1834ce48",
+    "v_51cc1834ce48-1"
+  ]
+}

@@ -1,0 +1,283 @@
+/*
+ * quote: values extracted from aig.com teaserflex quotes.
+ * Modes (class set by quote.js): quote-feature, quote-headshot, quote-portrait, quote-centered.
+ * Source breakpoints: 768px (row layout) and 1201px (wide desktop).
+ */
+
+/* ---------- shared ---------- */
+.quote,
+.quote .quote-figure,
+.quote .quote-image,
+.quote .quote-body {
+  box-sizing: border-box;
+}
+
+.quote .quote-figure {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.quote .quote-image {
+  flex: 0 0 auto;
+  width: 100%;
+  line-height: 0;
+}
+
+.quote .quote-image picture {
+  display: block;
+  height: 100%;
+}
+
+.quote .quote-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.quote .quote-body {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.quote .quote-quotation {
+  margin: 0;
+}
+
+/* global `main p` sets size/line-height: let paragraphs inherit the mode typography */
+.quote .quote-quotation p,
+.quote .quote-attribution p {
+  font: inherit;
+  color: inherit;
+}
+
+.quote .quote-quotation p {
+  margin: 0;
+}
+
+.quote .quote-attribution p {
+  margin: 0 0 15px;
+}
+
+/* ---------- feature: wide image + left-aligned charcoal quote (article) ---------- */
+.quote.quote-feature {
+  margin-inline: calc(-1 * var(--content-gutter));
+}
+
+.quote.quote-feature .quote-body {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  color: var(--text-color);
+}
+
+.quote.quote-feature .quote-quotation {
+  margin: 23.4px 0;
+  font-family: aig-futura, var(--heading-font-family);
+  font-size: 23.4px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.quote.quote-feature .quote-attribution {
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.quote.quote-feature .quote-attribution strong {
+  font-weight: 700;
+}
+
+/*
+ * ---------- headshot: narrow headshot + centred navy quote (article) ----------
+ * source container margin is 48px and does not collapse with the surrounding paragraphs
+ */
+.quote.quote-headshot {
+  margin: 0 calc(-1 * var(--content-gutter));
+  padding: 48px 0;
+}
+
+.quote.quote-headshot .quote-body {
+  padding-left: 32px;
+  color: var(--aig-navy);
+  text-align: center;
+}
+
+.quote.quote-headshot .quote-quotation,
+.quote.quote-headshot .quote-attribution {
+  margin: 23.4px 0;
+  font-family: aig-futura, var(--heading-font-family);
+  font-size: 23.4px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.quote.quote-headshot .quote-attribution p {
+  margin: 0;
+}
+
+.quote.quote-headshot .quote-attribution strong {
+  font-weight: inherit;
+}
+
+/* ---------- portrait / centered: large navy quote in a landing band ---------- */
+.quote.quote-portrait,
+.quote.quote-centered {
+  margin: 0 32px;
+  color: var(--aig-navy);
+}
+
+/*
+ * Source: each quote sits in its own container (48px margin, never collapsing) with a 48px
+ * teaser margin inside. Alone in a band the section padding already provides the 48px;
+ * after/before other content the block adds the container + teaser spacing itself.
+ */
+main .quote-wrapper:not(:first-child) > .quote.quote-portrait,
+main .quote-wrapper:not(:first-child) > .quote.quote-centered {
+  padding-top: 96px;
+}
+
+main .quote-wrapper:not(:last-child) > .quote.quote-portrait,
+main .quote-wrapper:not(:last-child) > .quote.quote-centered {
+  padding-bottom: 48px;
+}
+
+.quote.quote-portrait .quote-figure {
+  align-items: flex-start;
+}
+
+.quote.quote-portrait .quote-image {
+  width: 240px;
+  height: 288px;
+  margin: auto auto 42px;
+}
+
+.quote.quote-portrait .quote-image img {
+  height: 100%;
+}
+
+.quote.quote-portrait .quote-body {
+  align-self: stretch;
+  padding-left: 32px;
+}
+
+.quote.quote-centered .quote-body {
+  text-align: center;
+}
+
+.quote.quote-portrait .quote-quotation,
+.quote.quote-centered .quote-quotation {
+  margin: 0 0 32px;
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.quote.quote-portrait .quote-attribution,
+.quote.quote-centered .quote-attribution {
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 44px;
+  opacity: 0.8;
+}
+
+.quote.quote-portrait .quote-attribution strong,
+.quote.quote-centered .quote-attribution strong {
+  font-weight: 700;
+}
+
+/* ---------- tablet / desktop ---------- */
+@media (width >= 768px) {
+  .quote .quote-figure {
+    flex-direction: row;
+  }
+
+  /* feature */
+  .quote.quote-feature {
+    margin-inline: 0;
+  }
+
+  .quote.quote-feature .quote-image {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+
+  .quote.quote-feature .quote-image img {
+    height: 100%;
+  }
+
+  .quote.quote-feature .quote-body {
+    flex: 0 0 50%;
+    align-self: center;
+    width: 50%;
+    padding: 0 4.4% 2px 32px;
+  }
+
+  /* headshot */
+  .quote.quote-headshot {
+    margin: 0;
+  }
+
+  .quote.quote-headshot .quote-figure {
+    align-items: flex-start;
+  }
+
+  .quote.quote-headshot .quote-image {
+    flex: 0 0 23.5%;
+    width: 23.5%;
+  }
+
+  .quote.quote-headshot .quote-body {
+    flex: 0 0 49%;
+    width: 49%;
+  }
+
+  /* portrait / centered */
+  .quote.quote-portrait .quote-image {
+    flex: 0 0 240px;
+    margin: 0;
+  }
+
+  .quote.quote-portrait .quote-body {
+    align-self: auto;
+  }
+
+  .quote.quote-centered .quote-body {
+    padding-left: 40px;
+  }
+}
+
+@media (width >= 1025px) {
+  .quote.quote-headshot .quote-body {
+    flex: 0 0 74.5%;
+    width: 74.5%;
+  }
+}
+
+@media (width >= 1201px) {
+  .quote.quote-feature .quote-image {
+    flex-basis: 55%;
+    width: 55%;
+  }
+
+  .quote.quote-feature .quote-body {
+    flex-basis: 45%;
+    width: 45%;
+    padding: 0 6.4% 0 32px;
+  }
+
+  .quote.quote-portrait,
+  .quote.quote-centered {
+    margin-inline: 0;
+  }
+
+  .quote.quote-portrait .quote-figure {
+    align-items: center;
+  }
+}

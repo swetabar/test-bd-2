@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/corporate-responsibility/sustainability",
+  "path": "home/about/corporate-responsibility/sustainability",
+  "timestamp": "2026-10-08T14:19:42.121Z",
+  "title": "Sustainability | AIG Insurance",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-text",
+    "tabs",
+    "downloads",
+    "cards-related"
+  ]
+}

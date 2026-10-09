@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/investor-relations",
+  "path": "home/investor-relations",
+  "timestamp": "2026-10-08T14:23:16.079Z",
+  "title": "Investor Relations | AIG Insurance",
+  "template": "landing-section",
+  "blocks": [
+    "hero-fade",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-media",
+    "cta-banner",
+    "embed",
+    "embed"
+  ]
+}

@@ -1,0 +1,341 @@
+/*
+ * carousel — values extracted from www.aig.com (.aig-carousel slick slider with
+ * .teaserflex.aig-article-card cards: students-and-graduates job simulations, newsroom
+ * Latest Stories (.aig-carousel-3-col), app-and-web-portal, ERG photo gallery).
+ * The block bleeds to the section edges so the track can use the source slick-list margins
+ * (80px / 105px / 30px / 7.5% of the viewport); arrows sit on the section edges.
+ * Slider controls mirror blocks/columns-text.
+ */
+
+/* ---------- block frame (full bleed) ---------- */
+.carousel {
+  --carousel-visible: 1;
+
+  position: relative;
+  margin: 0 calc(-1 * var(--content-gutter));
+}
+
+.carousel.is-carousel {
+  margin-bottom: 108px;
+}
+
+.carousel .carousel-viewport {
+  margin: 0 80px;
+  overflow: auto hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.carousel .carousel-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel .carousel-slides {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* fewer cards than slots: slick centres the track */
+.carousel:not(.is-carousel) .carousel-slides {
+  justify-content: center;
+}
+
+.carousel .carousel-slide {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 calc(100% / var(--carousel-visible));
+  min-width: 0;
+  margin: 0;
+  padding: 10px;
+  scroll-snap-align: start;
+}
+
+/* ---------- card ---------- */
+.carousel .carousel-card {
+  box-sizing: border-box;
+  display: flow-root;
+  flex: 1 1 auto;
+  position: relative;
+  min-width: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 16%);
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.carousel .carousel-card:hover {
+  background-color: rgb(248 248 248);
+}
+
+.carousel .carousel-slide-image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.carousel .carousel-slide-image p {
+  margin: 0;
+}
+
+.carousel .carousel-slide-image picture {
+  display: block;
+  height: 100%;
+}
+
+.carousel .carousel-slide-image img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  max-width: none;
+  object-fit: cover;
+}
+
+.carousel .carousel-slide-content {
+  padding: 24px;
+}
+
+/* text-only cards (job simulations) */
+.carousel .carousel-card > .carousel-slide-content:only-child {
+  padding: 32px 30px 31px 24px;
+}
+
+.carousel .carousel-slide-content > :first-child {
+  margin-top: 0;
+}
+
+.carousel.block .carousel-slide-content p.carousel-slide-pretitle {
+  margin: 0;
+  padding: 0 0 16px;
+  color: rgb(91 92 96);
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.carousel.block .carousel-slide-content h2,
+.carousel.block .carousel-slide-content h3,
+.carousel.block .carousel-slide-content h4 {
+  margin: 0 0 16px;
+  color: var(--aig-navy);
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.carousel .carousel-slide-content li a:any-link {
+  color: var(--aig-navy);
+  text-decoration: underline;
+}
+
+.carousel .carousel-slide-content :is(h2, h3, h4) a:any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* cards without an image: cobalt title link */
+.carousel .carousel-card > .carousel-slide-content:only-child :is(h2, h3, h4) a:any-link {
+  color: var(--link-color);
+}
+
+.carousel .carousel-card > .carousel-slide-content:only-child :is(h2, h3, h4) a:hover {
+  color: var(--link-hover-color);
+}
+
+.carousel.block .carousel-slide-content p {
+  margin: 0 0 16px;
+  color: var(--text-color);
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.carousel .carousel-slide-content ul,
+.carousel .carousel-slide-content ol {
+  margin: 20px 0;
+  padding: 0 0 0 40px;
+}
+
+.carousel .carousel-slide-content ul {
+  list-style-type: disc;
+}
+
+.carousel .carousel-slide-content li {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+}
+
+/* standalone CTA (global arrow link) */
+.carousel.block .carousel-slide-content p.button-wrapper {
+  margin: 0;
+  line-height: 36px;
+}
+
+/* off-site link: external-link glyph instead of the arrow */
+.carousel .carousel-slide-content a.button.carousel-external::after {
+  content: 'external_link';
+  display: inline-block;
+  position: static;
+  width: auto;
+  height: auto;
+  margin-left: 6px;
+  background: none;
+  font-family: custom-icons, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  white-space: nowrap;
+}
+
+/* ---------- slider controls ---------- */
+.carousel .carousel-arrow {
+  display: none;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  width: 74px;
+  height: 74px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.carousel.is-carousel .carousel-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel .carousel-prev {
+  left: 0;
+}
+
+.carousel .carousel-next {
+  right: 0;
+}
+
+.carousel .carousel-arrow::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 33px;
+  background: no-repeat center / 100%;
+  opacity: 0.75;
+}
+
+.carousel .carousel-arrow:hover::before,
+.carousel .carousel-arrow:focus-visible::before {
+  opacity: 1;
+}
+
+.carousel .carousel-prev::before {
+  background-image: url('carousel-left.svg');
+}
+
+.carousel .carousel-next::before {
+  background-image: url('carousel-right.svg');
+}
+
+.carousel .carousel-arrow:disabled {
+  cursor: default;
+}
+
+.carousel .carousel-arrow:disabled::before {
+  opacity: 1;
+}
+
+.carousel .carousel-prev:disabled::before {
+  background-image: url('carousel-left-disabled.svg');
+}
+
+.carousel .carousel-next:disabled::before {
+  background-image: url('carousel-right-disabled.svg');
+}
+
+.carousel .carousel-dots {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.carousel.is-carousel .carousel-dots {
+  display: flex;
+}
+
+.carousel .carousel-dots button {
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgb(91 92 96);
+  border-radius: 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.carousel .carousel-dots button.active {
+  background-color: rgb(128 210 242);
+}
+
+/* ---------- responsive ---------- */
+@media (width > 480px) {
+  .carousel .carousel-viewport {
+    margin: 0 105px;
+  }
+}
+
+@media (width >= 768px) {
+  .carousel {
+    --carousel-visible: 3;
+  }
+
+  .carousel .carousel-viewport {
+    margin: 0 30px;
+  }
+
+  /* with arrows the slick list keeps 7.5% gutters at every desktop width */
+  .carousel.is-carousel .carousel-viewport {
+    margin: 0 7.5%;
+  }
+
+  /* story row (.aig-carousel-3-col): wider card gutters */
+  .carousel.carousel-stories .carousel-slide {
+    padding: 10px 25px;
+  }
+}
+
+@media (768px <= width <= 1200px) {
+  .carousel .carousel-card > .carousel-slide-content:only-child {
+    padding: 15px 10px 24px 15px;
+  }
+}
+
+@media (width > 1200px) {
+  .carousel .carousel-viewport {
+    margin: 0 7.5%;
+  }
+}
+
+@media (width >= 1280px) {
+  /* section content box is calc(83.333% - 25px) wide; bleed back to the section edges */
+  .carousel {
+    margin-inline: calc(-10% - 15px);
+  }
+}

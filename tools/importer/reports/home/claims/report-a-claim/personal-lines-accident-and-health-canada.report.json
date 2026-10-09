@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/claims/report-a-claim/personal-lines-accident-and-health-canada",
+  "path": "home/claims/report-a-claim/personal-lines-accident-and-health-canada",
+  "timestamp": "2026-10-08T15:01:23.651Z",
+  "title": "Report a AIG Personal Lines - Accident and Health Canada Claim",
+  "template": "claim-contact",
+  "blocks": [
+    "breadcrumbs",
+    "contact-card"
+  ]
+}

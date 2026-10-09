@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/news-releases",
+  "path": "home/newsroom/news-releases",
+  "timestamp": "2026-10-07T16:52:38.657Z",
+  "title": "News Releases | AIG Insurance",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "cards-related",
+    "embed",
+    "embed"
+  ]
+}

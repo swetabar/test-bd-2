@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/risk-solutions/business/l/risk-engineering/hot-work-management",
+  "path": "home/risk-solutions/business/l/risk-engineering/hot-work-management",
+  "timestamp": "2026-10-07T17:05:02.751Z",
+  "title": "Hot Work Management | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "accordion",
+    "video"
+  ]
+}

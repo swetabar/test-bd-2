@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/about/supplier-relations",
+  "path": "home/about/supplier-relations",
+  "timestamp": "2026-10-07T18:01:03.882Z",
+  "title": "Supplier Relations | AIG US",
+  "template": "content-page",
+  "blocks": [
+    "hero-banner",
+    "columns-quicklinks",
+    "columns-text",
+    "columns-media",
+    "downloads"
+  ]
+}

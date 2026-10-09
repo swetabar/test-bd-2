@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.aig.com/home/newsroom/stories/a-week-to-remember-2026-aig-womens-open",
+  "path": "home/newsroom/stories/a-week-to-remember-2026-aig-womens-open",
+  "timestamp": "2026-10-07T23:15:15.738Z",
+  "title": "A Week to Remember at the 2026 AIG Women’s Open",
+  "template": "article-page",
+  "blocks": [
+    "hero-article",
+    "social-share",
+    "cards-related"
+  ]
+}

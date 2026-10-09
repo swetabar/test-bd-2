@@ -1,0 +1,417 @@
+/*
+ * columns-text — values extracted from www.aig.com (.aig-carousel / .aig-carousel-3-col slick
+ * carousels and .aig-productcard "glance" cards).
+ * The block bleeds to the section edges so the track can use the source list margins
+ * (80px / 105px / 30px / 7.5% of the viewport); arrows sit on the section edges.
+ */
+
+/* ---------- block frame (full bleed) ---------- */
+.columns-text {
+  --columns-text-visible: 1;
+
+  position: relative;
+  margin: 0 calc(-1 * var(--content-gutter)) 60px;
+}
+
+.columns-text .columns-text-viewport {
+  margin: 0 80px;
+  overflow: auto hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.columns-text .columns-text-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.columns-text .columns-text-grid {
+  display: flex;
+}
+
+.columns-text .columns-text-slide {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 calc(100% / var(--columns-text-visible));
+  min-width: 0;
+  padding: 10px 10px 16px;
+  scroll-snap-align: start;
+}
+
+/* ---------- optional authored section background ---------- */
+main .section.columns-text-has-background {
+  position: relative;
+  isolation: isolate;
+}
+
+main .section.columns-text-has-background > .columns-text-background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  max-width: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+main .section.columns-text-has-background > .columns-text-background picture,
+main .section.columns-text-has-background > .columns-text-background img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ---------- default: text columns ---------- */
+.columns-text .columns-text-column {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.columns-text .columns-text-column > :first-child {
+  margin-top: 0;
+}
+
+.columns-text .columns-text-column h3 {
+  margin: 0 0 16px;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.columns-text .columns-text-column p {
+  margin: 0 0 15px;
+  font-size: var(--body-font-size-l);
+  line-height: var(--body-line-height-l);
+}
+
+.columns-text .columns-text-column p.columns-text-link {
+  margin: 0 0 15px;
+}
+
+/* ---------- carousel controls ---------- */
+.columns-text .columns-text-arrow {
+  display: none;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  width: 74px;
+  height: 74px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.columns-text.is-carousel .columns-text-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.columns-text .columns-text-prev {
+  left: 0;
+}
+
+.columns-text .columns-text-next {
+  right: 0;
+}
+
+.columns-text .columns-text-arrow::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 33px;
+  background: no-repeat center / 100%;
+  opacity: 0.75;
+}
+
+.columns-text .columns-text-arrow:hover::before,
+.columns-text .columns-text-arrow:focus-visible::before {
+  opacity: 1;
+}
+
+.columns-text .columns-text-prev::before {
+  background-image: url('carousel-left.svg');
+}
+
+.columns-text .columns-text-next::before {
+  background-image: url('carousel-right.svg');
+}
+
+.columns-text .columns-text-arrow:disabled {
+  cursor: default;
+}
+
+.columns-text .columns-text-arrow:disabled::before {
+  opacity: 1;
+}
+
+.columns-text .columns-text-prev:disabled::before {
+  background-image: url('carousel-left-disabled.svg');
+}
+
+.columns-text .columns-text-next:disabled::before {
+  background-image: url('carousel-right-disabled.svg');
+}
+
+.columns-text .columns-text-dots {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 48px;
+  justify-content: center;
+  gap: 16px;
+}
+
+.columns-text.is-carousel .columns-text-dots {
+  display: flex;
+}
+
+.columns-text .columns-text-dots button {
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgb(91 92 96);
+  border-radius: 0;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.columns-text .columns-text-dots button.active {
+  background-color: rgb(128 210 242);
+}
+
+/* ---------- glance: white stat cards ---------- */
+.columns-text.glance {
+  margin-bottom: 82px;
+}
+
+.columns-text.glance .columns-text-slide {
+  padding: 10px;
+}
+
+.columns-text.glance .columns-text-box {
+  box-sizing: border-box;
+  padding: 36px 30px 47px;
+  background-color: #fff;
+  color: var(--aig-navy);
+  text-align: center;
+}
+
+.columns-text.glance .columns-text-box p {
+  margin: 0 0 15px;
+  color: var(--aig-navy);
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.columns-text.glance .columns-text-box strong,
+.columns-text.glance .columns-text-box b {
+  font-weight: 500;
+}
+
+.columns-text.glance .columns-text-box p.columns-text-icon {
+  height: 46px;
+  margin: 0 0 20px;
+  line-height: 46px;
+}
+
+.columns-text.glance .columns-text-box p.columns-text-icon img {
+  display: block;
+  width: 65px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* ---------- responsive ---------- */
+@media (width > 480px) {
+  .columns-text .columns-text-viewport {
+    margin: 0 105px;
+  }
+}
+
+@media (width >= 768px) {
+  .columns-text {
+    --columns-text-visible: 3;
+
+    margin-bottom: -32px;
+  }
+
+  .columns-text.is-carousel {
+    margin-bottom: 60px;
+  }
+
+  .columns-text .columns-text-viewport {
+    margin: 0 30px;
+  }
+
+  .columns-text .columns-text-slide {
+    padding: 10px 25px 16px;
+  }
+
+  .columns-text.glance .columns-text-slide {
+    padding: 10px;
+  }
+
+  /* 4+ columns and narrow: 4-up slots (3-up on tablet), tighter gutters */
+  .columns-text.columns-text-many:not(.glance) .columns-text-slide,
+  .columns-text.narrow:not(.glance) .columns-text-slide,
+  main .section.narrow .columns-text:not(.glance) .columns-text-slide {
+    padding: 10px 10px 16px;
+  }
+
+  .columns-text.narrow:not(.glance, .is-carousel) .columns-text-grid,
+  main .section.narrow .columns-text:not(.glance, .is-carousel) .columns-text-grid {
+    justify-content: center;
+  }
+
+  .columns-text.glance {
+    --columns-text-visible: 2;
+
+    margin-bottom: 82px;
+  }
+
+  .columns-text.glance .columns-text-viewport {
+    margin: 0 7.5%;
+  }
+}
+
+@media (width >= 1024px) {
+  .columns-text.columns-text-many:not(.glance),
+  .columns-text.narrow:not(.glance),
+  main .section.narrow .columns-text:not(.glance) {
+    --columns-text-visible: 4;
+  }
+
+  .columns-text.glance {
+    --columns-text-visible: 3;
+  }
+}
+
+@media (width > 1200px) {
+  .columns-text .columns-text-viewport {
+    margin: 0 7.5%;
+  }
+}
+
+@media (width >= 1280px) {
+  /* section content box is calc(83.333% - 25px) wide; bleed back to the section edges */
+  .columns-text {
+    margin-inline: calc(-10% - 15px);
+  }
+}
+
+/*
+ * glance over an authored background row (landing pages, source .aig-article-card /
+ * .aig-infographic-card carousels): cards start 48px below the section title, navy copy on
+ * white cards; the section keeps 48px below it.
+ */
+main .section.columns-text-has-background:has(> .columns-text-wrapper > .columns-text.glance.columns-text-bg) {
+  margin-bottom: 48px;
+}
+
+/* (collapses with the 16px title margin) 108px below for the dots on mobile */
+.columns-text.glance.columns-text-bg {
+  margin-top: 48px;
+  margin-bottom: 108px;
+}
+
+.columns-text.glance.columns-text-bg .columns-text-dots {
+  margin-top: 39px;
+}
+
+/* article cards: heading + copy */
+.columns-text.glance.columns-text-bg .columns-text-box {
+  padding: 32px 30px 31px 24px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 16%);
+}
+
+.columns-text.glance.columns-text-bg .columns-text-box > :is(h1, h2, h3, h4) {
+  margin: 24.9px 0;
+  color: var(--aig-navy);
+  font-family: var(--heading-font-family);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.columns-text.glance.columns-text-bg .columns-text-box p {
+  margin: 0 0 16px;
+  color: var(--aig-navy);
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* stat cards: pretitle copy / big figure heading / caption */
+.columns-text.glance.columns-text-stats .columns-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 10px;
+  box-shadow: 1px 1px 6px 1px rgb(0 24 113 / 20%);
+}
+
+.columns-text.glance.columns-text-stats .columns-text-box > :is(h1, h2, h3, h4) {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.columns-text.glance.columns-text-stats .columns-text-box p {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-size: 23.008px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+@media (width >= 768px) {
+  .columns-text.glance.columns-text-bg:not(.is-carousel) {
+    margin-bottom: 0;
+  }
+
+  .columns-text.glance.columns-text-bg:not(.columns-text-stats) .columns-text-slide {
+    padding: 10px 25px;
+  }
+
+  /* source cards are inline-blocks: 6px line-box gap below the content */
+  .columns-text.glance.columns-text-stats .columns-text-box {
+    justify-content: flex-start;
+    padding-bottom: 36px;
+  }
+
+  .columns-text.glance.columns-text-stats .columns-text-box > :is(h1, h2, h3, h4) {
+    font-size: 55.008px;
+  }
+
+  .columns-text.glance.columns-text-stats .columns-text-box p {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  .columns-text.glance.columns-text-stats:not(.is-carousel) .columns-text-grid {
+    justify-content: center;
+  }
+}
+
+@media (width >= 1024px) {
+  .columns-text.glance.columns-text-stats {
+    --columns-text-visible: 4;
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "variantName": "cards-related",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": true,
+    "imagePattern": "noimg",
+    "structure": "text + 3 CTAs",
+    "purpose": "related-content link cards (title + Learn more link), three across"
+  },
+  "contentPattern": {
+    "structure": "one row per card: title (text or heading), optional description, Learn more link"
+  },
+  "usage": {
+    "pagesUsing": [
+      "/home/risk-solutions/business/multinational",
+      "/home/newsroom/stories/aig-is-honored-as-a-top-early-career-employer",
+      "/home/careers/students-and-graduates"
+    ],
+    "reuseCount": 3,
+    "lastUsed": "2026-10-07T23:40:42.624Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "v_ee64ee98c39c"
+  ]
+}
