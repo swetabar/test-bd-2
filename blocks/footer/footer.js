@@ -9,6 +9,8 @@
  * This file only builds layout shells, classes and behaviour around that content.
  */
 
+import { normalizeFragment } from '../../scripts/fragment-utils.js';
+
 const DIALOG_PATH_PREFIX = '/fragments/';
 const CONSENT_HASH = '#cookie-preferences';
 const CLOSE_HASH = '#close';
@@ -22,12 +24,7 @@ const CLOSE_HASH = '#close';
 function parseFragment(html, baseUrl) {
   const root = document.createElement('div');
   root.innerHTML = html;
-  // Document Authoring wraps list-item content in <p> and images in <picture>: unwrap both
-  root.querySelectorAll('li > p').forEach((p) => p.replaceWith(...p.childNodes));
-  root.querySelectorAll('picture').forEach((picture) => {
-    const img = picture.querySelector('img');
-    if (img) picture.replaceWith(img);
-  });
+  normalizeFragment(root);
   root.querySelectorAll('img[src]').forEach((img) => {
     img.src = new URL(img.getAttribute('src'), baseUrl).href;
   });

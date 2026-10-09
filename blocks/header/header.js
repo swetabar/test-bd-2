@@ -14,21 +14,9 @@
  * This file only builds layout/controls and wires behavior; it never invents copy.
  */
 
-const isDesktop = window.matchMedia('(width >= 900px)');
+import { normalizeFragment } from '../../scripts/fragment-utils.js';
 
-/**
- * Document Authoring delivers the fragment with list-item content wrapped in <p>
- * (<li><p><a>…</a></p><ul>…) and images wrapped in <picture>. Unwrap both so the
- * fragment has the same shape as the authored/local markup (<li><a>…</a><ul>…, <img>).
- * @param {Element} root
- */
-function normalizeFragment(root) {
-  root.querySelectorAll('li > p').forEach((p) => p.replaceWith(...p.childNodes));
-  root.querySelectorAll('picture').forEach((picture) => {
-    const img = picture.querySelector('img');
-    if (img) picture.replaceWith(img);
-  });
-}
+const isDesktop = window.matchMedia('(width >= 900px)');
 
 /**
  * Fetches the nav fragment. Metadata-independent dual fetch:
