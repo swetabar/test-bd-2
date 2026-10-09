@@ -17,6 +17,20 @@
 const isDesktop = window.matchMedia('(width >= 900px)');
 
 /**
+ * Document Authoring delivers the fragment with list-item content wrapped in <p>
+ * (<li><p><a>…</a></p><ul>…) and images wrapped in <picture>. Unwrap both so the
+ * fragment has the same shape as the authored/local markup (<li><a>…</a><ul>…, <img>).
+ * @param {Element} root
+ */
+function normalizeFragment(root) {
+  root.querySelectorAll('li > p').forEach((p) => p.replaceWith(...p.childNodes));
+  root.querySelectorAll('picture').forEach((picture) => {
+    const img = picture.querySelector('img');
+    if (img) picture.replaceWith(img);
+  });
+}
+
+/**
  * Fetches the nav fragment. Metadata-independent dual fetch:
  * /content (local preview / aem up) first, then site root (DA/EDS production).
  * @returns {Promise<{doc: Element, base: string}|null>}
@@ -28,6 +42,7 @@ async function fetchNavFragment() {
   const html = await resp.text();
   const doc = document.createElement('div');
   doc.innerHTML = html;
+  normalizeFragment(doc);
   return { doc, base: resp.url };
 }
 
